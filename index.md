@@ -11,6 +11,7 @@
 - Explore a few basic mathematical concepts that you are likely to encounter when building such experiences.
 
 - What is this, what does it let me do and how do I use it?
+- Focusing on reactivity
 
 > I decided to change all of this a year ago. I sat down and looked up all of the topics that a typical CS degree covers and then I dove in. Half way through, I decided to write a book about what I was learning.
 > The Imposter’s Handbook: a compendium of my year-long quest to fill the holes in my CS knowledge.
@@ -35,6 +36,7 @@
 ### Polar Coordinates
 - [Radians](https://mobile.twitter.com/fermatslibrary/status/832983341859209216/photo/1)
 - [polar coordinates explained](http://codepen.io/winkerVSbecks/pen/ZpGzdz)
+- not at origin
 
 #### Generating 2D shapes
 
@@ -50,6 +52,23 @@ export default function polygon(sides, r) {
 }
 ```
 
+- Parameterize
+```js
+// this code dynamically generates a <path> element
+// and assigns the string to the d attribute.
+const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+// here I'm using variables in place of values to
+// control the points of the curve
+let d = `M${x0},${y0} c${x1},${y1} ${x2},${y2} ${x3},${y3}`;
+path.setAttribute('d', d); 
+```
+
+- Morphing shapes
+  - [Morphing Colour Paths](http://codepen.io/chrisgannon/pen/NNGKeo)
+  - [Hex-a-portal (RGB)](http://codepen.io/chrisgannon/pen/yOYMMP?editors=0010)
+
+- http://varun.ca/truncation
+
 #### Patterns!
 - draw circles at equal intervals to get patterns
 -	animate them! https://beesandbombs.tumblr.com/post/99074397309/bw-dots
@@ -58,37 +77,52 @@ export default function polygon(sides, r) {
 
 ---
 
-## sin, cos, tan
+## A brief intro to `sin`, `cos`, `tan`
 - [Trigonometry for Animation](https://www.spu.ac.th/sdm/files/2012/07/03-Trigonometry-for-Animation.pdf)
 - [Trigonometry Collection](http://codepen.io/collection/DKgrdV/)
 
 
+### Oscillations
 
-## Generating and manipulating 2D shapes
+- Smooth Up and Down Motion
+- Sine wave
+  - http://codepen.io/jpolete/pen/rxNxyd?editors=0010
+  - [hexagonal 3d rainbow wavy lattice](http://codepen.io/towc/pen/MaVKJa)
+	- sine waves offset (multiple pendulum thing)
+    - http://codepen.io/DonKarlssonSan/pen/QGzqaM
+- Bees and Bombs (Dave Whyte)
+  - https://dribbble.com/shots/1783699-Blocks
+  - https://dribbble.com/shots/1754428-Wave
+  - [Swimmer](https://cdn.dribbble.com/users/583436/screenshots/3005711/swim.gif)
+    - points oscillating with a sine wave
+    - add some offset
+    - http://codepen.io/brainsandspace/pen/rrwPjJ
+- [Sine Language](http://codepen.io/chrisgannon/pen/dOEGwv)
 
-- [Morphing Colour Paths](http://codepen.io/chrisgannon/pen/NNGKeo)
-- [Hex-a-portal (RGB)](http://codepen.io/chrisgannon/pen/yOYMMP?editors=0010)
+---
 
-- Triangles and calculating sides
-- Solving Triangles
-- direction and pointing
-	- pong
-	- http://paperjs.org/examples/meta-balls/
-	- http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
+## Solving Triangles
+(Generating and manipulating 2D shapes)
+
+- [A visualisation of trigonometric functions](https://twitter.com/fermatslibrary/status/847433345256624128)
+- `tan`, triangles and calculating sides
+- https://p5js.org/examples/math-arctangent.html
+
+- direction
+  - pong
+  - http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
+  - http://winkervsbecks.github.io/fermat-point/
+
+-  pointing
 	- [Vue-controlled Wall-E](http://codepen.io/sdras/pen/YZBGNp)
 	- [Fraction Fingerprints](https://codepen.io/jasesmith/pen/EZWONY)
 	- http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit
-	- [hexagonal 3d rainbow wavy lattice](http://codepen.io/towc/pen/MaVKJa)
 	- Follow and Reach examples from p5js
-	- https://p5js.org/examples/math-arctangent.html
+
 - https://p5js.org/examples/math-distance-2d.html
-- http://winkervsbecks.github.io/fermat-point/
-- http://varun.ca/truncation/
-- http://varun.ca/chillwave/
+- http://paperjs.org/examples/meta-balls
 
 ```
-
-
                         __...------__    T(x2, y2)
                    _.-''             -(+)
                 ,-'                   |----
@@ -113,51 +147,11 @@ export default function polygon(sides, r) {
                       '`--......---'
 ```
 
-- Parameterize
-```js
-// this code dynamically generates a <path> element
-// and assigns the string to the d attribute.
-const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
-// here I'm using variables in place of values to
-// control the points of the curve
-let d = `M${x0},${y0} c${x1},${y1} ${x2},${y2} ${x3},${y3}`;
-path.setAttribute('d', d); 
-```
-
-
-
-## Locating, moving and rotating objects with trigonometry
-
-- translation: xEnd = xStart + c [addition]
-- scaling: xEnd = 2 * xStart [multiplication]
-- rotation: xEnd = cosθ * xStart + sinθ * xStart [trignometry]
-	+ [Rocket around the moon](http://codepen.io/Yakudoo/pen/aOEeXB)
-
-- bounce: https://inventwithpython.com/blogstatic/trig_bounce.py
-
-- pressed[translation]: http://codepen.io/winkerVSbecks/pen/PZEvQd
-- touchID[locating]: http://codepen.io/winkerVSbecks/full/vGojNb/
-
-- [A visualisation of trigonometric functions](https://twitter.com/fermatslibrary/status/847433345256624128)
-
-difference is making a baked version vs making something that is dynamic
-
+---
 
 ## Using curves to generate paths, easings and springs
-- Sine wave
-	- oscillating
-  - http://codepen.io/jpolete/pen/rxNxyd?editors=0010
-	- sine waves offset (multiple pendulum thing)
-    - http://codepen.io/DonKarlssonSan/pen/QGzqaM
-  - Bees and Bombs (Dave Whyte)
-    - https://dribbble.com/shots/1783699-Blocks
-    - https://dribbble.com/shots/1754428-Wave
-    - [Swimmer](https://cdn.dribbble.com/users/583436/screenshots/3005711/swim.gif)
-      - points oscillating with a sine wave
-      - add some offset
-      - http://codepen.io/brainsandspace/pen/rrwPjJ
-	- [Sine Language](http://codepen.io/chrisgannon/pen/dOEGwv)
-- Smooth Up and Down Motion
+- bounce: https://inventwithpython.com/blogstatic/trig_bounce.py
+- http://varun.ca/chillwave
 - Bounce
 - cubic bezier easing
 - circle wave: https://idyll-lang.github.io/idyll-d3-component/
@@ -181,8 +175,20 @@ function lerp(start, end) {
 }
 ```
 
+---
 
-## Vectors
+## Locating, moving and rotating objects with trigonometry
+
+- translation: xEnd = xStart + c [addition]
+- scaling: xEnd = 2 * xStart [multiplication]
+- rotation: xEnd = cosθ * xStart + sinθ * xStart [trignometry]
+	+ [Rocket around the moon](http://codepen.io/Yakudoo/pen/aOEeXB)
+
+- pressed[translation]: http://codepen.io/winkerVSbecks/pen/PZEvQd
+- touchID[locating]: http://codepen.io/winkerVSbecks/full/vGojNb/
+
+difference is making a baked version vs making something that is dynamic
+
 
 ---
 
