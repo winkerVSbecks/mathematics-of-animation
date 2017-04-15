@@ -1,5 +1,15 @@
 # Mathematics of animation
 
+## Overview
+
+1. Coordinate systems
+2. Generating and manipulating 2D shapes
+3. Locating, moving and rotating objects with trigonometry
+4. Using curves to generate paths, easings and springs
+5. Vectors
+
+---
+
 ## Intro
 
 - how did they do that?!
@@ -38,7 +48,7 @@
 - [polar coordinates explained](http://codepen.io/winkerVSbecks/pen/ZpGzdz)
 - not at origin
 
-#### Generating 2D shapes
+#### Generating 2D shapes & Parameterization
 
 - Points at equal intervals === shapes!
 - http://winkervsbecks.github.io/gems/
@@ -52,8 +62,7 @@ export default function polygon(sides, r) {
 }
 ```
 
-- Parameterize
-```js
+<!-- ```js
 // this code dynamically generates a <path> element
 // and assigns the string to the d attribute.
 const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
@@ -61,7 +70,7 @@ const path = document.createElementNS('http://www.w3.org/2000/svg', 'path');
 // control the points of the curve
 let d = `M${x0},${y0} c${x1},${y1} ${x2},${y2} ${x3},${y3}`;
 path.setAttribute('d', d); 
-```
+``` -->
 
 - Morphing shapes
   - [Morphing Colour Paths](http://codepen.io/chrisgannon/pen/NNGKeo)
@@ -121,31 +130,6 @@ path.setAttribute('d', d); 
 
 - https://p5js.org/examples/math-distance-2d.html
 - http://paperjs.org/examples/meta-balls
-
-```
-                        __...------__    T(x2, y2)
-                   _.-''             -(+)
-                ,-'                   |----
-              ,'                     |     ----
-            ,'                      |       '  ----
-           /                       |         `     ----
-          /                       |           `.       ----
-         /                       |             \           ----
-        |                       |               |              ----
-        |                      |                 |                  ----
-        |                     |                  |                      ----
-        |                   (+)---------------------------------------------(+) P (x1,y1)
-        |                                        .'
-        |                    O                   |
-         |                                      .'
-          \                                     /
-           \                                  ,'
-            `                                /
-             '.                            ,'
-               '-.                      _,'
-                  '-._              _,(+)  T'(x3, y3)
-                      '`--......---'
-```
 
 ---
 
