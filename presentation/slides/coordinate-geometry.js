@@ -16,28 +16,9 @@ import {
 } from 'spectacle';
 // import CodeSlide from 'spectacle-code-slide';
 
-import images from './images';
+// import images from '../images';
 
-export const slides = [
-  <Slide bgImage={images.colouredSucculents}>
-    <Heading margin="0 0 1rem 0" size={1} lineHeight={1.25} textColor="primary">
-      Mathematics<br />of Animation
-    </Heading>
-  </Slide>,
-  <Slide>
-    <Layout style={{ alignItems: 'center' }}>
-      <Fit>
-        <Image margin="0" style={{ display: 'block' }} width={240} src={images.winkervsbecks} />
-      </Fit>
-      <Fill>
-        <Heading size={3} textColor="tertiary" textAlign="left">Varun Vachhar</Heading>
-        <Text textAlign="left" lineHeight={1.25}>@winkerVSbecks</Text>
-        <Text textAlign="left" lineHeight={1}>
-          <Link textColor="secondary" href="http://varun.ca">varun.ca</Link>
-        </Text>
-      </Fill>
-    </Layout>
-  </Slide>,
+export const coordinateGeometrySlides = [
   <Slide bgColor="tertiary">
     <Heading size={6} textColor="primary" caps>Typography</Heading>
     <Heading size={1} textColor="secondary">Heading 1</Heading>

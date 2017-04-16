@@ -10,6 +10,12 @@ const images = {
   colouredSucculents: require('../assets/andrew-phillips-22549.jpg'),
   winkervsbecks: require('../assets/winkervsbecks.jpg'),
   gems: require('../assets/gems.png'),
+  shadow: require('../assets/shadow.gif'),
+  glossy: require('../assets/glossy.gif'),
+  chrome: require('../assets/chrome.gif'),
+  card: require('../assets/card.gif'),
+  someWords: require('../assets/some-words.gif'),
+  uber: require('../assets/uber.gif'),
 };
 
 preloader(images);
