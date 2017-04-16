@@ -90,6 +90,7 @@ path.setAttribute('d', d); 
 - [Trigonometry for Animation](https://www.spu.ac.th/sdm/files/2012/07/03-Trigonometry-for-Animation.pdf)
 - [Trigonometry Collection](http://codepen.io/collection/DKgrdV/)
 
+---
 
 ### Oscillations
 
@@ -119,7 +120,7 @@ path.setAttribute('d', d); 
 
 - direction
   - pong
-  - http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
+  - http://codepen.io/davidkpiano/pen/866627963d1ea2a5ce1b6d9db5faeaec http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
   - http://winkervsbecks.github.io/fermat-point/
 
 -  pointing
@@ -172,7 +173,6 @@ function lerp(start, end) {
 - touchID[locating]: http://codepen.io/winkerVSbecks/full/vGojNb/
 
 difference is making a baked version vs making something that is dynamic
-
 
 ---
 

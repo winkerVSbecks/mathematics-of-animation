@@ -6,6 +6,8 @@ import { slides } from './slides';
 require('normalize.css');
 require('spectacle/lib/themes/default/index.css');
 
+const systemSans = '-apple-system, BlinkMacSystemFont, \'avenir next\', avenir, \'helvetica neue\', helvetica, ubuntu, roboto, noto, \'segoe ui\', arial, sans-serif';
+
 const theme = createTheme({
   primary: 'white',
   secondary: '#2e2f30',
@@ -14,8 +16,8 @@ const theme = createTheme({
   quinary: '#c3bbff',
   senary: '#ff485e',
 }, {
-  primary: '-apple-system, BlinkMacSystemFont, \'avenir next\', avenir, \'helvetica neue\', helvetica, ubuntu, roboto, noto, \'segoe ui\', arial, sans-serif',
-  secondary: '-apple-system, BlinkMacSystemFont, \'avenir next\', avenir, \'helvetica neue\', helvetica, ubuntu, roboto, noto, \'segoe ui\', arial, sans-serif',
+  primary: systemSans,
+  secondary: systemSans,
 });
 
 export const Presentation = () => (

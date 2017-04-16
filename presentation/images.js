@@ -9,6 +9,7 @@ const images = {
   parrot: require('../assets/parrots/hd/parrot.gif'),
   colouredSucculents: require('../assets/andrew-phillips-22549.jpg'),
   winkervsbecks: require('../assets/winkervsbecks.jpg'),
+  gems: require('../assets/gems.png'),
 };
 
 preloader(images);

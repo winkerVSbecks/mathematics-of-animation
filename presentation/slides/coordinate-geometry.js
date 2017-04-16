@@ -19,12 +19,12 @@ import {
 import images from './images';
 
 export const slides = [
-  <Slide key={1} bgImage={images.colouredSucculents}>
+  <Slide bgImage={images.colouredSucculents}>
     <Heading margin="0 0 1rem 0" size={1} lineHeight={1.25} textColor="primary">
       Mathematics<br />of Animation
     </Heading>
   </Slide>,
-  <Slide key={2}>
+  <Slide>
     <Layout style={{ alignItems: 'center' }}>
       <Fit>
         <Image margin="0" style={{ display: 'block' }} width={240} src={images.winkervsbecks} />
@@ -38,7 +38,7 @@ export const slides = [
       </Fill>
     </Layout>
   </Slide>,
-  <Slide key={3} bgColor="tertiary">
+  <Slide bgColor="tertiary">
     <Heading size={6} textColor="primary" caps>Typography</Heading>
     <Heading size={1} textColor="secondary">Heading 1</Heading>
     <Heading size={2} textColor="secondary">Heading 2</Heading>
@@ -47,7 +47,7 @@ export const slides = [
     <Heading size={5} textColor="secondary">Heading 5</Heading>
     <Text size={6} textColor="secondary">Standard text</Text>
   </Slide>,
-  <Slide key={4} bgColor="primary" textColor="tertiary">
+  <Slide bgColor="primary" textColor="tertiary">
     <Heading size={6} textColor="secondary" caps>Standard List</Heading>
     <List>
       <ListItem>Item 1</ListItem>
@@ -56,7 +56,7 @@ export const slides = [
       <ListItem>Item 4</ListItem>
     </List>
   </Slide>,
-  <Slide key={5} bgColor="secondary" textColor="primary">
+  <Slide bgColor="secondary" textColor="primary">
     <BlockQuote>
       <Quote>Example Quote</Quote>
       <Cite>Author</Cite>
