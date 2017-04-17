@@ -13,6 +13,7 @@
   "author": "Varun Vachhar <varunvachhar@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "gsap": "^1.19.1",
     "normalize.css": "3.0.3",
     "ramda": "^0.23.0",
     "react": "15.4.2",

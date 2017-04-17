@@ -20,6 +20,7 @@ const images = {
   toggle: require('../assets/toggle.svg'),
   knob: require('../assets/knob.svg'),
   slider: require('../assets/slider.svg'),
+  splash: require('../assets/splash.gif'),
 };
 
 preloader(images);

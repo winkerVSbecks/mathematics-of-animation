@@ -19,6 +19,7 @@ import CodeSlide from 'spectacle-code-slide';
 
 import images from '../images';
 import { f, s } from '../styles';
+import { SplashExample } from '../../examples/splash';
 
 export const parameterizationSlides = [
   <Slide bgColor="pink" textColor="tertiary">
@@ -53,7 +54,8 @@ export const parameterizationSlides = [
   <Slide bgColor="primary" textColor="secondary">
     <Text>insert Hex-a-portal</Text>
   </Slide>,
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>Patterns with Splash</Text>
+  <Slide bgColor="secondary">
+    <Heading size={3} textColor="primary">Patterns</Heading>
+    <SplashExample />
   </Slide>,
 ];
