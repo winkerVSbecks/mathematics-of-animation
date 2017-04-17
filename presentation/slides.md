@@ -84,6 +84,8 @@ Events ➡️ Discrete Changes
 - To draw ⬣ and other such shapes we need angles
 ![](images.gems)
 
+^ You can make them in illustrator or sketch but, to generate them on the fly. But, to generate them on the fly we need to...
+
 ---
 
 ### Polar Coordinates

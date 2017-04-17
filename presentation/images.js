@@ -16,6 +16,9 @@ const images = {
   card: require('../assets/card.gif'),
   someWords: require('../assets/some-words.gif'),
   uber: require('../assets/uber.gif'),
+  toggle: require('../assets/toggle.svg'),
+  knob: require('../assets/knob.svg'),
+  slider: require('../assets/slider.svg'),
 };
 
 preloader(images);

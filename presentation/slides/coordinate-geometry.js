@@ -2,45 +2,58 @@ import React from 'react';
 import {
   BlockQuote,
   Cite,
+  CodePane,
   Heading,
+  Image,
   Fit,
   Fill,
   Layout,
   Link,
   ListItem,
   List,
-  Image,
   Quote,
   Slide,
   Text,
 } from 'spectacle';
-// import CodeSlide from 'spectacle-code-slide';
 
-// import images from '../images';
+import images from '../images';
+import { s, f } from '../styles';
 
 export const coordinateGeometrySlides = [
-  <Slide bgColor="tertiary">
-    <Heading size={6} textColor="primary" caps>Typography</Heading>
-    <Heading size={1} textColor="secondary">Heading 1</Heading>
-    <Heading size={2} textColor="secondary">Heading 2</Heading>
-    <Heading size={3} textColor="secondary">Heading 3</Heading>
-    <Heading size={4} textColor="secondary">Heading 4</Heading>
-    <Heading size={5} textColor="secondary">Heading 5</Heading>
-    <Text size={6} textColor="secondary">Standard text</Text>
+  <Slide bgColor="primary" textColor="secondary">
+    <Text>Insert image of shapes being measured</Text>
   </Slide>,
-  <Slide bgColor="primary" textColor="tertiary">
-    <Heading size={6} textColor="secondary" caps>Standard List</Heading>
-    <List>
-      <ListItem>Item 1</ListItem>
-      <ListItem>Item 2</ListItem>
-      <ListItem>Item 3</ListItem>
-      <ListItem>Item 4</ListItem>
-    </List>
+  <Slide bgColor="pink" textColor="tertiary">
+    <Image height="8rem" margin={s.r4} src={images.ruler25} />
+    <Heading style={{ display: 'inline' }}>Coordinate Geometry</Heading>
   </Slide>,
-  <Slide bgColor="secondary" textColor="primary">
-    <BlockQuote>
-      <Quote>Example Quote</Quote>
-      <Cite>Author</Cite>
-    </BlockQuote>
+  <Slide bgColor="primary" textColor="secondary">
+    <Text>Insert image of polar coordinates</Text>
+  </Slide>,
+  <Slide bgColor="primary" textColor="secondary">
+    <Text>Insert image of point ➡️ line ➡️ shape</Text>
+  </Slide>,
+  <Slide bgColor="primary" textColor="secondary">
+    <Image
+      className="br2 db shadow-5"
+      width={400}
+      src={images.gems}
+    />
+    <Link
+      textSize={f[6]}
+      textColor="secondary"
+      href="http://varun.ca"
+    >
+      Rarities 2.0 by Rogie 👑
+    </Link>
+  </Slide>,
+  <Slide bgColor="pink" textColor="secondary">
+    <Text>Insert image of polar coordinates</Text>
+  </Slide>,
+  <Slide bgColor="pink" textColor="secondary">
+    <CodePane
+      lang="js"
+      source={require('raw-loader!../code/offset-polar.js')}
+    />
   </Slide>,
 ];

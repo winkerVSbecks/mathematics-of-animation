@@ -1,6 +1,7 @@
 import createTheme from 'spectacle/lib/themes/default';
 
 require('normalize.css');
+require('./tachyons.css');
 require('spectacle/lib/themes/default/index.css');
 
 const systemSans = '-apple-system, BlinkMacSystemFont, \'avenir next\', avenir, \'helvetica neue\', helvetica, ubuntu, roboto, noto, \'segoe ui\', arial, sans-serif';
