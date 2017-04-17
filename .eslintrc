@@ -27,7 +27,8 @@
     "no-constant-condition": ["error", { "checkLoops": false }],
     "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0, "maxEOF": 0}],
     "import/no-named-as-default": 0,
-    "import/no-named-as-default-member": 0
+    "import/no-named-as-default-member": 0,
+    "import/no-webpack-loader-syntax": 0
   },
   "parserOptions": {
     "ecmaFeatures": {
@@ -36,8 +37,8 @@
   },
   "settings": {
     "import/resolver": {
-      "node": {
-        "extensions": [".js"]
+      "webpack": {
+        "config": "webpack.config.js"
       }
     }
   },
