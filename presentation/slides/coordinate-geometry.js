@@ -33,6 +33,9 @@ export const coordinateGeometrySlides = [
   <Slide bgColor="primary" textColor="secondary">
     <Text>Insert image of point ➡️ line ➡️ shape</Text>
   </Slide>,
+  <Slide bgColor="primary">
+    <Image width={400} src={images.manypolygons} />
+  </Slide>,
   <Slide bgColor="primary" textColor="secondary">
     <Image
       className="br2 db shadow-5"

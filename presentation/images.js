@@ -16,6 +16,7 @@ const images = {
   card: require('../assets/card.gif'),
   someWords: require('../assets/some-words.gif'),
   uber: require('../assets/uber.gif'),
+  manypolygons: require('../assets/manypolygons.gif'),
   toggle: require('../assets/toggle.svg'),
   knob: require('../assets/knob.svg'),
   slider: require('../assets/slider.svg'),

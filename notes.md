@@ -215,3 +215,10 @@ point -> cartesian coords -> line
 - [Math Gifs - Album on Imgur](http://imgur.com/a/VTMUq#0)
 
 splash is a good example of why to use polar coordinate system
+
+---
+
+## Summary
+- find
+- parameterize
+- animate

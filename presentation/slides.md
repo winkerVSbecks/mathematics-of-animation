@@ -183,7 +183,7 @@ function rad(angle) {
 Use polar coords to generate patterns
 
 - draw circles at equal intervals to get a pattern
--	animate them! https://beesandbombs.tumblr.com/post/99074397309/bw-dots
+-	animate them! https://68.media.tumblr.com/d93e9aaf62d79585b1420e670f438f98/tumblr_ncvwb6PBEG1r2geqjo1_500.gif
 - show how to draw cardioids
 	+	https://ello.co/wblut/post/r3owh2ompqy3sfv52aaevq
 
