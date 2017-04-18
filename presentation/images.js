@@ -10,6 +10,7 @@ const images = {
   colouredSucculents: require('../assets/andrew-phillips-22549.jpg'),
   winkervsbecks: require('../assets/winkervsbecks.jpg'),
   gems: require('../assets/gems.png'),
+  gemsDemo: require('../assets/gems.gif'),
   shadow: require('../assets/shadow.gif'),
   glossy: require('../assets/glossy.gif'),
   chrome: require('../assets/chrome.gif'),

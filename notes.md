@@ -222,3 +222,4 @@ splash is a good example of why to use polar coordinate system
 - find
 - parameterize
 - animate
+- lerp transitions

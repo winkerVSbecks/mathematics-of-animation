@@ -19,6 +19,7 @@ import CodeSlide from 'spectacle-code-slide';
 
 import images from '../images';
 import { f, s } from '../styles';
+import { Embed } from '../components';
 import { SplashExample } from '../../examples/splash';
 
 export const parameterizationSlides = [
@@ -49,10 +50,19 @@ export const parameterizationSlides = [
     ]}
   />,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>insert a drawing that explain parameterization of the gems (shape, face and top)</Text>
+    <Text>insert demo of polygon generator</Text>
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
     <Text>insert Hex-a-portal</Text>
+  </Slide>,
+  <Slide bgColor="primary" textColor="secondary">
+    <Text>insert a drawing that explain parameterization of the gems (shape, face and top)</Text>
+  </Slide>,
+  <Slide bgColor="#FE664D" textColor="secondary">
+    <Embed
+      url="http://winkervsbecks.github.io/gems"
+      fallback={images.gemsDemo}
+    />
   </Slide>,
   <Slide bgColor="secondary">
     <Heading size={3} textColor="primary">Patterns</Heading>
