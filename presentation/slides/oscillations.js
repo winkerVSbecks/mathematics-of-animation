@@ -42,7 +42,7 @@ export const oscillationsSlides = [
   <Slide bgColor="pink">
     <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
   </Slide>,
-  <Slide bgColor="pink">
-    <Heading fit textColor="red">Swimmer</Heading>
+  <Slide bgColor="mauve">
+    <Heading fit textColor="tertiary">SWIMMER</Heading>
   </Slide>,
 ];
