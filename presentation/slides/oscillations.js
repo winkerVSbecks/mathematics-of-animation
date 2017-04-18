@@ -36,4 +36,13 @@ export const oscillationsSlides = [
       themeId="29124" bgColor="#440015" color="#ff0050"
     />
   </Slide>,
+  <Slide>
+    <Heading fit textColor="red">Dave Whyte (Bees and Bombs)</Heading>
+  </Slide>,
+  <Slide bgColor="pink">
+    <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
+  </Slide>,
+  <Slide bgColor="pink">
+    <Heading fit textColor="red">Swimmer</Heading>
+  </Slide>,
 ];
