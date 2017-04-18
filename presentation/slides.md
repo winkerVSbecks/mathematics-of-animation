@@ -232,9 +232,6 @@ Use polar coords to generate patterns
 - sine waves offset (multiple pendulum thing)
 - http://codepen.io/jpolete/pen/rxNxyd?editors=0010
 - [offsets](http://codepen.io/DonKarlssonSan/pen/QGzqaM)
-- Bees and Bombs (Dave Whyte)
-- https://dribbble.com/shots/1783699-Blocks
-- https://dribbble.com/shots/1754428-Wave
 
 ---
 

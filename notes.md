@@ -135,9 +135,7 @@ path.setAttribute('d', d); 
 ---
 
 ## Using curves to generate paths, easings and springs
-- bounce: https://inventwithpython.com/blogstatic/trig_bounce.py
-- http://varun.ca/chillwave
-- Bounce
+- Bounce: https://inventwithpython.com/blogstatic/trig_bounce.py
 - cubic bezier easing
 - circle wave: https://idyll-lang.github.io/idyll-d3-component/
 - randomly move stuff around (perlin)
@@ -145,7 +143,7 @@ path.setAttribute('d', d); 
 	+ http://winkervsbecks.github.io/hookes-law
 	+ Springy line with SVG
 
-[SASS Mixin for Generating a Custom Easing Function  ](http://codepen.io/winkerVSbecks/pen/Cihkr)
+[SASS Mixin for Generating a Custom Easing Function](http://codepen.io/winkerVSbecks/pen/Cihkr)
 
 http://codepen.io/rachsmith/post/animation-tip-lerp
 ```js
@@ -159,6 +157,14 @@ function lerp(start, end) {
   };
 }
 ```
+
+---
+
+## Summary
+- find
+- parameterize
+- animate
+- lerp transitions
 
 ---
 
@@ -215,11 +221,3 @@ point -> cartesian coords -> line
 - [Math Gifs - Album on Imgur](http://imgur.com/a/VTMUq#0)
 
 splash is a good example of why to use polar coordinate system
-
----
-
-## Summary
-- find
-- parameterize
-- animate
-- lerp transitions

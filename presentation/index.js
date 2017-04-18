@@ -4,7 +4,7 @@ import { slides } from './slides';
 import { theme } from './styles';
 
 export const Presentation = () => (
-  <Deck transition={['slide']} transitionDuration={500} theme={theme} progress="bar">
+  <Deck transition={['zoom', 'fade']} transitionDuration={500} theme={theme} progress="bar">
     { React.Children.toArray(slides) }
   </Deck>
 );

@@ -22,6 +22,17 @@ const images = {
   knob: require('../assets/knob.svg'),
   slider: require('../assets/slider.svg'),
   splash: require('../assets/splash.gif'),
+  swimmer: require('../assets/swimmer.gif'),
+  hexagon: require('../assets/beesandbombs/hexagon.gif'),
+  boxes: require('../assets/beesandbombs/boxes.gif'),
+  out: require('../assets/beesandbombs/out.gif'),
+  wave: require('../assets/beesandbombs/wave.gif'),
+  bouncers: require('../assets/beesandbombs/bouncers.gif'),
+  dotLineWave: require('../assets/beesandbombs/dot-line-wave.gif'),
+  blob: require('../assets/beesandbombs/blob.gif'),
+  friendlyBlocks: require('../assets/beesandbombs/friendly-blocks.gif'),
+  waveD: require('../assets/beesandbombs/wave_d.gif'),
+  cubewave: require('../assets/beesandbombs/cubewave.gif'),
 };
 
 preloader(images);

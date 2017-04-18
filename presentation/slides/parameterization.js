@@ -54,7 +54,7 @@ export const parameterizationSlides = [
   </Slide>,
   <Slide bgColor="#000">
     <CodePen
-      height="600"
+      height={600}
       name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
     />
   </Slide>,
