@@ -2,7 +2,7 @@ import React, { PropTypes } from 'react';
 
 export const Embed = ({ url, fallback }) => (
   <iframe
-    className="w-100 vh-75 bn bg-red bn"
+    className="w-100 vh-75 bn bg-black bn"
     scrolling="no"
     src={url}
     frameBorder="no"

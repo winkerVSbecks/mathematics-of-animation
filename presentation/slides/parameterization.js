@@ -19,7 +19,7 @@ import CodeSlide from 'spectacle-code-slide';
 
 import images from '../images';
 import { f, s } from '../styles';
-import { Embed } from '../components';
+import { Embed, CodePen } from '../components';
 import { SplashExample } from '../../examples/splash';
 
 export const parameterizationSlides = [
@@ -52,8 +52,17 @@ export const parameterizationSlides = [
   <Slide bgColor="primary" textColor="secondary">
     <Text>insert demo of polygon generator</Text>
   </Slide>,
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>insert Hex-a-portal</Text>
+  <Slide bgColor="#000">
+    <CodePen
+      height="600"
+      name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
+    />
+  </Slide>,
+  <Slide bgColor="#000">
+    <Text textColor="white">insert my Hex-a-Portal demo here</Text>
+    <CodePen
+      name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
+    />
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
     <Text>insert a drawing that explain parameterization of the gems (shape, face and top)</Text>
@@ -65,7 +74,10 @@ export const parameterizationSlides = [
     />
   </Slide>,
   <Slide bgColor="secondary">
-    <Heading size={3} textColor="primary">Patterns</Heading>
+    <Heading size={6} textColor="primary">Generate Patterns</Heading>
     <SplashExample />
+  </Slide>,
+  <Slide bgColor="primary" textColor="secondary">
+    <Text>insert a drawing that explains splash pattern</Text>
   </Slide>,
 ];

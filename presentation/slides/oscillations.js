@@ -31,6 +31,9 @@ export const oscillationsSlides = [
     </Heading>
   </Slide>,
   <Slide bgColor="#440015" textColor="tertiary">
-    <CodePen name="Sine" user="HunorMarton" id="ggQGqQ" bgColor="#440015" color="#ff0050" />
+    <CodePen
+      name="Sine" user="HunorMarton" id="ggQGqQ"
+      themeId="29124" bgColor="#440015" color="#ff0050"
+    />
   </Slide>,
 ];
