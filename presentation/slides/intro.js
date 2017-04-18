@@ -30,10 +30,25 @@ export const introSlides = [
         />
       </Fit>
       <Fill>
-        <Heading size={3} textColor="tertiary" textAlign="left">Varun Vachhar</Heading>
-        <Text textAlign="left" lineHeight={1.25}>@winkerVSbecks</Text>
-        <Text textAlign="left" lineHeight={1}>
-          <Link textColor="secondary" href="http://varun.ca">varun.ca</Link>
+        <Heading size={2} textColor="tertiary" textAlign="left">
+          Varun Vachhar
+        </Heading>
+        <Text
+          textColor="secondary" textSize={f[4]} textAlign="left"
+          lineHeight={1.25}
+        >
+          developer at Rangle.io
+        </Text>
+        <Text
+          textColor="secondary" textSize={f[4]} textAlign="left"
+          lineHeight={1.25}
+        >
+          @winkerVSbecks
+        </Text>
+        <Text textSize={f[4]} textAlign="left" lineHeight={1}>
+          <Link textColor="secondary" href="http://varun.ca">
+            varun.ca
+          </Link>
         </Text>
       </Fill>
     </Layout>

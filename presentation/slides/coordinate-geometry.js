@@ -28,7 +28,7 @@ export const coordinateGeometrySlides = [
     <Heading style={{ display: 'inline' }}>Coordinate Geometry</Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>Insert image of polar coordinates</Text>
+    <Text>Insert image of cartesian coordinates</Text>
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
     <Text>Insert image of point ➡️ line ➡️ shape</Text>
@@ -54,6 +54,7 @@ export const coordinateGeometrySlides = [
     <Text>Insert image of polar coordinates</Text>
   </Slide>,
   <Slide bgColor="pink" textColor="secondary">
+    <Text>Insert offset-polar demo</Text>
     <CodePane
       lang="js"
       source={require('raw-loader!../code/offset-polar.js')}

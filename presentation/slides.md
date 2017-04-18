@@ -203,6 +203,8 @@ Use polar coords to generate patterns
 - [Trigonometry for Animation](https://www.spu.ac.th/sdm/files/2012/07/03-Trigonometry-for-Animation.pdf)
 - [Trigonometry Collection](http://codepen.io/collection/DKgrdV/)
 
+^ ok so… boring. This is the first thing everyone learns. Next!
+
 ^ the great thing is that you don't need to stop at 360. You can keep going and the sine wave will keep oscillating. The humblest of curves.
 
 ---
