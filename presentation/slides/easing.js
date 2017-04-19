@@ -14,15 +14,17 @@ import {
   Text,
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
-import { CodePen, Embed } from '../components';
+import { CodePen, Embed, Easings } from '../components';
 
 import images from '../images';
 import { f, s } from '../styles';
 
 export const easingSlides = [
-  <Slide bgColor="mauve">
-    <Heading textColor="tertiary">Easings</Heading>
-    <Image src="https://storage.googleapis.com/material-design/publish/material_v_11/assets/0BybB4JO78tNpRlY1eHJ4LTh4ZjQ/01-duration-and-easing.png" />
+  <Slide bgColor="pink">
+    <Heading margin={s.b3} size={6} textColor="tertiary">
+      Easings
+    </Heading>
+    <Easings w={600} />
   </Slide>,
   <Slide bgColor="mauve">
     <CodePane

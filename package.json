@@ -13,6 +13,7 @@
   "author": "Varun Vachhar <varunvachhar@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "animejs": "^2.0.2",
     "gsap": "^1.19.1",
     "normalize.css": "3.0.3",
     "ramda": "^0.23.0",
