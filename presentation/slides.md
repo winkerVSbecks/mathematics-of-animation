@@ -32,6 +32,8 @@
 ![I know some of these words](https://media.giphy.com/media/3osxYbgtOZrFW2C81O/giphy.gif)
 ![I know some of these words](https://media.giphy.com/media/zXA5VEmXr7OUg/giphy.gif)
 
+^ dot product cross prodcut matrices ¯\_(ツ)_/¯
+
 ---
 
 ## I intend to share a few techniques I use a lot and mostly demystify trigonometry
@@ -243,3 +245,64 @@ Parameterization 🤝🏽 Oscillation
 https://gist.github.com/anonymous/952fa668b21370709314cb6acb8f44c3
 
 ---
+
+## Solving Triangles
+
+- [A visualisation of trigonometric functions](https://twitter.com/fermatslibrary/status/847433345256624128)
+- `tan`, triangles and calculating sides
+
+- direction
+  - pong
+  - https://p5js.org/examples/math-arctangent.html
+  - http://codepen.io/davidkpiano/pen/866627963d1ea2a5ce1b6d9db5faeaec http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
+  - http://winkervsbecks.github.io/fermat-point/
+
+-  pointing
+	- [Vue-controlled Wall-E](http://codepen.io/sdras/pen/YZBGNp)
+	- [Fraction Fingerprints](https://codepen.io/jasesmith/pen/EZWONY)
+
+- http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit
+	- Follow and Reach examples from p5js
+
+- https://p5js.org/examples/math-distance-2d.html
+
+---
+
+## Meta Balls
+
+- http://paperjs.org/examples/meta-balls
+
+---
+
+## Using curves to generate paths, easings and springs
+- Bounce: https://inventwithpython.com/blogstatic/trig_bounce.py
+- cubic bezier easing
+- circle wave: https://idyll-lang.github.io/idyll-d3-component/
+- randomly move stuff around (perlin)
+- spring
+	+ http://winkervsbecks.github.io/hookes-law
+	+ Springy line with SVG
+
+[SASS Mixin for Generating a Custom Easing Function](http://codepen.io/winkerVSbecks/pen/Cihkr)
+
+http://codepen.io/rachsmith/post/animation-tip-lerp
+```js
+function lerp(start, end) {
+  const dx = end.x - start.x;
+  const dy = end.y - start.y;
+
+  return {
+    x: start.x + dx * 0.1,
+    y: start.y + dy * 0.1,
+  };
+}
+```
+
+---
+
+## Summary
+
+- find
+- parameterize
+- animate
+- lerp transitions

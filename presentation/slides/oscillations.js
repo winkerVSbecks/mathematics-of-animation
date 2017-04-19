@@ -55,7 +55,7 @@ export const oscillationsSlides = [
       />
       <div
         className="w-25 cover"
-        style={{ background: `url(${images.wave}) center` }}
+        style={{ background: `url(${images.waveD}) center` }}
       />
       <div
         className="w-25 cover"
@@ -71,21 +71,30 @@ export const oscillationsSlides = [
       />
       <div
         className="w-25 cover"
-        style={{ background: `url(${images.waveD}) center` }}
+        style={{ background: `url(${images.weaves}) center` }}
       />
     </div>
   </Slide>,
+  <Slide bgColor="pink">
+    <Text fit textColor="red">
+      - translation: xEnd = xStart + c [addition]
+      - scaling: xEnd = 2 * xStart [multiplication]
+      - rotation: xEnd = cosθ * xStart + sinθ * xStart [trignometry]
+      + [Rocket around the moon](http://codepen.io/Yakudoo/pen/aOEeXB)
+    </Text>
+  </Slide>,
   <Slide bgColor="primary">
     <Heading fit textColor="red">many sine waves with slight offsets</Heading>
+    <Heading fit textColor="red">1, 2, 3, many, multiple layers</Heading>
     <CodePen name="Waves" user="DonKarlssonSan" id="QGzqaM" bgColor="white" />
+  </Slide>,
+  <Slide bgColor="#141414">
+    <Image src={images.swimmer} width={400} />
   </Slide>,
   <Slide bgColor="pink">
     <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
   </Slide>,
-  <Slide bgColor="mauve">
-    <Heading fit textColor="tertiary">SWIMMER</Heading>
-  </Slide>,
-  <Slide bgColor="#141414">
-    <Image src={images.swimmer} width={400} />
+  <Slide bgColor="pink">
+    <Heading fit textColor="red">Explain swimmer</Heading>
   </Slide>,
 ];

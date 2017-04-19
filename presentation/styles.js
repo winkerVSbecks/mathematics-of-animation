@@ -15,6 +15,7 @@ export const theme = createTheme({
   mauve: '#c3bbff',
   red: '#ff485e',
   pink: '#fee1e1',
+  yellow: '#e5e059',
 }, {
   primary: systemSans,
   secondary: systemSans,

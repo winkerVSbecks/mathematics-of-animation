@@ -2,11 +2,11 @@
 
 ## Overview
 
-1. Coordinate systems
-2. Generating and manipulating 2D shapes
-3. Locating, moving and rotating objects with trigonometry
-4. Using curves to generate paths, easings and springs
-5. Vectors
+1. Coordinate systems ✅
+2. Generating and manipulating 2D shapes ✅
+3. ✅ Locating, ✅ moving and ✅ rotating objects with trigonometry
+4. Using curves to generate paths, ✅ easings and springs
+5. Vectors 🚫
 
 ---
 
@@ -120,12 +120,11 @@ path.setAttribute('d', d); 
 
 - direction
   - pong
-  - http://codepen.io/davidkpiano/pen/866627963d1ea2a5ce1b6d9db5faeaec http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
+  - http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle
   - http://winkervsbecks.github.io/fermat-point/
 
 -  pointing
 	- [Vue-controlled Wall-E](http://codepen.io/sdras/pen/YZBGNp)
-	- [Fraction Fingerprints](https://codepen.io/jasesmith/pen/EZWONY)
 	- http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit
 	- Follow and Reach examples from p5js
 
@@ -158,9 +157,13 @@ function lerp(start, end) {
 }
 ```
 
+^ Same bezier curves used to make shapes in sketch are used in those magic CSS easing numbers
+^ moves fast and then slows down
+
 ---
 
 ## Summary
+
 - find
 - parameterize
 - animate

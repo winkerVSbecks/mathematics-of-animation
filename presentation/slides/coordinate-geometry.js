@@ -28,10 +28,7 @@ export const coordinateGeometrySlides = [
     <Heading style={{ display: 'inline' }}>Coordinate Geometry</Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>Insert image of cartesian coordinates</Text>
-  </Slide>,
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>Insert image of point ➡️ line ➡️ shape</Text>
+    <Text>Insert image of cartesian coordinates with full shape</Text>
   </Slide>,
   <Slide bgColor="primary">
     <Image width={400} src={images.manypolygons} />
