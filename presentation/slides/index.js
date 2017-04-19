@@ -3,6 +3,7 @@ import { coordinateGeometrySlides } from './coordinate-geometry';
 import { parameterizationSlides } from './parameterization';
 import { oscillationsSlides } from './oscillations';
 import { solvingTrianglesSlides } from './solving-triangles';
+import { easingSlides } from './easing';
 
 export const slides = [
   ...introSlides,
@@ -10,4 +11,5 @@ export const slides = [
   ...parameterizationSlides,
   ...oscillationsSlides,
   ...solvingTrianglesSlides,
+  ...easingSlides,
 ];

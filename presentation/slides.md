@@ -251,19 +251,25 @@ https://gist.github.com/anonymous/952fa668b21370709314cb6acb8f44c3
 - [A visualisation of trigonometric functions](https://twitter.com/fermatslibrary/status/847433345256624128)
 - `tan`, triangles and calculating sides
 
-### direction
-  - pong
-  - https://p5js.org/examples/math-arctangent.html
-  - http://codepen.io/davidkpiano/pen/866627963d1ea2a5ce1b6d9db5faeaec
-  - http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
-  - http://winkervsbecks.github.io/fermat-point/
+---
 
-### pointing
-- [Vue-controlled Wall-E](http://codepen.io/sdras/pen/YZBGNp)
-- [Fraction Fingerprints](https://codepen.io/jasesmith/pen/EZWONY)
+## Eyes
 
-- http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit
-- Follow and Reach examples from p5js
+https://p5js.org/examples/math-arctangent.html
+
+^ same principle is used in pong
+
+---
+
+Netmag 404 Page by Hakim El Hattab
+
+^ a more extreme version of what this concept
+
+---
+
+## Glossy Triangle
+
+http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
 
 ---
 
@@ -273,16 +279,39 @@ https://gist.github.com/anonymous/952fa668b21370709314cb6acb8f44c3
 
 ---
 
-## Using curves to generate paths, easings and springs
-- Bounce: https://inventwithpython.com/blogstatic/trig_bounce.py
-- cubic bezier easing
-- circle wave: https://idyll-lang.github.io/idyll-d3-component/
-- randomly move stuff around (perlin)
-- spring
-	+ http://winkervsbecks.github.io/hookes-law
-	+ Springy line with SVG
+http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit
 
-[SASS Mixin for Generating a Custom Easing Function](http://codepen.io/winkerVSbecks/pen/Cihkr)
+^ Really great blog post by rachsmith on solving-triangles and using it to build a game
+
+---
+
+## Using curves to generate paths, easings and springs
+
+cubic bezier
+
+---
+
+## Penner’s equations
+
+```js
+function noEasing (t, b, c, d) {
+  return c * t / d + b;
+}
+```
+
+patakk example
+
+---
+
+## Cubic ➡️ Penner
+
+Bounce?
++ https://inventwithpython.com/blogstatic/trig_bounce.py
++ Springy line with SVG?
+
+---
+
+## Lerp
 
 http://codepen.io/rachsmith/post/animation-tip-lerp
 ```js
