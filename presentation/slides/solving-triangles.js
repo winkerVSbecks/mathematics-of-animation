@@ -13,7 +13,7 @@ import {
   Text,
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
-import { Chillwave, CodePen } from '../components';
+import { CodePen, Embed } from '../components';
 
 import images from '../images';
 import { f, s } from '../styles';
@@ -54,7 +54,10 @@ export const solvingTrianglesSlides = [
       Netmag 404 Page by Hakim El Hattab
     </Link>
   </Slide>,
-  <Slide bgColor="mauve">
-    <Heading textColor="tertiary">Meta Balls</Heading>
+  <Slide bgColor="#fee1e1">
+    <CodePen
+      name="Meta Balls" user="winkerVSbecks" id="Qvyppq" bgColor="#fee1e1"
+      height={600}
+    />
   </Slide>,
 ];
