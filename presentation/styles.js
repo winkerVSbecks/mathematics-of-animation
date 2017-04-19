@@ -12,6 +12,7 @@ export const theme = createTheme({
   secondary: '#2e2f30',
   tertiary: '#5a5ae6',
   quartenary: '#dcdedf',
+  gray: '#8b8e8f',
   mauve: '#c3bbff',
   red: '#ff485e',
   pink: '#fee1e1',

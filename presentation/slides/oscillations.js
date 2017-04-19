@@ -2,21 +2,12 @@ import React from 'react';
 import {
   Heading,
   Image,
-  Fit,
-  Fill,
-  Layout,
-  Link,
-  ListItem,
-  List,
-  Quote,
   Slide,
   Text,
 } from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
 import { Chillwave, CodePen } from '../components';
 
 import images from '../images';
-import { f, s } from '../styles';
 
 export const oscillationsSlides = [
   <Slide bgColor="pink" textColor="tertiary">
@@ -34,7 +25,12 @@ export const oscillationsSlides = [
     />
   </Slide>,
   <Slide>
-    <Image alt="hexagon" src={images.hexagon} width={500} />
+    <Image
+      className="br2 db shadow-5"
+      alt="hexagon"
+      src={images.hexagon}
+      width={500}
+    />
   </Slide>,
   <Slide>
     <Heading fit textColor="red">Dave Whyte (bees & bombs)</Heading>

@@ -4,6 +4,7 @@ import { parameterizationSlides } from './parameterization';
 import { oscillationsSlides } from './oscillations';
 import { solvingTrianglesSlides } from './solving-triangles';
 import { easingSlides } from './easing';
+import { outroSlides } from './outro';
 
 export const slides = [
   ...introSlides,
@@ -12,4 +13,5 @@ export const slides = [
   ...oscillationsSlides,
   ...solvingTrianglesSlides,
   ...easingSlides,
+  ...outroSlides,
 ];

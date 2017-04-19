@@ -37,16 +37,16 @@ export const introSlides = [
           textColor="secondary" textSize={f[4]} textAlign="left"
           lineHeight={1.25}
         >
-          developer at Rangle.io
+          Developer at Rangle.io
         </Text>
         <Text
-          textColor="secondary" textSize={f[4]} textAlign="left"
+          textColor="gray" textSize={f[4]} textAlign="left"
           lineHeight={1.25}
         >
           @winkerVSbecks
         </Text>
         <Text textSize={f[4]} textAlign="left" lineHeight={1}>
-          <Link textColor="secondary" href="http://varun.ca">
+          <Link textColor="gray" href="http://varun.ca">
             varun.ca
           </Link>
         </Text>
@@ -58,11 +58,11 @@ export const introSlides = [
       Overview
     </Heading>
     <List>
-      <ListItem>Coordinate Geometry</ListItem>
-      <ListItem>Generating 2D shapes & Parameterization</ListItem>
-      <ListItem>Oscillations: moving with trigonometry</ListItem>
-      <ListItem>Solving triangles</ListItem>
-      <ListItem>Curves, easings and springs</ListItem>
+      <ListItem margin={s.b3}>Coordinate Geometry</ListItem>
+      <ListItem margin={s.b3}>Generating 2D shapes & Parameterization</ListItem>
+      <ListItem margin={s.b3}>Oscillations: moving with trigonometry</ListItem>
+      <ListItem margin={s.b3}>Solving triangles</ListItem>
+      <ListItem margin={s.b3}>Curves, easings and springs</ListItem>
     </List>
   </Slide>,
   <Slide align="center center" bgColor="pink">
