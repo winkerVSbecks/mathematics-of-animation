@@ -1,8 +1,9 @@
 import React, { PropTypes } from 'react';
 
-export const Embed = ({ url, fallback }) => (
+export const Embed = ({ url, fallback, bgColor = '#000' }) => (
   <iframe
-    className="w-100 vh-75 bn bg-black bn"
+    className="w-100 vh-75 bn bn"
+    style={{ backgroundColor: bgColor }}
     scrolling="no"
     src={url}
     frameBorder="no"
@@ -14,4 +15,5 @@ export const Embed = ({ url, fallback }) => (
 Embed.propTypes = {
   url: PropTypes.string,
   fallback: PropTypes.string,
+  bgColor: PropTypes.string,
 };

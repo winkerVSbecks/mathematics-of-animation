@@ -30,13 +30,7 @@ export const solvingTrianglesSlides = [
     </div>
   </Slide>,
   <Slide bgColor="mauve">
-    <Heading textColor="tertiary">What is Tan</Heading>
-  </Slide>,
-  <Slide bgColor="mauve">
-    <Heading textColor="tertiary">Direction</Heading>
-  </Slide>,
-  <Slide bgColor="mauve">
-    <Heading textColor="tertiary">Pointing</Heading>
+    <Heading textColor="tertiary">Tan and 2 things means you can solve for the third</Heading>
   </Slide>,
   <Slide bgColor="mauve">
     <CodePen
@@ -54,10 +48,31 @@ export const solvingTrianglesSlides = [
       Netmag 404 Page by Hakim El Hattab
     </Link>
   </Slide>,
+  <Slide bgColor="#fff">
+    <Embed
+      bgColor="#fff"
+      url="//winkervsbecks.github.io/a-triangle-everyday/glossy-triangle"
+      height={600}
+    />
+  </Slide>,
+  <Slide bgColor="#fff">
+    <Heading textColor="tertiary">Insert image of glossy triangle explanation</Heading>
+  </Slide>,
   <Slide bgColor="#fee1e1">
     <CodePen
       name="Meta Balls" user="winkerVSbecks" id="Qvyppq" bgColor="#fee1e1"
       height={600}
     />
+  </Slide>,
+  <Slide bgColor="#FDFCFC">
+    <Heading textColor="tertiary" textAlign="left" size={5}>Use It for Levers</Heading>
+    <Image src={images.lever} width={595} />
+    <Link
+      textColor="secondary" textSize={f[6]}
+      href="http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit"
+      style={{ display: 'block' }}
+    >
+      &ldquo;Solving Triangles = Profit&rdquo; by Rachel Smith
+    </Link>
   </Slide>,
 ];

@@ -251,20 +251,19 @@ https://gist.github.com/anonymous/952fa668b21370709314cb6acb8f44c3
 - [A visualisation of trigonometric functions](https://twitter.com/fermatslibrary/status/847433345256624128)
 - `tan`, triangles and calculating sides
 
-- direction
+### direction
   - pong
   - https://p5js.org/examples/math-arctangent.html
-  - http://codepen.io/davidkpiano/pen/866627963d1ea2a5ce1b6d9db5faeaec http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
+  - http://codepen.io/davidkpiano/pen/866627963d1ea2a5ce1b6d9db5faeaec
+  - http://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle/
   - http://winkervsbecks.github.io/fermat-point/
 
--  pointing
-	- [Vue-controlled Wall-E](http://codepen.io/sdras/pen/YZBGNp)
-	- [Fraction Fingerprints](https://codepen.io/jasesmith/pen/EZWONY)
+### pointing
+- [Vue-controlled Wall-E](http://codepen.io/sdras/pen/YZBGNp)
+- [Fraction Fingerprints](https://codepen.io/jasesmith/pen/EZWONY)
 
 - http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit
-	- Follow and Reach examples from p5js
-
-- https://p5js.org/examples/math-distance-2d.html
+- Follow and Reach examples from p5js
 
 ---
 

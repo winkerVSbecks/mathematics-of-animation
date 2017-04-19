@@ -34,6 +34,7 @@ const images = {
   cubewave: require('../assets/beesandbombs/cubewave.gif'),
   weaves: require('../assets/beesandbombs/weaves.gif'),
   netmag: require('../assets/netmag.gif'),
+  lever: require('../assets/lever.gif'),
 };
 
 preloader(images);
