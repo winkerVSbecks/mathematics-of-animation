@@ -9,10 +9,11 @@
 3. Oscillations: moving with trigonometry ✅
   + swimmer
 4. Solving triangles
-  + meta balls
+  + meta balls ✅
 5. Using curves to generate paths, easings and springs
-  + Bounce
-  + spring
+  + Bounce 🚫
+  + spring 🚫
+  + Curves
   + lerp
 
 ---

@@ -50,11 +50,11 @@ export const coordinateGeometrySlides = [
   <Slide bgColor="pink" textColor="secondary">
     <Text>Insert image of polar coordinates</Text>
   </Slide>,
-  <Slide bgColor="pink" textColor="secondary">
-    <Text>Insert offset-polar demo</Text>
-    <CodePane
-      lang="js"
-      source={require('raw-loader!../code/offset-polar.js')}
-    />
-  </Slide>,
+  // <Slide bgColor="pink" textColor="secondary">
+  //   <Text>Insert offset-polar demo</Text>
+  //   <CodePane
+  //     lang="js"
+  //     source={require('raw-loader!../code/offset-polar.js')}
+  //   />
+  // </Slide>,
 ];

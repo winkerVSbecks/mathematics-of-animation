@@ -1,14 +1,16 @@
 import React from 'react';
 import {
+  CodePane,
   Heading,
   Image,
+  Link,
   Slide,
-  Text,
 } from 'spectacle';
 import { Chillwave, CodePen } from '../components';
 import { WavesWithOffset } from '../../examples/waves-with-offset';
 
 import images from '../images';
+import { f } from '../styles';
 
 export const oscillationsSlides = [
   <Slide bgColor="pink" textColor="tertiary">
@@ -72,17 +74,33 @@ export const oscillationsSlides = [
       />
     </div>
   </Slide>,
-  <Slide bgColor="pink">
-    <Text fit textColor="red">
-      - translation: xEnd = xStart + c [addition]
-      - scaling: xEnd = 2 * xStart [multiplication]
-      - rotation: xEnd = cosθ * xStart + sinθ * xStart [trignometry]
-      + [Rocket around the moon](http://codepen.io/Yakudoo/pen/aOEeXB)
-    </Text>
-  </Slide>,
   <Slide bgColor="tertiary">
     <Heading fit textColor="primary">Sine Waves with Offsets</Heading>
     <WavesWithOffset />
+    <Link
+      textColor="primary" textSize={f[6]}
+      href="http://codepen.io/DonKarlssonSan/pen/QGzqaM?editors=1100"
+    >
+      🍴 of Johan Karlsson's CodePen
+    </Link>
+  </Slide>,
+  <Slide bgColor="#2d2d2d">
+    <CodePane
+      lang="javascript"
+      source={`
+        // translation
+        x = xStart + 2 * sin(θ);
+
+        // scaling
+        width = widthStart + 5 * sin(θ);
+
+        // rotation
+        x = originX + radius * cos(θ);
+        y = originY + radius * sin(θ);
+
+        // Example: [Rocket around the moon](http://codepen.io/Yakudoo/pen/aOEeXB)
+      `}
+    />
   </Slide>,
   <Slide bgColor="#141414">
     <Image src={images.swimmer} width={400} />
