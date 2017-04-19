@@ -44,6 +44,16 @@ export const solvingTrianglesSlides = [
       height={600}
     />
   </Slide>,
+  <Slide bgColor="#000">
+    <Image src={images.netmag} width={946} />
+    <Link
+      textColor="primary" textSize={f[6]}
+      href="http://lab.hakim.se/404/netmag.html"
+      style={{ display: 'block' }}
+    >
+      Netmag 404 Page by Hakim El Hattab
+    </Link>
+  </Slide>,
   <Slide bgColor="mauve">
     <Heading textColor="tertiary">Meta Balls</Heading>
   </Slide>,

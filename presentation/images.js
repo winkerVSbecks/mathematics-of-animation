@@ -33,6 +33,7 @@ const images = {
   waveD: require('../assets/beesandbombs/wave_d.gif'),
   cubewave: require('../assets/beesandbombs/cubewave.gif'),
   weaves: require('../assets/beesandbombs/weaves.gif'),
+  netmag: require('../assets/netmag.gif'),
 };
 
 preloader(images);
