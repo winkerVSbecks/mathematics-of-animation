@@ -6,6 +6,7 @@ import {
   Text,
 } from 'spectacle';
 import { Chillwave, CodePen } from '../components';
+import { WavesWithOffset } from '../../examples/waves-with-offset';
 
 import images from '../images';
 
@@ -79,10 +80,9 @@ export const oscillationsSlides = [
       + [Rocket around the moon](http://codepen.io/Yakudoo/pen/aOEeXB)
     </Text>
   </Slide>,
-  <Slide bgColor="primary">
-    <Heading fit textColor="red">many sine waves with slight offsets</Heading>
-    <Heading fit textColor="red">1, 2, 3, many, multiple layers</Heading>
-    <CodePen name="Waves" user="DonKarlssonSan" id="QGzqaM" bgColor="white" />
+  <Slide bgColor="tertiary">
+    <Heading fit textColor="primary">Sine Waves with Offsets</Heading>
+    <WavesWithOffset />
   </Slide>,
   <Slide bgColor="#141414">
     <Image src={images.swimmer} width={400} />
