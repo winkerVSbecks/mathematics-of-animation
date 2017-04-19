@@ -38,16 +38,16 @@ export class WavesWithOffset extends Component {
         <div style={styleLayer1} className="ball bounceY" />
         <div style={styleLayer1} className="ball bounceY" />
         <div style={styleLayer1} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
-          <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
+        <div style={styleLayer2} className="ball bounceY" />
         <div style={styleLayer3} className="ball bounceY" />
         <div style={styleLayer3} className="ball bounceY" />
         <div style={styleLayer3} className="ball bounceY" />
