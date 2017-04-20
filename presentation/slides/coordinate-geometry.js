@@ -20,15 +20,15 @@ import images from '../images';
 import { s, f } from '../styles';
 
 export const coordinateGeometrySlides = [
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>Insert image of shapes being measured</Text>
+  <Slide className="contain" bgColor="primary">
+    <Image src={images.measure} width="100%" />
   </Slide>,
   <Slide bgColor="pink" textColor="tertiary">
     <Image height="8rem" margin={s.r4} src={images.ruler25} />
     <Heading style={{ display: 'inline' }}>Coordinate Geometry</Heading>
   </Slide>,
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>Insert image of cartesian coordinates with full shape</Text>
+  <Slide className="contain" bgColor="primary">
+    <Image src={images.cartesian} width="100%" />
   </Slide>,
   <Slide bgColor="primary">
     <Image width={400} src={images.manypolygons} />
@@ -47,8 +47,8 @@ export const coordinateGeometrySlides = [
       Rarities 2.0 by Rogie 👑
     </Link>
   </Slide>,
-  <Slide bgColor="pink" textColor="secondary">
-    <Text>Insert image of polar coordinates</Text>
+  <Slide className="contain" bgColor="primary">
+    <Image src={images.polar} width="100%" />
   </Slide>,
   // <Slide bgColor="pink" textColor="secondary">
   //   <Text>Insert offset-polar demo</Text>

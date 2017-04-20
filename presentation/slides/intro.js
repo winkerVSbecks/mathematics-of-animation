@@ -34,18 +34,21 @@ export const introSlides = [
           Varun Vachhar
         </Heading>
         <Text
+          className="fw6"
           textColor="secondary" textSize={f[4]} textAlign="left"
-          lineHeight={1.25}
         >
           Developer at Rangle.io
         </Text>
         <Text
+          className="fw6"
           textColor="gray" textSize={f[4]} textAlign="left"
-          lineHeight={1.25}
         >
           @winkerVSbecks
         </Text>
-        <Text textSize={f[4]} textAlign="left" lineHeight={1}>
+        <Text
+          className="fw6"
+          textSize={f[4]} textAlign="left"
+        >
           <Link textColor="gray" href="http://varun.ca">
             varun.ca
           </Link>

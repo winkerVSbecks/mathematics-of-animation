@@ -35,6 +35,13 @@ const images = {
   weaves: require('../assets/beesandbombs/weaves.gif'),
   netmag: require('../assets/netmag.gif'),
   lever: require('../assets/lever.gif'),
+  cactus: require('../assets/annie-spratt-79272.jpg'),
+  gemsExplain: require('../assets/gems-explain.jpg'),
+  splashExplain: require('../assets/splash-explain.jpg'),
+  octagon: require('../assets/octagon.jpg'),
+  polar: require('../assets/polar.jpg'),
+  cartesian: require('../assets/cartesian.jpg'),
+  measure: require('../assets/measure.jpg'),
 };
 
 preloader(images);

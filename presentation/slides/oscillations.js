@@ -35,8 +35,9 @@ export const oscillationsSlides = [
       width={500}
     />
   </Slide>,
-  <Slide>
-    <Heading fit textColor="red">Dave Whyte (bees & bombs)</Heading>
+  <Slide bgColor="mauve">
+    <Heading textColor="tertiary" fit>Dave Whyte</Heading>
+    <Heading textColor="red" fit>BEES & BOMBS</Heading>
   </Slide>,
   <Slide className="flex">
     <div className="flex-auto flex flex-wrap" style={{ height: 600 }}>
@@ -109,6 +110,6 @@ export const oscillationsSlides = [
     <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
   </Slide>,
   <Slide bgColor="pink">
-    <Heading fit textColor="red">Explain swimmer</Heading>
+    <Heading fit textColor="red">~~Explain swimmer~~</Heading>
   </Slide>,
 ];

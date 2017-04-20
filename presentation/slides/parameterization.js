@@ -30,7 +30,7 @@ export const parameterizationSlides = [
     <Heading>Parameterization</Heading>
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>insert codePen that explains parameterization of regular polygons</Text>
+    <Text>~~insert codePen that explains parameterization of regular polygons~~</Text>
   </Slide>,
   <CodeSlide
     transition={['scale']}
@@ -50,7 +50,7 @@ export const parameterizationSlides = [
     ]}
   />,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>insert demo of polygon generator</Text>
+    <Text>~~insert demo of polygon generator~~</Text>
   </Slide>,
   <Slide bgColor="#000">
     <CodePen
@@ -59,13 +59,15 @@ export const parameterizationSlides = [
     />
   </Slide>,
   <Slide bgColor="#000">
-    <Text textColor="white">insert my Hex-a-Portal demo here</Text>
+    <Text textColor="white">
+      ~~insert my Hex-a-Portal demo here~~
+    </Text>
     <CodePen
       name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
     />
   </Slide>,
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>insert a drawing that explain parameterization of the gems (shape, face and top)</Text>
+  <Slide className="contain" bgColor="primary">
+    <Image src={images.gemsExplain} width="100%" />
   </Slide>,
   <Slide bgColor="#FE664D" textColor="secondary">
     <Embed
@@ -77,7 +79,7 @@ export const parameterizationSlides = [
     <Heading size={6} textColor="primary">Generate Patterns</Heading>
     <SplashExample />
   </Slide>,
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>insert a drawing that explains splash pattern</Text>
+  <Slide className="contain" bgColor="primary">
+    <Image src={images.splashExplain} width="75%" />
   </Slide>,
 ];

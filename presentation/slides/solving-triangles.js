@@ -30,7 +30,9 @@ export const solvingTrianglesSlides = [
     </div>
   </Slide>,
   <Slide bgColor="mauve">
-    <Heading textColor="tertiary">Tan and 2 things means you can solve for the third</Heading>
+    <Heading size={5} textColor="tertiary">
+      ~~Explain tan and 2 things means you can solve for the third~~
+    </Heading>
   </Slide>,
   <Slide bgColor="mauve">
     <CodePen
@@ -56,7 +58,9 @@ export const solvingTrianglesSlides = [
     />
   </Slide>,
   <Slide bgColor="#fff">
-    <Heading textColor="tertiary">Insert image of glossy triangle explanation</Heading>
+    <Heading textColor="tertiary">
+      ~~Insert image of glossy triangle explanation~~
+    </Heading>
   </Slide>,
   <Slide bgColor="#fee1e1">
     <CodePen

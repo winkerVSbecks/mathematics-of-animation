@@ -1,13 +1,11 @@
 import React from 'react';
 import {
   Heading,
-  Fit,
   Fill,
   Layout,
   Link,
   ListItem,
   List,
-  Image,
   Slide,
   Text,
 } from 'spectacle';
@@ -19,16 +17,14 @@ export const outroSlides = [
   <Slide bgColor="mauve">
     <Heading textColor="tertiary">Summary</Heading>
   </Slide>,
-  <Slide>
-    <Heading size={1} textColor="tertiary" fit>
+  <Slide bgColor="#f1ebed" bgImage={images.cactus}>
+    <Heading size={1} textColor="tertiary" textAlign="left">
       Thank You!
     </Heading>
     <Layout>
-      <Fit style={{ display: 'flex', alignItems: 'center', paddingTop: '1em' }}>
-        <Image src={images.winkervsbecks} margin={s.r3} height={128} />
-      </Fit>
       <Fill>
         <Text
+          className="fw6"
           margin={s.t4}
           textAlign="left"
           textColor="secondary"
@@ -36,19 +32,55 @@ export const outroSlides = [
           Varun Vachhar
         </Text>
         <Link href="http://twitter.com/winkervsbecks">
-          <Text margin={s.t2} textColor="gray" textAlign="left" textSize={f[5]}>
+          <Text
+            margin={s.t2}
+            textColor="gray" textAlign="left" textSize={f[5]}
+            className="fw6"
+          >
             @winkerVSbecks
           </Text>
         </Link>
         <Link href="http://varun.ca">
-          <Text margin={s.t2} textColor="gray" textAlign="left" textSize={f[5]}>
+          <Text
+            margin={s.t2}
+            textColor="gray" textAlign="left" textSize={f[5]}
+            className="fw6"
+          >
             varun.ca
           </Text>
         </Link>
       </Fill>
     </Layout>
   </Slide>,
-  <Slide bgColor="mauve">
-    <Heading textColor="tertiary">Attributions</Heading>
+  <Slide>
+    <Heading textColor="tertiary" size={5} textAlign="left">
+      Icons and Images from
+    </Heading>
+    <List>
+      <ListItem>
+        <Link
+          textColor="secondary"
+          href="http://iconmonstr.com"
+        >
+          iconmonstr.com (Alexander Kahlkopf)
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link
+          textColor="secondary"
+          href="https://unsplash.com/@andrewjohnp"
+        >
+          Andrew Phillips
+        </Link>
+      </ListItem>
+      <ListItem>
+        <Link
+          textColor="secondary"
+          href="https://unsplash.com/@anniespratt"
+        >
+          Annie Spratt
+        </Link>
+      </ListItem>
+    </List>
   </Slide>,
 ];
