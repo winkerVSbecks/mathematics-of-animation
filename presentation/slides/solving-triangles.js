@@ -45,7 +45,7 @@ export const solvingTrianglesSlides = [
   <Slide bgColor="#fff">
     <Embed
       bgColor="#fff"
-      url="//winkervsbecks.github.io/a-triangle-everyday/glossy-triangle"
+      url="https://winkervsbecks.github.io/a-triangle-everyday/glossy-triangle"
       height={600}
     />
   </Slide>,
