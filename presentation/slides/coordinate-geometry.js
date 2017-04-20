@@ -7,6 +7,7 @@ import {
 } from 'spectacle';
 
 import { CodePen } from '../components';
+import { Hexagon } from '../../examples/hexagon';
 import images from '../images';
 import { s, f } from '../styles';
 
@@ -47,16 +48,13 @@ export const coordinateGeometrySlides = [
   <Slide>
     <CodePen
       height={600}
-      name="Polar Coordinates" user="winkerVSbecks" id="ZpGzdz" bgColor="#fff" color="#89C2EF"
+      name="Hexagon with Polar Coordinates" user="winkerVSbecks" id="ZpGzdz" bgColor="#fff" color="#89C2EF"
     />
   </Slide>,
   <Slide bgColor="#fefef2">
     <Image src={images.octagon} width="100%" />
   </Slide>,
   <Slide>
-    <CodePen
-      height={600}
-      name="Hexagon with Polar Coordinates" user="winkerVSbecks" id="ZpGzdz" bgColor="#fff" color="#89C2EF"
-    />
+    <Hexagon />
   </Slide>,
 ];
