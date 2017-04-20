@@ -1,0 +1,18 @@
+#wave {
+  animation: moveTheWave 2400ms linear infinite;
+  stroke-dasharray: 0 16 102 16;
+}
+
+@keyframes moveTheWave {
+
+  0% {
+    stroke-dashoffset: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    stroke-dashoffset: -136;
+    transform: translate3d(-90px, 0, 0);
+  }
+
+}
