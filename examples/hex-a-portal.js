@@ -138,7 +138,7 @@ export class HexAPortal extends Component {
           />
         </div>
         <div className="white f5">
-          Fork of <a className="white" href="https://gannon.tv/">Chris Gannon's</a> <a className="white" href="http://codepen.io/chrisgannon/pen/yOYMMP">Hex-a-portal (RGB)</a>
+          Based on <a className="white" href="http://codepen.io/chrisgannon/pen/yOYMMP">Hex-a-portal (RGB)</a> by <a className="white" href="https://gannon.tv/">Chris Gannon</a>
         </div>
       </div>
     );
