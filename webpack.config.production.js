@@ -38,10 +38,10 @@ module.exports = {
       loader: "style-loader!css-loader"
     }, {
       test: /\.(png|jpg|gif)$/,
-      loader: "url-loader?limit=8192&publicPath=/"
+      loader: "url-loader?limit=8192&publicPath=dist/"
     }, {
       test: /\.svg$/,
-      loader: "url-loader?limit=10000&mimetype=image/svg+xml&publicPath=/"
+      loader: "url-loader?limit=10000&mimetype=image/svg+xml&publicPath=dist/"
     }]
   }
 };
