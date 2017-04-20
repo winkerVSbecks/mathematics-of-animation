@@ -13,6 +13,7 @@ import images from '../images';
 import { f, s } from '../styles';
 import { Embed, CodePen } from '../components';
 import { SplashExample } from '../../examples/splash';
+import { PolygonParameterization } from '../../examples/polygon-parameterization';
 
 export const parameterizationSlides = [
   <Slide bgColor="pink" textColor="tertiary">
@@ -35,9 +36,10 @@ export const parameterizationSlides = [
     </Text>
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>~~insert codePen that explains parameterization of regular polygons~~</Text>
+    <PolygonParameterization />
+    {/* <Text>~~insert codePen that explains parameterization of regular polygons~~</Text>
     <Text>parameterization could be 5 points but, we can make it easier
-    use number sides + radius</Text>
+    use number sides + radius</Text> */}
   </Slide>,
   <CodeSlide
     transition={['scale']}

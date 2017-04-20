@@ -1,13 +1,6 @@
 import React, { Component } from 'react';
 import anime from 'animejs';
 
-// <!-- var red = '#f79c82';
-// var lightRed = '#fde6e0';
-// var grey = '#8a90a4';
-// var blue = '#89c2ef';
-// var green = '#95d9ad';
-// var lightGrey = '#969cae';
-
 const rad = angle => (Math.PI * angle) / 180;
 
 const point = (o, r, theta) =>
