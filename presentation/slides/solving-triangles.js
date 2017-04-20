@@ -2,21 +2,13 @@ import React from 'react';
 import {
   Heading,
   Image,
-  Fit,
-  Fill,
-  Layout,
   Link,
-  ListItem,
-  List,
-  Quote,
   Slide,
-  Text,
 } from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
 import { CodePen, Embed } from '../components';
 
 import images from '../images';
-import { f, s } from '../styles';
+import { f } from '../styles';
 
 const triangle = 'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fee1e1"><path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" /></svg>\')';
 
@@ -67,6 +59,9 @@ export const solvingTrianglesSlides = [
       name="Meta Balls" user="winkerVSbecks" id="Qvyppq" bgColor="#fee1e1"
       height={600}
     />
+  </Slide>,
+  <Slide bgColor="#fee1e1">
+    <Heading size={5}>~~Insert Meta Balls explainer~~</Heading>
   </Slide>,
   <Slide bgColor="#FDFCFC">
     <Heading textColor="tertiary" textAlign="left" size={5}>Use It for Levers</Heading>
