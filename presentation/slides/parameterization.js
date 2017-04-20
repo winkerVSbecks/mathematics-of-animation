@@ -73,7 +73,7 @@ export const parameterizationSlides = [
   </Slide>,
   <Slide bgColor="#FE664D" textColor="secondary">
     <Embed
-      url="http://winkervsbecks.github.io/gems"
+      url="//winkervsbecks.github.io/gems"
       fallback={images.gemsDemo}
     />
   </Slide>,
