@@ -31,6 +31,8 @@ export const parameterizationSlides = [
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
     <Text>~~insert codePen that explains parameterization of regular polygons~~</Text>
+    <Text>parameterization could be 5 points but, we can make it easier
+    use number sides + radius</Text>
   </Slide>,
   <CodeSlide
     transition={['scale']}
