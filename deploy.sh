@@ -74,11 +74,11 @@ parse_args() {
 	deploy_branch=${GIT_DEPLOY_BRANCH:-gh-pages}
 
 	#if no user identity is already set in the current git environment, use this:
-	default_username=${GIT_DEPLOY_USERNAME:-deploy.sh}
-	default_email=${GIT_DEPLOY_EMAIL:-}
+	default_username=${GIT_DEPLOY_USERNAME:-winkerVSbecks}
+	default_email=${GIT_DEPLOY_EMAIL:-varunvachhar@gmail.com}
 
 	#repository to deploy to. must be readable and writable.
-	repo=${GIT_DEPLOY_REPO:-origin}
+	repo=${GIT_DEPLOY_REPO:-git@github.com:winkerVSbecks/mathematics-of-animation.git}
 
 	#append commit hash to the end of message by default
 	append_hash=${GIT_DEPLOY_APPEND_HASH:-true}
