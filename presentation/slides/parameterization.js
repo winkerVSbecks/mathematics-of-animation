@@ -14,6 +14,7 @@ import { f, s } from '../styles';
 import { Embed, CodePen } from '../components';
 import { SplashExample } from '../../examples/splash';
 import { PolygonParameterization } from '../../examples/polygon-parameterization';
+import { HexAPortal } from '../../examples/hex-a-portal';
 
 export const parameterizationSlides = [
   <Slide bgColor="pink" textColor="tertiary">
@@ -58,22 +59,8 @@ export const parameterizationSlides = [
       { loc: [16, 19] },
     ]}
   />,
-  <Slide bgColor="primary" textColor="secondary">
-    <Text>~~insert demo of polygon generator~~</Text>
-  </Slide>,
   <Slide bgColor="#000">
-    <CodePen
-      height={600}
-      name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
-    />
-  </Slide>,
-  <Slide bgColor="#000">
-    <Text textColor="white">
-      ~~insert my Hex-a-Portal demo here~~
-    </Text>
-    <CodePen
-      name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
-    />
+    <HexAPortal />
   </Slide>,
   <Slide bgColor="primary">
     <Image src={images.gemsExplain} width="100%" />
