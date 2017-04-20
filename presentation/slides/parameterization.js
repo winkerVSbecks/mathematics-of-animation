@@ -1,16 +1,8 @@
 import React from 'react';
 import {
   BlockQuote,
-  Cite,
-  CodePane,
   Heading,
   Image,
-  Fit,
-  Fill,
-  Layout,
-  Link,
-  ListItem,
-  List,
   Quote,
   Slide,
   Text,
@@ -28,6 +20,19 @@ export const parameterizationSlides = [
     <Image height="6rem" margin={s.r3} src={images.knob} />
     <Image height="6rem" margin="0" src={images.slider} />
     <Heading>Parameterization</Heading>
+  </Slide>,
+  <Slide bgColor="secondary">
+    <Heading size={4} textColor="pink" textAlign="left" margin={s.b4}>
+      Parameterization
+    </Heading>
+    <BlockQuote margin={s.b5}>
+      <Quote textSize={f[3]} style={{ lineHeight: 1.5 }}>
+        Defining the parameters or variables necessary to generate a geometric object.
+      </Quote>
+    </BlockQuote>
+    <Text textColor="primary" textAlign="left">
+      Coordinates of each vertex ➡️ Shape
+    </Text>
   </Slide>,
   <Slide bgColor="primary" textColor="secondary">
     <Text>~~insert codePen that explains parameterization of regular polygons~~</Text>
@@ -68,7 +73,7 @@ export const parameterizationSlides = [
       name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
     />
   </Slide>,
-  <Slide className="contain" bgColor="primary">
+  <Slide bgColor="primary">
     <Image src={images.gemsExplain} width="100%" />
   </Slide>,
   <Slide bgColor="#FE664D" textColor="secondary">
@@ -81,7 +86,7 @@ export const parameterizationSlides = [
     <Heading size={6} textColor="primary">Generate Patterns</Heading>
     <SplashExample />
   </Slide>,
-  <Slide className="contain" bgColor="primary">
+  <Slide bgColor="#fefff7">
     <Image src={images.splashExplain} width="75%" />
   </Slide>,
 ];

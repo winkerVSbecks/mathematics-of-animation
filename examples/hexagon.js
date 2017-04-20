@@ -74,8 +74,12 @@ export class Hexagon extends Component {
       loop: true,
       update: () => {
         const t = parseInt(angle.value, 10);
-        this.angle.textContent = `θ = ${t}°`;
-        this.coords.textContent = `(x, y) = (r * cos(${t}°), r * sin(${t}°))`;
+        if (this.angle) {
+          this.angle.textContent = `θ = ${t}°`;
+        }
+        if (this.coords) {
+          this.coords.textContent = `(x, y) = (r * cos(${t}°), r * sin(${t}°))`;
+        }
       },
     });
   }
