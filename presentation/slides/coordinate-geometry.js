@@ -11,14 +11,14 @@ import images from '../images';
 import { s, f } from '../styles';
 
 export const coordinateGeometrySlides = [
-  <Slide className="contain" bgColor="#fefff7">
+  <Slide bgColor="#fefff7">
     <Image src={images.measure} width="100%" />
   </Slide>,
   <Slide bgColor="pink" textColor="tertiary">
     <Image height="8rem" margin={s.r4} src={images.ruler25} />
     <Heading style={{ display: 'inline' }}>Coordinate Geometry</Heading>
   </Slide>,
-  <Slide className="contain" bgColor="#fefef2">
+  <Slide bgColor="#fefef2">
     <Image src={images.cartesian} width="100%" />
   </Slide>,
   <Slide bgColor="primary">
@@ -38,13 +38,25 @@ export const coordinateGeometrySlides = [
       Rarities 2.0 by Rogie 👑
     </Link>
   </Slide>,
-  <Slide className="contain" bgColor="#fefef2">
+  <Slide bgColor="#fefef2">
+    <Heading size={5}>~~Explain challenges to making these shapes with cartesian coords~~</Heading>
+  </Slide>,
+  <Slide bgColor="#fefef2">
     <Image src={images.polar} width="100%" />
   </Slide>,
   <Slide>
     <CodePen
       height={600}
-      name="Hex-a-Portal (RGB)" user="winkerVSbecks" id="ZpGzdz" bgColor="#fff" color="#89C2EF"
+      name="Polar Coordinates" user="winkerVSbecks" id="ZpGzdz" bgColor="#fff" color="#89C2EF"
+    />
+  </Slide>,
+  <Slide bgColor="#fefef2">
+    <Image src={images.octagon} width="100%" />
+  </Slide>,
+  <Slide>
+    <CodePen
+      height={600}
+      name="Hexagon with Polar Coordinates" user="winkerVSbecks" id="ZpGzdz" bgColor="#fff" color="#89C2EF"
     />
   </Slide>,
 ];
