@@ -1,1 +1,1 @@
-export * from './waves-with-offset';
+export { WavesWithOffset } from './waves-with-offset';

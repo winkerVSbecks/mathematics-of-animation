@@ -41,17 +41,10 @@ export const coordinateGeometrySlides = [
   <Slide className="contain" bgColor="#fefef2">
     <Image src={images.polar} width="100%" />
   </Slide>,
-  <Slide className="contain">
+  <Slide>
     <CodePen
       height={600}
       name="Hex-a-Portal (RGB)" user="winkerVSbecks" id="ZpGzdz" bgColor="#fff" color="#89C2EF"
     />
   </Slide>,
-  // <Slide bgColor="pink" textColor="secondary">
-  //   <Text>Insert offset-polar demo</Text>
-  //   <CodePane
-  //     lang="js"
-  //     source={require('raw-loader!../code/offset-polar.js')}
-  //   />
-  // </Slide>,
 ];
