@@ -7,6 +7,7 @@ import {
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 import { CodePen, Easings, BezierCurve } from '../components';
+import { CustomEasing } from '../../examples/custom-easing';
 
 import { f, s } from '../styles';
 
@@ -46,7 +47,7 @@ export const easingSlides = [
     }, {
       loc: [1, 2],
       title: 'Transform',
-      note: 'change_in_property * [Some Value] + start_value',
+      note: 'start_value + delta * [some_multiplier]',
     }]}
   />,
     // <Link
@@ -63,20 +64,25 @@ export const easingSlides = [
     <BezierCurve w={600} />
   </Slide>,
   <Slide>
-    <Text>The time variable goes from 0 to 1 and g adjusts the amount of easing.</Text>
     <CodePane
-      textSize="1.6rem"
+      textSize="1.4rem"
       lang="javascript"
-      source={`let x = 300 * ease(time, g);
+      source={`function transform(t) {
+  const g = 4;
 
-function ease(p, g){
-  if (p < 0.5) {
-    return 0.5 * Math.pow(2 * p, g);
-  } else {
-    return 1 - 0.5 * Math.pow(2 * (1 - p), g);
+  if (t < 0.5) {
+    return 0.5 * Math.pow(2 * t, g)
   }
+
+  return 1 - (0.5 * Math.pow(2 * (1 - t), g));
+}
+
+function ease(currentTime, startValue, delta, duration) {
+  const t = currentTime / duration;
+  return startValue + (transform(t) * delta);
 }`}
     />
+    <CustomEasing />
   </Slide>,
   <Slide>
     <Heading size={6} textColor="secondary">Lerping</Heading>
