@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Appear,
   Heading,
   Image,
   Link,
@@ -36,8 +37,22 @@ export const coordinateGeometrySlides = [
       Rarities 2.0 by Rogie 👑
     </Link>
   </Slide>,
-  <Slide bgColor="#fefef2">
-    <Heading size={5}>~~Explain challenges to making these shapes with cartesian coords~~</Heading>
+  <Slide bgColor="pink">
+    <svg xmlns="http://www.w3.org/2000/svg" height="600px" viewBox="-2 0 28 24">
+      <path fill="#2e2f30" d="M18,2 L24,12.5 L18,23 H6 L0,12.5 L6,2Z" stroke="none" />
+      <g fill="none" stroke="#ff485e" strokeWidth="0.25">
+        <Appear><circle cx="24" cy="12.5" r="0.5" /></Appear>
+        <Appear><circle cx="18" cy="2" r="0.5" /></Appear>
+        <Appear><circle cx="6" cy="2" r="0.5" /></Appear>
+        <Appear>
+          <g>
+            <circle cx="6" cy="23" r="0.5" />
+            <circle cx="0" cy="12.5" r="0.5" />
+            <circle cx="18" cy="23" r="0.5" />
+          </g>
+        </Appear>
+      </g>
+    </svg>
   </Slide>,
   <Slide bgColor="#fefef2">
     <Image src={images.polar} width="100%" />
