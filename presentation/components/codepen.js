@@ -6,6 +6,7 @@ export const CodePen = ({
   themeId = '29126',
   bgColor = '#fff',
   color = '#000',
+  author = null
 }) => (
   <div style={{ backgroundColor: bgColor }}>
     <iframe
@@ -30,7 +31,9 @@ export const CodePen = ({
       on <a href="http://codepen.io">CodePen</a>.
     </iframe>
     <p style={{ color }} className="f5">
-      <a style={{ color }} href={`http://codepen.io/${user}/pen/${id}`}>{ name }</a> by <a style={{ color }} href={`http://codepen.io/${user}`}>@{user}</a>
+      <a style={{ color }} href={`http://codepen.io/${user}/pen/${id}`}>{ name }</a> by {
+        author || <a style={{ color }} href={`http://codepen.io/${user}`}>@{user}</a>
+      }
     </p>
   </div>
 );
@@ -43,4 +46,5 @@ CodePen.propTypes = {
   bgColor: PropTypes.string,
   themeId: PropTypes.string,
   color: PropTypes.string,
+  author: PropTypes.string,
 };

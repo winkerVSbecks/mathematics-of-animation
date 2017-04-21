@@ -5,7 +5,7 @@ import {
   Link,
   Slide,
 } from 'spectacle';
-import { CodePen, Embed } from '../components';
+import { CodePen } from '../components';
 
 import images from '../images';
 import { f } from '../styles';
@@ -28,7 +28,13 @@ export const solvingTrianglesSlides = [
   </Slide>,
   <Slide bgColor="mauve">
     <CodePen
-      name="eyes" user="winkerVSbecks" id="jmWNRO" bgColor="#c3bbff"
+      name="Solving Triangles for Eye Tracking"
+      author={
+        <a style={{ color: '#000' }} href="https://p5js.org/examples/math-arctangent.html">
+          p5.js
+        </a>
+      }
+      user="winkerVSbecks" id="jmWNRO" bgColor="#c3bbff"
       height={600}
     />
   </Slide>,
@@ -56,7 +62,13 @@ export const solvingTrianglesSlides = [
   </Slide>,
   <Slide bgColor="#fee1e1">
     <CodePen
-      name="Meta Balls" user="winkerVSbecks" id="Qvyppq" bgColor="#fee1e1"
+      name="Meta Balls Debugging"
+      author={
+        <a style={{ color: '#000' }} href="http://paperjs.org/examples/meta-balls">
+          Paper.js
+        </a>
+      }
+      user="winkerVSbecks" id="Qvyppq" bgColor="#fee1e1"
       height={600}
     />
   </Slide>,
