@@ -106,9 +106,9 @@ export const oscillationsSlides = [
   <Slide bgColor="#141414">
     <Image src={images.swimmer} width={400} />
   </Slide>,
-  <Slide bgColor="pink">
-    <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
-  </Slide>,
+  // <Slide bgColor="pink">
+  //   <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
+  // </Slide>,
   <Slide bgColor="pink">
     <Heading fit textColor="red">~~Explain swimmer~~</Heading>
   </Slide>,

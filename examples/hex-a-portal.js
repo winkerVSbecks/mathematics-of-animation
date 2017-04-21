@@ -25,8 +25,8 @@ export class HexAPortal extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      sideCount: 3,
-      radius: 200,
+      sideCount: 6,
+      radius: 140,
     };
   }
 

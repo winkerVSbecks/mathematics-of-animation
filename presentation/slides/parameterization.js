@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  Appear,
   BlockQuote,
   Heading,
   Image,
@@ -11,7 +12,7 @@ import CodeSlide from 'spectacle-code-slide';
 
 import images from '../images';
 import { f, s } from '../styles';
-import { Embed, CodePen } from '../components';
+import { Embed } from '../components';
 import { SplashExample } from '../../examples/splash';
 import { PolygonParameterization } from '../../examples/polygon-parameterization';
 import { HexAPortal } from '../../examples/hex-a-portal';
@@ -36,11 +37,23 @@ export const parameterizationSlides = [
       Coordinates of each vertex ➡️ Shape
     </Text>
   </Slide>,
+  <Slide bgColor="#fefef2">
+    <Heading size={6} textColor="secondary" margin="0">
+      angle = 360 / <span className="bb b--green bw3">number of sides</span>
+    </Heading>
+    <div style={{ backgroundImage: `url(${images.octagon})`, height: 500 }} className="contain bg-center">
+      <Appear>
+        <div>
+          <div
+            className="dib ba b--red bw2 br-100 absolute"
+            style={{ top: '48.5%', left: '52%', width: 40, height: 40 }}
+          />
+        </div>
+      </Appear>
+    </div>
+  </Slide>,
   <Slide bgColor="primary" textColor="secondary">
     <PolygonParameterization />
-    {/* <Text>~~insert codePen that explains parameterization of regular polygons~~</Text>
-    <Text>parameterization could be 5 points but, we can make it easier
-    use number sides + radius</Text> */}
   </Slide>,
   <CodeSlide
     transition={['scale']}
@@ -72,7 +85,9 @@ export const parameterizationSlides = [
     />
   </Slide>,
   <Slide bgColor="secondary">
-    <Heading size={6} textColor="primary">Generate Patterns</Heading>
+    <Heading size={6} textColor="primary" textAlign="left">
+      Use polar coordinates for location to generate patterns
+    </Heading>
     <SplashExample />
   </Slide>,
   <Slide bgColor="#fefff7">

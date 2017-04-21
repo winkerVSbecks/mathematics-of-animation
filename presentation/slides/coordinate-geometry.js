@@ -12,9 +12,6 @@ import images from '../images';
 import { s, f } from '../styles';
 
 export const coordinateGeometrySlides = [
-  <Slide bgColor="#fefff7">
-    <Image src={images.measure} width="100%" />
-  </Slide>,
   <Slide bgColor="pink" textColor="tertiary">
     <Image height="8rem" margin={s.r4} src={images.ruler25} />
     <Heading style={{ display: 'inline' }}>Coordinate Geometry</Heading>
