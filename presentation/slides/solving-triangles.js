@@ -83,9 +83,11 @@ export const solvingTrianglesSlides = [
     />
   </Slide>,
   <Slide bgColor="#fff">
-    <Heading textColor="tertiary">
-      ~~Insert glossy triangle explanation CodePen~~
-    </Heading>
+    <CodePen
+      name="Glossy Triangle" user="winkerVSbecks" id="QvELaB"
+      bgColor="#fff"
+      height={600}
+    />
   </Slide>,
   <Slide bgColor="#fee1e1">
     <CodePen
