@@ -4,6 +4,7 @@ import {
   BlockQuote,
   Heading,
   Image,
+  Link,
   Quote,
   Slide,
   Text,
@@ -75,6 +76,20 @@ export const parameterizationSlides = [
   <Slide bgColor="#000">
     <HexAPortal />
   </Slide>,
+  <Slide bgColor="primary" textColor="secondary">
+    <Image
+      className="br2 db shadow-5"
+      width={400}
+      src={images.gems}
+    />
+    <Link
+      textSize={f[6]}
+      textColor="secondary"
+      href="http://varun.ca"
+    >
+      Rarities 2.0 by Rogie 👑
+    </Link>
+  </Slide>,
   <Slide bgColor="primary">
     <Image src={images.gemsExplain} width="100%" />
   </Slide>,
@@ -85,8 +100,8 @@ export const parameterizationSlides = [
     />
   </Slide>,
   <Slide bgColor="secondary">
-    <Heading size={6} textColor="primary" textAlign="left">
-      Use polar coordinates for location to generate patterns
+    <Heading size={5} textColor="primary">
+      Use polar coordinates for locations to generate patterns
     </Heading>
     <SplashExample />
   </Slide>,

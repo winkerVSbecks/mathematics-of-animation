@@ -78,8 +78,9 @@ export const introSlides = [
       2017 Card by Phil
     </Link>
   </Slide>,
-  <Slide align="center center">
-    <Image width={640} src={images.someWords} />
+  <Slide bgColor="secondary" align="center center">
+    {/* <Image width={640} src={images.someWords} /> */}
+    <Image width={640} src="https://i.giphy.com/ErHMDXYMfGH96.gif" />
   </Slide>,
   <Slide align="center center">
     <Heading textColor="tertiary" fit size={1} margin={s.b4}>

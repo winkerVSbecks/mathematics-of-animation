@@ -1,14 +1,20 @@
 import React from 'react';
 import {
+  Appear,
+  Fill,
   Heading,
   Image,
+  Layout,
   Link,
   Slide,
+  Text,
 } from 'spectacle';
 import { CodePen } from '../components';
 
 import images from '../images';
-import { f } from '../styles';
+import { s, f } from '../styles';
+import { SolvingTriangles } from '../../examples/solving-triangle';
+import { Trigonometry } from '../../examples/trigonometry';
 
 const triangle = 'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fee1e1"><path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" /></svg>\')';
 
@@ -22,9 +28,30 @@ export const solvingTrianglesSlides = [
     </div>
   </Slide>,
   <Slide bgColor="mauve">
-    <Heading size={5} textColor="tertiary">
-      ~~Explain tan and 2 things means you can solve for the third~~
-    </Heading>
+    <div
+      className="bg-center flex items-center justify-center"
+      style={{ backgroundImage: `${triangle}`, height: 600, backgroundSize: '50%' }}
+    >
+      <Heading size={3} textColor="tertiary">Finding missing sides and angles</Heading>
+    </div>
+  </Slide>,
+  <Slide bgColor="mauve" margin="0">
+    <Heading size={4} textColor="tertiary">Solving a Right Angle Triangle</Heading>
+    <SolvingTriangles />
+  </Slide>,
+  <Slide bgColor="mauve" margin="0">
+    <Layout>
+      <Fill>
+        <Trigonometry />
+      </Fill>
+      <Fill>
+        <Text margin={s.b3}>sin(θ) = O / H</Text>
+        <Text margin={s.b3}>cos(θ) = A / H</Text>
+        <Text margin={s.b4}>tan(θ) = O / A</Text>
+        <Appear><Heading size={4} textColor="red">SOH CAH TOA!</Heading></Appear>
+        <Appear><Image width="100%" src="https://i.giphy.com/DGiZfWmc0HWms.gif" /></Appear>
+      </Fill>
+    </Layout>
   </Slide>,
   <Slide bgColor="mauve">
     <CodePen
@@ -57,7 +84,7 @@ export const solvingTrianglesSlides = [
   </Slide>,
   <Slide bgColor="#fff">
     <Heading textColor="tertiary">
-      ~~Insert image of glossy triangle explanation~~
+      ~~Insert glossy triangle explanation CodePen~~
     </Heading>
   </Slide>,
   <Slide bgColor="#fee1e1">

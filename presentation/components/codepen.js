@@ -46,5 +46,5 @@ CodePen.propTypes = {
   bgColor: PropTypes.string,
   themeId: PropTypes.string,
   color: PropTypes.string,
-  author: PropTypes.string,
+  author: PropTypes.any,
 };
