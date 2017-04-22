@@ -64,8 +64,11 @@ export const easingSlides = [
     <BezierCurve w={600} />
   </Slide>,
   <Slide>
+    <Heading size={6} textColor="tertiary">
+      Custom Easing
+    </Heading>
     <CodePane
-      textSize="1.4rem"
+      textSize="1.25rem"
       lang="javascript"
       source={`function transform(t) {
   const g = 4;
@@ -73,7 +76,6 @@ export const easingSlides = [
   if (t < 0.5) {
     return 0.5 * Math.pow(2 * t, g)
   }
-
   return 1 - (0.5 * Math.pow(2 * (1 - t), g));
 }
 

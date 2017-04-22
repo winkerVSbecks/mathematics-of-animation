@@ -101,9 +101,6 @@ export const solvingTrianglesSlides = [
       height={600}
     />
   </Slide>,
-  <Slide bgColor="#fee1e1">
-    <Heading size={5}>~~Insert Meta Balls explainer~~</Heading>
-  </Slide>,
   <Slide bgColor="#FDFCFC">
     <Heading textColor="tertiary" textAlign="left" size={5}>Use It for Levers</Heading>
     <Image src={images.lever} width={595} />

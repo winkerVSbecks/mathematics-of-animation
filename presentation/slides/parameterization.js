@@ -90,7 +90,7 @@ export const parameterizationSlides = [
       Rarities 2.0 by Rogie 👑
     </Link>
   </Slide>,
-  <Slide bgColor="primary">
+  <Slide bgColor="#fdfef6">
     <Image src={images.gemsExplain} width="100%" />
   </Slide>,
   <Slide bgColor="#FE664D" textColor="secondary">
