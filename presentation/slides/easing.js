@@ -71,7 +71,7 @@ export const easingSlides = [
       textSize="1.25rem"
       lang="javascript"
       source={`function transform(t) {
-  const g = 4;
+  const g = 6;
 
   if (t < 0.5) {
     return 0.5 * Math.pow(2 * t, g)
