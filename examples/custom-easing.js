@@ -4,9 +4,10 @@ function transform(t) {
   const g = 6;
 
   if (t < 0.5) {
+    // eslint-disable-next-line
     return 0.5 * Math.pow(2 * t, g)
   }
-
+  // eslint-disable-next-line
   return 1 - (0.5 * Math.pow(2 * (1 - t), g));
 }
 

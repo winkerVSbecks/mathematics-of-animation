@@ -77,14 +77,14 @@ export const solvingTrianglesSlides = [
   </Slide>,
   <Slide bgColor="#fff">
     <CodePen
-      name="Glossy Triangle" user="winkerVSbecks" id="uAIaq"
+      name="The Glossy Triangle" user="winkerVSbecks" id="uAIaq"
       bgColor="#fff"
       height={600}
     />
   </Slide>,
   <Slide bgColor="#fff">
     <CodePen
-      name="Glossy Triangle" user="winkerVSbecks" id="QvELaB"
+      name="The Glossy Triangle Debug" user="winkerVSbecks" id="QvELaB"
       bgColor="#fff"
       height={600}
     />

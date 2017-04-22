@@ -14,9 +14,6 @@ import images from '../images';
 import { s, f } from '../styles';
 
 export const outroSlides = [
-  <Slide bgColor="mauve">
-    <Heading textColor="tertiary">~~Summary~~</Heading>
-  </Slide>,
   <Slide bgColor="#f1ebed" bgImage={images.cactus}>
     <Heading size={1} textColor="tertiary" textAlign="left">
       Thank You!
