@@ -33,7 +33,9 @@ export const easingSlides = [
 }`}
     ranges={[{
       loc: [0, 3],
-      title: 'Penner’s Equations',
+      title: (
+        <span>Penner’s Equations<br /><a className="white" href="http://robertpenner.com/easing">robertpenner.com/easing</a></span>
+      ),
     }, {
       loc: [0, 1],
       title: 'Current Time',
@@ -56,15 +58,6 @@ export const easingSlides = [
       note: 'start_value + delta * [some_multiplier]',
     }]}
   />,
-  <Slide>
-    <Link
-      textColor="seondary" textSize={f[6]}
-      href="http://robertpenner.com/easing"
-      style={{ display: 'block' }}
-    >
-      Penner’s Equations
-    </Link>
-  </Slide>,
   <Slide bgColor="pink">
     <Heading margin={s.b3} size={6} textColor="tertiary">
       Bezier Curves
