@@ -2,7 +2,6 @@ import React from 'react';
 import {
   CodePane,
   Heading,
-  Link,
   Slide,
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
@@ -28,7 +27,7 @@ export const easingSlides = [
     transition={['scale']}
     textSize={f[5]}
     lang="js"
-    code={`function noEasing(currentTime, startValue, delta, duration) {
+    code={`function easing(currentTime, startValue, delta, duration) {
   return delta * currentTime / duration + startValue;
 }`}
     ranges={[{
