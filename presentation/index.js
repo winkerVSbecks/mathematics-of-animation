@@ -1,5 +1,5 @@
 import React from 'react';
-import { Deck} from 'spectacle';
+import { Deck } from 'spectacle';
 import { slides } from './slides';
 import { theme } from './styles';
 

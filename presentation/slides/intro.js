@@ -78,19 +78,15 @@ export const introSlides = [
       2017 Card by Phil
     </Link>
   </Slide>,
-  <Slide align="center center">
-    <Image width={640} src={images.someWords} />
+  <Slide bgColor="secondary" align="center center">
+    {/* <Image width={640} src={images.someWords} /> */}
+    <Image width={640} src="https://i.giphy.com/ErHMDXYMfGH96.gif" />
   </Slide>,
   <Slide align="center center">
-    <Heading textColor="tertiary" fit size={1} margin={s.b4}>
+    <Heading textColor="tertiary" size={6} margin={s.b3}>
       Reactive Animations
     </Heading>
-    <Text textColor="secondary">Events ➡️ Discrete Changes</Text>
-  </Slide>,
-  <Slide align="center center">
-    <Heading textColor="tertiary" size={5} margin={s.b4}>
-      Reactive Animations
-    </Heading>
+    <Text textColor="secondary" margin={s.b5}>Events ➡️ Discrete Changes</Text>
     <Layout style={{ alignItems: 'center' }}>
       <Fit><Image width={400} src={images.shadow} /></Fit>
       <Fit>

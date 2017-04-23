@@ -8,6 +8,7 @@ import {
 } from 'spectacle';
 import { Chillwave, CodePen } from '../components';
 import { WavesWithOffset } from '../../examples/waves-with-offset';
+import { Translation, Scaling, Rotation } from '../../examples/oscillation-demos';
 
 import images from '../images';
 import { f } from '../styles';
@@ -75,6 +76,44 @@ export const oscillationsSlides = [
       />
     </div>
   </Slide>,
+  <Slide>
+    <Heading textColor="tertiary" size={3}>Translation</Heading>
+    <Translation />
+    <CodePane
+      lang="javascript"
+      textSize={f[4]}
+      source="x = xStart + 300 * Math.sin(theta);"
+    />
+  </Slide>,
+  <Slide>
+    <Heading textColor="tertiary" size={3}>Scaling</Heading>
+    <Scaling />
+    <CodePane
+      lang="javascript"
+      textSize={f[4]}
+      source="scale = 1 + 1 * Math.sin(theta);"
+    />
+  </Slide>,
+  <Slide>
+    <Heading textColor="tertiary" size={3}>Rotation</Heading>
+    <Rotation />
+    <CodePane
+      lang="javascript"
+      textSize={f[4]}
+      source={`x = originX + radius * Math.cos(theta);
+y = originY + radius * Math.sin(theta);`}
+    />
+  </Slide>,
+  <Slide bgColor="#22222a" textColor="tertiary">
+    <CodePen
+      name="Rocket around the moon" user="Yakudoo" id="aOEeXB"
+      height={600}
+      bgColor="#22222a" color="#167370"
+    />
+  </Slide>,
+  <Slide bgColor="#141414">
+    <Image src={images.swimmer} width={400} />
+  </Slide>,
   <Slide bgColor="tertiary">
     <Heading fit textColor="primary">Sine Waves with Offsets</Heading>
     <WavesWithOffset />
@@ -85,31 +124,10 @@ export const oscillationsSlides = [
       🍴 of Johan Karlsson's CodePen
     </Link>
   </Slide>,
-  <Slide bgColor="#2d2d2d">
-    <CodePane
-      lang="javascript"
-      source={`
-        // translation
-        x = xStart + 2 * sin(θ);
-
-        // scaling
-        width = widthStart + 5 * sin(θ);
-
-        // rotation
-        x = originX + radius * cos(θ);
-        y = originY + radius * sin(θ);
-
-        // Example: [Rocket around the moon](http://codepen.io/Yakudoo/pen/aOEeXB)
-      `}
-    />
-  </Slide>,
-  <Slide bgColor="#141414">
-    <Image src={images.swimmer} width={400} />
-  </Slide>,
-  <Slide bgColor="pink">
-    <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
-  </Slide>,
-  <Slide bgColor="pink">
-    <Heading fit textColor="red">~~Explain swimmer~~</Heading>
-  </Slide>,
+  // <Slide bgColor="pink">
+  //   <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
+  // </Slide>,
+  // <Slide bgColor="pink">
+  //   <Heading fit textColor="red">~~Explain swimmer~~</Heading>
+  // </Slide>,
 ];

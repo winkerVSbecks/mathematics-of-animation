@@ -43,6 +43,7 @@
     }
   },
   "globals": {
+    "requestAnimationFrame": true,
     "document": true,
     "describe": true,
     "expect": true,

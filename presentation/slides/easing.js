@@ -2,22 +2,15 @@ import React from 'react';
 import {
   CodePane,
   Heading,
-  Image,
-  Fit,
-  Fill,
-  Layout,
   Link,
-  ListItem,
-  List,
-  Quote,
   Slide,
-  Text,
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
-import { CodePen, Embed, Easings } from '../components';
+import { Easings, BezierCurve } from '../components';
+import { CustomEasing } from '../../examples/custom-easing';
+import { Bounce } from '../../examples/bounce';
 
-import images from '../images';
-import { f, s } from '../styles';
+import { f, s, lh } from '../styles';
 
 export const easingSlides = [
   <Slide bgColor="pink">
@@ -26,66 +19,86 @@ export const easingSlides = [
     </Heading>
     <Easings w={600} />
   </Slide>,
-  <Slide>
-    <Heading size={6} textColor="secondary">Penner’s Equations</Heading>
-    <CodePane
-      textSize="1.6rem"
-      lang="javascript"
-      source={`/**
- * @t: Current time/position of the tween
- *     This can be seconds or frames, steps, seconds, ms,
- *     whatever – as long as the unit is the same
- *     as is used for the total time.
- * @b: Beginning value of the property.
- * @c: Change between the beginning and destination value
- *     of the property.
- * @d: Total time of the tween.
- */
-function noEasing(t, b, c, d) {
-  return c * t / d + b;
+  <Slide bgColor="secondary">
+    <Heading size={6} lineHeight={lh.title} textColor="primary">
+      An easing function drives the relationship between time and the animation's progress.
+    </Heading>
+  </Slide>,
+  <CodeSlide
+    transition={['scale']}
+    textSize={f[5]}
+    lang="js"
+    code={`function noEasing(currentTime, startValue, delta, duration) {
+  return delta * currentTime / duration + startValue;
 }`}
-    />
-    <Link
-      textColor="seondary" textSize={f[6]}
-      href="http://upshots.org/actionscript/jsas-understanding-easing"
-      style={{ display: 'block' }}
-    >
-      Understanding Easing (Explaining Penner’s equations)
-    </Link>
+    ranges={[{
+      loc: [0, 3],
+      title: (
+        <span>Penner’s Equations<br /><span className="white f2 ttu tracked">robertpenner.com/easing</span></span>
+      ),
+    }, {
+      loc: [0, 1],
+      title: 'Current Time',
+      note: 'In seconds or frames or whatever – as long you use the same unit as the total time.',
+    }, {
+      loc: [0, 1],
+      title: 'Start Value',
+      note: 'The start value of the property you are animating.',
+    }, {
+      loc: [0, 1],
+      title: 'Delta',
+      note: 'The change between the start and end value.',
+    }, {
+      loc: [0, 1],
+      title: 'Duration',
+      note: 'The total duration of the tween/animation/transition',
+    }, {
+      loc: [1, 2],
+      title: 'Transform',
+      note: 'start_value + delta * [some_multiplier]',
+    }]}
+  />,
+  <Slide bgColor="pink">
+    <Heading margin={s.b3} size={6} textColor="tertiary">
+      Bezier Curves
+    </Heading>
+    <BezierCurve w={600} />
   </Slide>,
   <Slide>
-    <Text>The time variable goes from 0 to 1 and g adjusts the amount of easing.</Text>
+    <Heading size={6} textColor="tertiary">
+      Custom Easing
+    </Heading>
     <CodePane
-      textSize="1.6rem"
+      textSize="1.25rem"
       lang="javascript"
-      source={`let x = 300 * ease(time, g);
+      source={`function transform(t) {
+  const g = 6;
 
-function ease(p, g){
-  if (p < 0.5) {
-    return 0.5 * Math.pow(2 * p, g);
-  } else {
-    return 1 - 0.5 * Math.pow(2 * (1 - p), g);
+  if (t < 0.5) {
+    return 0.5 * Math.pow(2 * t, g)
   }
-}`}
-    />
-  </Slide>,
-  <Slide>
-    <Heading size={6} textColor="secondary">Lerping</Heading>
-    <CodePane
-      textSize="1.6rem"
-      lang="javascript"
-      source={`function lerp(start, end) {
-  const dx = end.x - start.x;
-  const dy = end.y - start.y;
+  return 1 - (0.5 * Math.pow(2 * (1 - t), g));
+}
 
-  return {
-    x: start.x + dx * 0.1,
-    y: start.y + dy * 0.1,
-  };
+function ease(currentTime, startValue, delta, duration) {
+  const t = currentTime / duration;
+  return startValue + (transform(t) * delta);
 }`}
     />
+    <CustomEasing />
   </Slide>,
   <Slide>
-    <Heading size={5}>~~Lerping demo~~</Heading>
+    <Heading size={6} textColor="tertiary">Bounce</Heading>
+    <CodePane
+      textSize="1.25rem"
+      lang="javascript"
+      source={`function ease(currentTime, startValue, delta, duration) {
+  const t = currentTime / duration;
+  const step = Math.sin(-13.0 * (t + 1.0) * (Math.PI / 2)) * (2 ** (-10 * t));
+
+  return startValue + (delta * (1 + step));
+}`}
+    />
+    <Bounce />
   </Slide>,
 ];

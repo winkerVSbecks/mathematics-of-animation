@@ -1,16 +1,10 @@
 import React from 'react';
 import {
+  Appear,
   BlockQuote,
-  Cite,
-  CodePane,
   Heading,
   Image,
-  Fit,
-  Fill,
-  Layout,
   Link,
-  ListItem,
-  List,
   Quote,
   Slide,
   Text,
@@ -19,8 +13,10 @@ import CodeSlide from 'spectacle-code-slide';
 
 import images from '../images';
 import { f, s } from '../styles';
-import { Embed, CodePen } from '../components';
+import { Embed } from '../components';
 import { SplashExample } from '../../examples/splash';
+import { PolygonParameterization } from '../../examples/polygon-parameterization';
+import { HexAPortal } from '../../examples/hex-a-portal';
 
 export const parameterizationSlides = [
   <Slide bgColor="pink" textColor="tertiary">
@@ -29,10 +25,36 @@ export const parameterizationSlides = [
     <Image height="6rem" margin="0" src={images.slider} />
     <Heading>Parameterization</Heading>
   </Slide>,
+  <Slide bgColor="secondary">
+    <Heading size={4} textColor="pink" textAlign="left" margin={s.b4}>
+      Parameterization
+    </Heading>
+    <BlockQuote margin={s.b5}>
+      <Quote textSize={f[3]} style={{ lineHeight: 1.5 }}>
+        Defining the parameters or variables necessary to generate a geometric object.
+      </Quote>
+    </BlockQuote>
+    <Text textColor="primary" textAlign="left">
+      Coordinates of each vertex ➡️ Shape
+    </Text>
+  </Slide>,
+  <Slide bgColor="#fefef2">
+    <Heading size={6} textColor="secondary" margin="0">
+      angle = 360 / <span className="bb b--green bw3">number of sides</span>
+    </Heading>
+    <div style={{ backgroundImage: `url(${images.octagon})`, height: 500 }} className="contain bg-center">
+      <Appear>
+        <div>
+          <div
+            className="dib ba b--red bw2 br-100 absolute"
+            style={{ top: '48.5%', left: '52%', width: 40, height: 40 }}
+          />
+        </div>
+      </Appear>
+    </div>
+  </Slide>,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>~~insert codePen that explains parameterization of regular polygons~~</Text>
-    <Text>parameterization could be 5 points but, we can make it easier
-    use number sides + radius</Text>
+    <PolygonParameterization />
   </Slide>,
   <CodeSlide
     transition={['scale']}
@@ -51,24 +73,24 @@ export const parameterizationSlides = [
       { loc: [16, 19] },
     ]}
   />,
+  <Slide bgColor="#000">
+    <HexAPortal />
+  </Slide>,
   <Slide bgColor="primary" textColor="secondary">
-    <Text>~~insert demo of polygon generator~~</Text>
-  </Slide>,
-  <Slide bgColor="#000">
-    <CodePen
-      height={600}
-      name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
+    <Image
+      className="br2 db shadow-5"
+      width={400}
+      src={images.gems}
     />
+    <Link
+      textSize={f[6]}
+      textColor="secondary"
+      href="http://varun.ca"
+    >
+      Rarities 2.0 by Rogie 👑
+    </Link>
   </Slide>,
-  <Slide bgColor="#000">
-    <Text textColor="white">
-      ~~insert my Hex-a-Portal demo here~~
-    </Text>
-    <CodePen
-      name="Hex-a-Portal (RGB)" user="chrisgannon" id="yOYMMP" bgColor="#000" color="#fff"
-    />
-  </Slide>,
-  <Slide className="contain" bgColor="primary">
+  <Slide bgColor="#fdfef6">
     <Image src={images.gemsExplain} width="100%" />
   </Slide>,
   <Slide bgColor="#FE664D" textColor="secondary">
@@ -78,10 +100,12 @@ export const parameterizationSlides = [
     />
   </Slide>,
   <Slide bgColor="secondary">
-    <Heading size={6} textColor="primary">Generate Patterns</Heading>
+    <Heading size={5} textColor="primary">
+      Use polar coordinates for locations to generate patterns
+    </Heading>
     <SplashExample />
   </Slide>,
-  <Slide className="contain" bgColor="primary">
+  <Slide bgColor="#fefff7">
     <Image src={images.splashExplain} width="75%" />
   </Slide>,
 ];
