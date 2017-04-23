@@ -1,5 +1,9 @@
 import React, { Component } from 'react';
 
+let timerTranslation;
+let timerScaling;
+let timerRotation;
+
 export class Translation extends Component {
   constructor(props) {
     super(props);
@@ -13,10 +17,13 @@ export class Translation extends Component {
       this.setState({ x: Math.sin(theta) * 300 });
     };
 
-    (function animloop() {
-      requestAnimationFrame(animloop);
-      draw();
-    }());
+    timerTranslation = setInterval(() => {
+      requestAnimationFrame(draw);
+    }, 17);
+  }
+
+  componentWillUnmount() {
+    clearInterval(timerTranslation);
   }
 
   render() {
@@ -45,10 +52,13 @@ export class Scaling extends Component {
       this.setState({ scale: Math.sin(theta) * 1 });
     };
 
-    (function animloop() {
-      requestAnimationFrame(animloop);
-      draw();
-    }());
+    timerScaling = setInterval(() => {
+      requestAnimationFrame(draw);
+    }, 17);
+  }
+
+  componentWillUnmount() {
+    clearInterval(timerScaling);
   }
 
   render() {
@@ -82,10 +92,13 @@ export class Rotation extends Component {
       });
     };
 
-    (function animloop() {
-      requestAnimationFrame(animloop);
-      draw();
-    }());
+    timerRotation = setInterval(() => {
+      requestAnimationFrame(draw);
+    }, 17);
+  }
+
+  componentWillUnmount() {
+    clearInterval(timerRotation);
   }
 
   render() {

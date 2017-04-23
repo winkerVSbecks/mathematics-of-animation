@@ -127,7 +127,7 @@ y = originY + radius * Math.sin(theta);`}
   // <Slide bgColor="pink">
   //   <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
   // </Slide>,
-  <Slide bgColor="pink">
-    <Heading fit textColor="red">~~Explain swimmer~~</Heading>
-  </Slide>,
+  // <Slide bgColor="pink">
+  //   <Heading fit textColor="red">~~Explain swimmer~~</Heading>
+  // </Slide>,
 ];
