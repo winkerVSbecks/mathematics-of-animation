@@ -60,7 +60,7 @@ export const parameterizationSlides = [
     transition={['scale']}
     textSize={f[4]}
     lang="js"
-    code={require('raw-loader!../code/polygon.js')}
+    code={require('!raw-loader!../code/polygon.js')}
     ranges={[
       { loc: [0, 0], title: 'Polygon Generator' },
       { loc: [0, 1], note: 'Number of sides & radius (to control the size)' },
