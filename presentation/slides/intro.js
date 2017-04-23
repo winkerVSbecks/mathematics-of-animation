@@ -82,6 +82,9 @@ export const introSlides = [
     {/* <Image width={640} src={images.someWords} /> */}
     <Image width={640} src="https://i.giphy.com/ErHMDXYMfGH96.gif" />
   </Slide>,
+  <Slide bgColor="pink" align="center center">
+    <Heading textColor="red">✨Math✨</Heading>
+  </Slide>,
   <Slide align="center center">
     <Heading textColor="tertiary" size={6} margin={s.b3}>
       Reactive Animations
