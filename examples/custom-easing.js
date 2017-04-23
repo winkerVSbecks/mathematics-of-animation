@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+let timerId;
+
 function transform(t) {
   const g = 6;
 
@@ -38,10 +40,13 @@ export class CustomEasing extends Component {
       this.setState({ x: ease(time, 32, 700, 2) });
     };
 
-    (function animloop() {
-      requestAnimationFrame(animloop);
-      draw();
-    }());
+    timerId = setInterval(() => {
+      requestAnimationFrame(draw);
+    }, 17);
+  }
+
+  componentWillUnmount() {
+    clearInterval(timerId);
   }
 
   render() {

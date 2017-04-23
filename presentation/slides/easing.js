@@ -34,7 +34,7 @@ export const easingSlides = [
     ranges={[{
       loc: [0, 3],
       title: (
-        <span>Penner’s Equations<br /><a className="white" href="http://robertpenner.com/easing">robertpenner.com/easing</a></span>
+        <span>Penner’s Equations<br /><span className="white f2 ttu tracked">robertpenner.com/easing</span></span>
       ),
     }, {
       loc: [0, 1],
@@ -86,16 +86,6 @@ function ease(currentTime, startValue, delta, duration) {
 }`}
     />
     <CustomEasing />
-  </Slide>,
-  <Slide>
-    <Heading size={6} textColor="secondary">Custom Easing with Animation Libraries</Heading>
-    <CodePane
-      textSize="1.6rem"
-      lang="javascript"
-      source={`anime.easings['myCustomEasingName'] = function(t) {
-  return Math.pow(Math.sin(t * 3), 3);
-}`}
-    />
   </Slide>,
   <Slide>
     <Heading size={6} textColor="tertiary">Bounce</Heading>

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 
+let timerId;
+
 function ease(currentTime, startValue, delta, duration) {
   const t = currentTime / duration;
   const step = Math.sin(-13.0 * (t + 1.0) * (Math.PI / 2)) * (2.0 ** (-10.0 * t));
@@ -48,10 +50,13 @@ export class Bounce extends Component {
       this.setState({ x: ease(time, 32, 500, 1) });
     };
 
-    (function animloop() {
-      requestAnimationFrame(animloop);
-      draw();
-    }());
+    timerId = setInterval(() => {
+      requestAnimationFrame(draw);
+    }, 17);
+  }
+
+  componentWillUnmount() {
+    clearInterval(timerId);
   }
 
   render() {
