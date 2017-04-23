@@ -5,7 +5,7 @@ import {
   Slide,
 } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
-import { Easings, BezierCurve } from '../components';
+import { Easings, BezierCurve, CodePen } from '../components';
 import { CustomEasing } from '../../examples/custom-easing';
 import { Bounce } from '../../examples/bounce';
 
@@ -99,5 +99,12 @@ function ease(currentTime, startValue, delta, duration) {
 }`}
     />
     <Bounce />
+  </Slide>,
+  <Slide bgColor="#361D48">
+    <CodePen
+      height={600}
+      name="The Core" user="winkerVSbecks" id="lkqGo"
+      bgColor="#361D48" color="#FC3D5B"
+    />
   </Slide>,
 ];
