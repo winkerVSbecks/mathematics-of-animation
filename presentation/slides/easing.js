@@ -63,16 +63,16 @@ export const easingSlides = [
     </Heading>
     <BezierCurve w={600} />
   </Slide>,
-  <Slide>
-    <Heading size={6} textColor="tertiary">
+  <Slide padding="0">
+    <Heading size={6} textColor="tertiary" margin={s.b3}>
       Custom Easing
     </Heading>
     <CodePane
       textSize="1.25rem"
       lang="javascript"
-      source={`function transform(t) {
+      source={`// From: http://patakk.tumblr.com/post/88602945835/heres-a-simple-function-you-can-use-for-easing
+function transform(t) {
   const g = 6;
-
   if (t < 0.5) {
     return 0.5 * Math.pow(2 * t, g)
   }
@@ -87,11 +87,12 @@ function ease(currentTime, startValue, delta, duration) {
     <CustomEasing />
   </Slide>,
   <Slide>
-    <Heading size={6} textColor="tertiary">Bounce</Heading>
+    <Heading size={6} textColor="tertiary" margin={s.b4}>Bounce</Heading>
     <CodePane
       textSize="1.25rem"
       lang="javascript"
-      source={`function ease(currentTime, startValue, delta, duration) {
+      source={`// From: https://github.com/mattdesl/eases/blob/4eb8bc4c7ea4ed98b075c899cb5867461de4330a/elastic-out.js
+function ease(currentTime, startValue, delta, duration) {
   const t = currentTime / duration;
   const step = Math.sin(-13.0 * (t + 1.0) * (Math.PI / 2)) * (2 ** (-10 * t));
 
