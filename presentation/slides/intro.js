@@ -19,41 +19,41 @@ export const introSlides = [
       Mathematics<br />of Animation
     </Heading>
   </Slide>,
-  <Slide>
-    <Layout style={{ alignItems: 'center' }}>
-      <Fit>
-        <Image
-          margin="0" style={{ display: 'block' }}
-          width={240} src={images.winkervsbecks}
-        />
-      </Fit>
-      <Fill>
-        <Heading size={2} textColor="tertiary" textAlign="left">
-          Varun Vachhar
-        </Heading>
-        <Text
-          className="fw6"
-          textColor="secondary" textSize={f[4]} textAlign="left"
-        >
-          Developer at Rangle.io
-        </Text>
-        <Text
-          className="fw6"
-          textColor="gray" textSize={f[4]} textAlign="left"
-        >
-          @winkerVSbecks
-        </Text>
-        <Text
-          className="fw6"
-          textSize={f[4]} textAlign="left"
-        >
-          <Link textColor="gray" href="http://varun.ca">
-            varun.ca
-          </Link>
-        </Text>
-      </Fill>
-    </Layout>
-  </Slide>,
+  // <Slide>
+  //   <Layout style={{ alignItems: 'center' }}>
+  //     <Fit>
+  //       <Image
+  //         margin="0" style={{ display: 'block' }}
+  //         width={240} src={images.winkervsbecks}
+  //       />
+  //     </Fit>
+  //     <Fill>
+  //       <Heading size={2} textColor="tertiary" textAlign="left">
+  //         Varun Vachhar
+  //       </Heading>
+  //       <Text
+  //         className="fw6"
+  //         textColor="secondary" textSize={f[4]} textAlign="left"
+  //       >
+  //         Developer at Rangle.io
+  //       </Text>
+  //       <Text
+  //         className="fw6"
+  //         textColor="gray" textSize={f[4]} textAlign="left"
+  //       >
+  //         @winkerVSbecks
+  //       </Text>
+  //       <Text
+  //         className="fw6"
+  //         textSize={f[4]} textAlign="left"
+  //       >
+  //         <Link textColor="gray" href="http://varun.ca">
+  //           varun.ca
+  //         </Link>
+  //       </Text>
+  //     </Fill>
+  //   </Layout>
+  // </Slide>,
   <Slide align="center center" bgColor="pink">
     <Heading textColor="secondary" size={4} className="flex items-center justify-center">
       <Image width="1em" margin={s.r3} src={images.codepen} />CodePen
