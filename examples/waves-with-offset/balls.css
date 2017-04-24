@@ -12,163 +12,163 @@
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - -30vmin);
+  left: calc(30% - -30vmin);
 }
 .ball:nth-child(2) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - -21.5vmin);
+  left: calc(30% - -21.5vmin);
 }
 .ball:nth-child(3) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - -13vmin);
+  left: calc(30% - -13vmin);
 }
 .ball:nth-child(4) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - -4.5vmin);
+  left: calc(30% - -4.5vmin);
 }
 .ball:nth-child(5) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - 4vmin);
+  left: calc(30% - 4vmin);
 }
 .ball:nth-child(6) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - 12.5vmin);
+  left: calc(30% - 12.5vmin);
 }
 .ball:nth-child(7) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - 21vmin);
+  left: calc(30% - 21vmin);
 }
 .ball:nth-child(8) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - 29.5vmin);
+  left: calc(30% - 29.5vmin);
 }
 .ball:nth-child(9) {
   width: 8vmin;
   height: 8vmin;
   background-color: #c3bbff;
-  left: calc(50% - 38vmin);
+  left: calc(30% - 38vmin);
 }
 .ball:nth-child(11) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - -31.25vmin);
+  left: calc(30% - -31.25vmin);
 }
 .ball:nth-child(12) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - -22.75vmin);
+  left: calc(30% - -22.75vmin);
 }
 .ball:nth-child(13) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - -14.25vmin);
+  left: calc(30% - -14.25vmin);
 }
 .ball:nth-child(14) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - -5.75vmin);
+  left: calc(30% - -5.75vmin);
 }
 .ball:nth-child(15) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - 2.75vmin);
+  left: calc(30% - 2.75vmin);
 }
 .ball:nth-child(16) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - 11.25vmin);
+  left: calc(30% - 11.25vmin);
 }
 .ball:nth-child(17) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - 19.75vmin);
+  left: calc(30% - 19.75vmin);
 }
 .ball:nth-child(18) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - 28.25vmin);
+  left: calc(30% - 28.25vmin);
 }
 .ball:nth-child(19) {
   width: 5.5vmin;
   height: 5.5vmin;
   background-color: #ff485e;
-  left: calc(50% - 36.75vmin);
+  left: calc(30% - 36.75vmin);
 }
 .ball:nth-child(21) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - -32.5vmin);
+  left: calc(30% - -32.5vmin);
 }
 .ball:nth-child(22) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - -24vmin);
+  left: calc(30% - -24vmin);
 }
 .ball:nth-child(23) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - -15.5vmin);
+  left: calc(30% - -15.5vmin);
 }
 .ball:nth-child(24) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - -7vmin);
+  left: calc(30% - -7vmin);
 }
 .ball:nth-child(25) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - 1.5vmin);
+  left: calc(30% - 1.5vmin);
 }
 .ball:nth-child(26) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - 10vmin);
+  left: calc(30% - 10vmin);
 }
 .ball:nth-child(27) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - 18.5vmin);
+  left: calc(30% - 18.5vmin);
 }
 .ball:nth-child(28) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - 27vmin);
+  left: calc(30% - 27vmin);
 }
 .ball:nth-child(29) {
   width: 3vmin;
   height: 3vmin;
   background-color: #fee1e1;
-  left: calc(50% - 35.5vmin);
+  left: calc(30% - 35.5vmin);
 }
 
 .bounceY {

@@ -124,7 +124,7 @@ y = originY + distance * Math.sin(theta);`}
       Swimmer by Dave Whyte
     </Link>
   </Slide>,
-  <Slide bgColor="tertiary">
+  <Slide bgColor="tertiary" padding="0">
     <Heading fit textColor="primary">Sine Waves with Offsets</Heading>
     <WavesWithOffset />
     <Link
