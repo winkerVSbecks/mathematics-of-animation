@@ -36,15 +36,15 @@ export const solvingTrianglesSlides = [
       <Heading size={3} textColor="tertiary">Finding missing sides and angles</Heading>
     </div>
   </Slide>,
-  <Slide bgColor="mauve" margin="0">
+  <Slide bgColor="mauve">
     <Heading size={4} textColor="tertiary">Right Angled Triangle</Heading>
     <RightAngledTriangle />
   </Slide>,
-  <Slide bgColor="mauve" margin="0">
+  <Slide bgColor="mauve">
     <Heading size={4} textColor="tertiary">Solving a Right Angled Triangle</Heading>
     <SolvingRightAngledTriangle />
   </Slide>,
-  <Slide bgColor="mauve" margin="0">
+  <Slide bgColor="mauve">
     <Heading size={4} className="fw8" margin={s.b4}>SOH CAH TOA!</Heading>
     <Layout>
       <Fill>
