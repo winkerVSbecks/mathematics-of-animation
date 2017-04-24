@@ -1,7 +1,7 @@
 import React from 'react';
 import { Appear } from 'spectacle';
 
-export const SolvingTriangles = () => (
+export const RightAngledTriangle = () => (
   <svg viewBox="0 0 140 120" height="600" fill="none">
     <Appear>
       <g><rect x="77.5" y="77.5" width="10" height="10" fill="#ff485e" stroke="none" /></g>

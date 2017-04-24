@@ -46,6 +46,14 @@ export const outroSlides = [
             varun.ca
           </Text>
         </Link>
+        <Text
+          margin={s.t5}
+          textColor="secondary"
+          textAlign="left" textSize={f[5]}
+          className="fw6"
+        >
+          Slides: <Link href="https://goo.gl/w6FYTC" textColor="tertiary">goo.gl/w6FYTC</Link>
+        </Text>
       </Fill>
     </Layout>
   </Slide>,

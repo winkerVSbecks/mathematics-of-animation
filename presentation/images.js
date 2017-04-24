@@ -42,6 +42,7 @@ const images = {
   polar: require('../assets/polar.jpg'),
   cartesian: require('../assets/cartesian.jpg'),
   measure: require('../assets/measure.jpg'),
+  sorcery: require('../assets/sorcery.gif'),
 };
 
 preloader(images);

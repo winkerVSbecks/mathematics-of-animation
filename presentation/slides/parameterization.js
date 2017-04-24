@@ -40,7 +40,7 @@ export const parameterizationSlides = [
   </Slide>,
   <Slide bgColor="#fefef2">
     <Heading size={6} textColor="secondary" margin="0">
-      angle = 360 / <span className="bb b--green bw3">number of sides</span>
+      angle = 360° / <span className="bb b--green bw3">number of sides</span>
     </Heading>
     <div style={{ backgroundImage: `url(${images.octagon})`, height: 500 }} className="contain bg-center">
       <Appear>

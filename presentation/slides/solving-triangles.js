@@ -13,7 +13,8 @@ import { CodePen } from '../components';
 
 import images from '../images';
 import { s, f } from '../styles';
-import { SolvingTriangles } from '../../examples/solving-triangle';
+import { RightAngledTriangle } from '../../examples/right-angled-triangle';
+import { SolvingRightAngledTriangle } from '../../examples/solving-right-angled-triangle';
 import { Trigonometry } from '../../examples/trigonometry';
 
 const triangle = 'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fee1e1"><path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" /></svg>\')';
@@ -36,20 +37,24 @@ export const solvingTrianglesSlides = [
     </div>
   </Slide>,
   <Slide bgColor="mauve" margin="0">
-    <Heading size={4} textColor="tertiary">Solving a Right Angle Triangle</Heading>
-    <SolvingTriangles />
+    <Heading size={4} textColor="tertiary">Right Angled Triangle</Heading>
+    <RightAngledTriangle />
   </Slide>,
   <Slide bgColor="mauve" margin="0">
+    <Heading size={4} textColor="tertiary">Solving a Right Angled Triangle</Heading>
+    <SolvingRightAngledTriangle />
+  </Slide>,
+  <Slide bgColor="mauve" margin="0">
+    <Heading size={4} className="fw8" margin={s.b4}>SOH CAH TOA!</Heading>
     <Layout>
       <Fill>
         <Trigonometry />
       </Fill>
       <Fill>
-        <Text margin={s.b3}>sin(θ) = O / H</Text>
-        <Text margin={s.b3}>cos(θ) = A / H</Text>
-        <Text margin={s.b4}>tan(θ) = O / A</Text>
-        <Appear><Heading size={4} textColor="red">SOH CAH TOA!</Heading></Appear>
-        <Appear><Image width="100%" src="https://i.giphy.com/DGiZfWmc0HWms.gif" /></Appear>
+        <Text margin={s.v4}>sin(θ) = O / H</Text>
+        <Text margin={s.b4}>cos(θ) = A / H</Text>
+        <Text margin={s.b5}>tan(θ) = O / A</Text>
+        <Appear><Text>θ = arcTan(O / A)</Text></Appear>
       </Fill>
     </Layout>
   </Slide>,
