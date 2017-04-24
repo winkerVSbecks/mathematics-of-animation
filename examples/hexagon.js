@@ -134,7 +134,7 @@ export class Hexagon extends Component {
             d={side(o, r, -315, -360)}
           />
         </g>
-        <rect x="0" y="76" fill="#fff" width="100" height="16" />
+        <rect x="0" y="76" fill="#fff" width="100" height="12" />
         <text
           ref={(coords) => { this.coordsX = coords; }}
           textAnchor="middle"
