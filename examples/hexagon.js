@@ -58,15 +58,17 @@ export class Hexagon extends Component {
     anime({
       targets: angle,
       value: [
-        { value: 45 }, { value: 90 }, { value: 135 }, { value: 180 },
-        { value: 225 }, { value: 270 }, { value: 315 }, { value: 360 },
+        { value: 1 }, { value: 2 }, { value: 3 }, { value: 4 },
+        { value: 5 }, { value: 6 }, { value: 7 }, { value: 8 },
+        // { value: 45 }, { value: 90 }, { value: 135 }, { value: 180 },
+        // { value: 225 }, { value: 270 }, { value: 315 }, { value: 360 },
       ],
       easing: 'easeInOutQuad',
       duration: 12000,
       delay: 1500,
       loop: true,
       update: () => {
-        const t = parseInt(angle.value, 10);
+        const t = parseInt(angle.value, 10) * 45;
         if (this.angle) {
           this.angle.textContent = `θ = ${t}°`;
         }
