@@ -1,6 +1,7 @@
 import React from 'react';
 import {
   CodePane,
+  Code,
   Heading,
   Slide,
 } from 'spectacle';
@@ -22,6 +23,10 @@ export const easingSlides = [
     <Heading size={6} lineHeight={lh.title} textColor="primary">
       An easing function drives the relationship between time and the animation's progress.
     </Heading>
+  </Slide>,
+  <Slide bgColor="pink" padding="0">
+    <Code>cubic-bezier(h1x, h1y, h2x, h2y)</Code>
+    <BezierCurve w={500} />
   </Slide>,
   <CodeSlide
     transition={['scale']}
@@ -57,12 +62,6 @@ export const easingSlides = [
       note: 'start_value + delta * [some_multiplier]',
     }]}
   />,
-  <Slide bgColor="pink">
-    <Heading margin={s.b3} size={6} textColor="tertiary">
-      Bezier Curves
-    </Heading>
-    <BezierCurve w={600} />
-  </Slide>,
   <Slide padding="0">
     <Heading size={6} textColor="tertiary" margin={s.b3}>
       Custom Easing
