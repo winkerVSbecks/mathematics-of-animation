@@ -68,7 +68,10 @@ export const parameterizationSlides = [
       { loc: [2, 3], note: 'Generate a placeholder list for the vertices of the polygon' },
       { loc: [12, 15], note: '[0, 1, 2, ... count]' },
       { loc: [4, 10], note: 'Loop over this list to generate each vertex' },
-      { loc: [5, 9], note: 'x = radius * cos(theta) & y = radius * sin(theta)' },
+      {
+        loc: [5, 9],
+        note: (<span>x = radius * cos(theta)<br />y = radius * sin(theta)</span>),
+      },
       { loc: [6, 7], note: 'angle needs to be in radians' },
       { loc: [16, 19] },
     ]}

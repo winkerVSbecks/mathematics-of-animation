@@ -1,10 +1,10 @@
 function polygon(sideCount, radius) {
-  const theta = 360 / sideCount;
+  const angle = 360 / sideCount;
   const vertexIndices = range(sideCount);
 
   return vertexIndices.map((index) => {
     return {
-      theta: degreesToRadians(theta * index),
+      theta: degreesToRadians(angle * index),
       r: radius,
     };
   });
