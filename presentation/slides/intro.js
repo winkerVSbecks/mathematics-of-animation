@@ -55,6 +55,9 @@ export const introSlides = [
     </Layout>
   </Slide>,
   <Slide align="center center" bgColor="pink">
+    <Heading textColor="secondary" size={4} className="flex items-center justify-center">
+      <Image width="1em" margin={s.r3} src={images.codepen} />CodePen
+    </Heading>
     <Image width={400} src={images.card} />
     <Link
       textColor="tertiary" textSize={f[6]}

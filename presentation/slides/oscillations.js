@@ -86,7 +86,7 @@ export const oscillationsSlides = [
 x = Math.sin(theta);
 
 function animationLoop() {
-  theta = theta + 0.15;
+  theta = theta + 0.15;  // radians
 }`}
     />
   </Slide>,
@@ -116,6 +116,13 @@ function animationLoop() {
       textSize={f[4]}
       source={`x = originX + distance * Math.cos(theta);
 y = originY + distance * Math.sin(theta);`}
+    />
+  </Slide>,
+  <Slide bgColor="#22222a" textColor="tertiary">
+    <CodePen
+      name="Rocket around the moon" user="Yakudoo" id="aOEeXB"
+      height={600}
+      bgColor="#22222a" color="#167370"
     />
   </Slide>,
   <Slide bgColor="#141414">

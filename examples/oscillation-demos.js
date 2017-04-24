@@ -139,9 +139,14 @@ export class Rotation extends Component {
     return (
       <div className="h5 flex items-center justify-center  ba b--black-80">
         <div
-          style={{ transform: `translate3d(${x}px, ${y}px, 0)`, backgroundColor: '#ff485e' }}
+          style={{
+            transformOrigin: 'center center',
+            transform: `translate3d(${x}px, ${y}px, 0)`,
+            backgroundColor: '#ff485e',
+          }}
           className="br-100 w2 h2"
         />
+        <div className="w1 h1 br-100 bg-black absolute" />
       </div>
     );
   }

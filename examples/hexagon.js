@@ -60,8 +60,6 @@ export class Hexagon extends Component {
       value: [
         { value: 1 }, { value: 2 }, { value: 3 }, { value: 4 },
         { value: 5 }, { value: 6 }, { value: 7 }, { value: 8 },
-        // { value: 45 }, { value: 90 }, { value: 135 }, { value: 180 },
-        // { value: 225 }, { value: 270 }, { value: 315 }, { value: 360 },
       ],
       easing: 'easeInOutQuad',
       duration: 12000,
@@ -72,8 +70,9 @@ export class Hexagon extends Component {
         if (this.angle) {
           this.angle.textContent = `θ = ${t}°`;
         }
-        if (this.coords) {
-          this.coords.textContent = `(x, y) = (r * cos(${t}°), r * sin(${t}°))`;
+        if (this.coordsX && this.coordsY) {
+          this.coordsX.textContent = `x = r * cos(${t}°)`;
+          this.coordsY.textContent = `y = r * sin(${t}°)`;
         }
       },
     });
@@ -135,11 +134,19 @@ export class Hexagon extends Component {
             d={side(o, r, -315, -360)}
           />
         </g>
-        <rect x="0" y="76" fill="#fff" width="100" height="6" />
+        <rect x="0" y="76" fill="#fff" width="100" height="12" />
         <text
-          ref={(coords) => { this.coords = coords; }}
+          ref={(coords) => { this.coordsX = coords; }}
           textAnchor="middle"
           x="50" y="80"
+          fontFamily="monospace"
+          fontSize="4"
+          fill="#8a90a4"
+        />
+        <text
+          ref={(coords) => { this.coordsY = coords; }}
+          textAnchor="middle"
+          x="50" y="86"
           fontFamily="monospace"
           fontSize="4"
           fill="#8a90a4"

@@ -30,7 +30,7 @@ export const easingSlides = [
   </Slide>,
   <CodeSlide
     transition={['scale']}
-    textSize={f[5]}
+    textSize="1.6rem"
     lang="js"
     code={`function easing(currentTime, startValue, delta, duration) {
   return delta * currentTime / duration + startValue;
@@ -99,6 +99,16 @@ function ease(currentTime, startValue, delta, duration) {
 }`}
     />
     <Bounce />
+  </Slide>,
+  <Slide>
+    <Heading size={6} textColor="tertiary" margin={s.b4}>Defining Custom Functions</Heading>
+    <CodePane
+      textSize="1.5rem"
+      lang="javascript"
+      source={`anime.easings['myCustomEasingName'] = function(t) {
+  return Math.pow(Math.sin(t * 3), 3);
+}`}
+    />
   </Slide>,
   <Slide bgColor="#361D48">
     <CodePen

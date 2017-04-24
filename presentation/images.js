@@ -43,6 +43,7 @@ const images = {
   cartesian: require('../assets/cartesian.jpg'),
   measure: require('../assets/measure.jpg'),
   sorcery: require('../assets/sorcery.gif'),
+  codepen: require('../assets/codepen.png'),
 };
 
 preloader(images);
