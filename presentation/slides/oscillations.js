@@ -86,7 +86,7 @@ export const oscillationsSlides = [
 x = Math.sin(theta);
 
 function animationLoop() {
-  theta = theta + 0.15;
+  theta = theta + 0.15;  // radians
 }`}
     />
   </Slide>,

@@ -33,7 +33,7 @@ export const solvingTrianglesSlides = [
       className="bg-center flex items-center justify-center"
       style={{ backgroundImage: `${triangle}`, height: 600, backgroundSize: '50%' }}
     >
-      <Heading size={3} textColor="tertiary">Finding missing sides and angles</Heading>
+      <Heading size={3} textColor="tertiary">finding missing sides or angles</Heading>
     </div>
   </Slide>,
   <Slide bgColor="mauve">

@@ -11,5 +11,6 @@ export const Trigonometry = () => (
     <text x="100" y="55" fontSize="12" fill="#2e2f30" textAnchor="middle" fontWeight="600">O</text>
     <text x="50" y="105" fontSize="12" fill="#2e2f30" textAnchor="middle" fontWeight="600">A</text>
     <text x="40" y="45" fontSize="12" fill="#2e2f30" textAnchor="middle" fontWeight="600">H</text>
+    <text x="32" y="84" fontSize="12" fill="#2e2f30">θ</text>
   </svg>
 );
