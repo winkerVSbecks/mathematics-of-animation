@@ -5,8 +5,6 @@ import {
   Fill,
   Layout,
   Link,
-  ListItem,
-  List,
   Image,
   Slide,
   Text,
@@ -56,18 +54,6 @@ export const introSlides = [
       </Fill>
     </Layout>
   </Slide>,
-  <Slide bgColor="primary" textColor="secondary">
-    <Heading size={5} textColor="tertiary" textAlign="left">
-      Overview
-    </Heading>
-    <List>
-      <ListItem margin={s.b3}>Coordinate Geometry</ListItem>
-      <ListItem margin={s.b3}>Generating 2D shapes & Parameterization</ListItem>
-      <ListItem margin={s.b3}>Oscillations: moving with trigonometry</ListItem>
-      <ListItem margin={s.b3}>Solving triangles</ListItem>
-      <ListItem margin={s.b3}>Curves, easings and springs</ListItem>
-    </List>
-  </Slide>,
   <Slide align="center center" bgColor="pink">
     <Image width={400} src={images.card} />
     <Link
@@ -78,9 +64,8 @@ export const introSlides = [
       2017 Card by Phil
     </Link>
   </Slide>,
-  <Slide bgColor="secondary" align="center center">
-    {/* <Image width={640} src={images.someWords} /> */}
-    <Image width={640} src="https://i.giphy.com/ErHMDXYMfGH96.gif" />
+  <Slide bgColor="#000" align="center center">
+    <Image height="600" src={images.sorcery} />
   </Slide>,
   <Slide bgColor="pink" align="center center">
     <Heading textColor="red">✨MATH✨</Heading>

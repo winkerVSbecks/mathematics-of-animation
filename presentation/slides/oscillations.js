@@ -104,13 +104,6 @@ export const oscillationsSlides = [
 y = originY + radius * Math.sin(theta);`}
     />
   </Slide>,
-  <Slide bgColor="#22222a" textColor="tertiary">
-    <CodePen
-      name="Rocket around the moon" user="Yakudoo" id="aOEeXB"
-      height={600}
-      bgColor="#22222a" color="#167370"
-    />
-  </Slide>,
   <Slide bgColor="#141414">
     <Image src={images.swimmer} width={400} />
   </Slide>,
@@ -124,10 +117,11 @@ y = originY + radius * Math.sin(theta);`}
       🍴 of Johan Karlsson's CodePen
     </Link>
   </Slide>,
-  // <Slide bgColor="pink">
-  //   <Heading fit textColor="red">Parameterization 💞 Oscillation</Heading>
-  // </Slide>,
-  // <Slide bgColor="pink">
-  //   <Heading fit textColor="red">~~Explain swimmer~~</Heading>
-  // </Slide>,
+  <Slide bgColor="#22222a" textColor="tertiary">
+    <CodePen
+      name="Rocket around the moon" user="Yakudoo" id="aOEeXB"
+      height={600}
+      bgColor="#22222a" color="#167370"
+    />
+  </Slide>,
 ];

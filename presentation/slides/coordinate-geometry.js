@@ -65,7 +65,7 @@ export const coordinateGeometrySlides = [
   </Slide>,
   <Slide bgColor="#fefef2">
     <Heading size={6} textColor="secondary" margin="0">
-      angle = 360 / number of sides
+      angle = 360° / number of sides
     </Heading>
     <Image src={images.octagon} width="100%" />
   </Slide>,
