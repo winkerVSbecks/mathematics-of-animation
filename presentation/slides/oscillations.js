@@ -8,10 +8,10 @@ import {
 } from 'spectacle';
 import { Chillwave, CodePen } from '../components';
 import { WavesWithOffset } from '../../examples/waves-with-offset';
-import { Translation, Scaling, Rotation } from '../../examples/oscillation-demos';
+import { Sine, Translation, Scaling, Rotation } from '../../examples/oscillation-demos';
 
 import images from '../images';
-import { f } from '../styles';
+import { s, f } from '../styles';
 
 export const oscillationsSlides = [
   <Slide bgColor="pink" textColor="tertiary">
@@ -77,7 +77,21 @@ export const oscillationsSlides = [
     </div>
   </Slide>,
   <Slide>
-    <Heading textColor="tertiary" size={3}>Translation</Heading>
+    <Heading textColor="tertiary" size={3}>Sine</Heading>
+    <Sine />
+    <CodePane
+      lang="javascript"
+      textSize={f[4]}
+      source={`let theta = 0;
+x = Math.sin(theta);
+
+function animationLoop() {
+  theta = theta + 0.15;
+}`}
+    />
+  </Slide>,
+  <Slide>
+    <Heading textColor="tertiary" size={3} margin={s.b4}>Translation</Heading>
     <Translation />
     <CodePane
       lang="javascript"
@@ -86,26 +100,29 @@ export const oscillationsSlides = [
     />
   </Slide>,
   <Slide>
-    <Heading textColor="tertiary" size={3}>Scaling</Heading>
+    <Heading textColor="tertiary" size={3} margin={s.b4}>Scaling</Heading>
     <Scaling />
     <CodePane
       lang="javascript"
       textSize={f[4]}
-      source="scale = 1 + 1 * Math.sin(theta);"
+      source="scale = scaleStart + 1 * Math.sin(theta);"
     />
   </Slide>,
   <Slide>
-    <Heading textColor="tertiary" size={3}>Rotation</Heading>
+    <Heading textColor="tertiary" size={3} margin={s.b4}>Rotation</Heading>
     <Rotation />
     <CodePane
       lang="javascript"
       textSize={f[4]}
-      source={`x = originX + radius * Math.cos(theta);
-y = originY + radius * Math.sin(theta);`}
+      source={`x = originX + distance * Math.cos(theta);
+y = originY + distance * Math.sin(theta);`}
     />
   </Slide>,
   <Slide bgColor="#141414">
-    <Image src={images.swimmer} width={400} />
+    <div><Image src={images.swimmer} width={400} /></div>
+    <Link textColor="primary" textSize={f[6]} href="https://dribbble.com/shots/3005711-Swimmer">
+      Swimmer by Dave Whyte
+    </Link>
   </Slide>,
   <Slide bgColor="tertiary">
     <Heading fit textColor="primary">Sine Waves with Offsets</Heading>

@@ -49,7 +49,7 @@ export const solvingTrianglesSlides = [
         <Text margin={s.b3}>cos(θ) = A / H</Text>
         <Text margin={s.b4}>tan(θ) = O / A</Text>
         <Appear><Heading size={4} textColor="red">SOH CAH TOA!</Heading></Appear>
-        <Appear><Image width="100%" src="https://i.giphy.com/DGiZfWmc0HWms.gif" /></Appear>
+        <Appear>tan(θ) = O / A</Appear>
       </Fill>
     </Layout>
   </Slide>,

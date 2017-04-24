@@ -1,9 +1,42 @@
 import React, { Component } from 'react';
 
+let timerSine;
 let timerTranslation;
 let timerScaling;
 let timerRotation;
 
+export class Sine extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { x: 0 };
+  }
+
+  componentDidMount() {
+    let theta = 0;
+    const draw = () => {
+      theta += 0.01;
+      this.setState({ x: Math.sin(theta) });
+    };
+
+    timerSine = setInterval(() => {
+      requestAnimationFrame(draw);
+    }, 17);
+  }
+
+  componentWillUnmount() {
+    clearInterval(timerSine);
+  }
+
+  render() {
+    return (
+      <div className="h4 flex items-center justify-center  ba b--black-80 code ttu tracked f1">
+        { this.state.x.toFixed(2) }
+      </div>
+    );
+  }
+}
+
+// eslint-disable-next-line
 export class Translation extends Component {
   constructor(props) {
     super(props);
