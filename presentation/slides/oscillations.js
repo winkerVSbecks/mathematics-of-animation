@@ -118,6 +118,13 @@ function animationLoop() {
 y = originY + distance * Math.sin(theta);`}
     />
   </Slide>,
+  <Slide bgColor="#22222a" textColor="tertiary">
+    <CodePen
+      name="Rocket around the moon" user="Yakudoo" id="aOEeXB"
+      height={600}
+      bgColor="#22222a" color="#167370"
+    />
+  </Slide>,
   <Slide bgColor="#141414">
     <div><Image src={images.swimmer} width={400} /></div>
     <Link textColor="primary" textSize={f[6]} href="https://dribbble.com/shots/3005711-Swimmer">
