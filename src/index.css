@@ -1,0 +1,168 @@
+#wave {
+  animation: moveTheWave 2400ms linear infinite;
+  stroke-dasharray: 0 16 102 16;
+}
+
+@keyframes moveTheWave {
+
+  0% {
+    stroke-dashoffset: 0;
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    stroke-dashoffset: -136;
+    transform: translate3d(-90px, 0, 0);
+  }
+
+}
+
+.input-range {
+  vertical-align: middle;
+  background-color: transparent;
+  padding-top: 8px;
+  padding-top: .5rem;
+  padding-bottom: 8px;
+  padding-bottom: .5rem;
+  color: inherit;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+.input-range::-webkit-slider-thumb {
+  position: relative;
+  width: 8px;
+  width: .5rem;
+  height: 20px;
+  height: 1.25rem;
+  cursor: pointer;
+  margin-top: -8px;
+  margin-top: -0.5rem;
+  border-radius: 3px;
+  background-color: currentcolor;
+  -webkit-appearance: none;
+}
+
+/* Touch screen friendly pseudo element */
+.input-range::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -8px;
+  top: -0.5rem;
+  left: -14px;
+  left: -0.875rem;
+  width: 36px;
+  width: 2.25rem;
+  height: 36px;
+  height: 2.25rem;
+  opacity: 0;
+}
+
+.input-range::-moz-range-thumb {
+  width: 8px;
+  width: .5rem;
+  height: 20px;
+  height: 1.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  border-color: transparent;
+  border-width: 0;
+  background-color: currentcolor;
+}
+
+.input-range::-webkit-slider-runnable-track {
+  height: 4px;
+  height: 0.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.input-range::-moz-range-track {
+  height: 4px;
+  height: 0.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(0, 0, 0, .25);
+}
+
+.input-range:focus {
+  outline: none;
+}
+
+
+
+.input-range-rv {
+  vertical-align: middle;
+  background-color: transparent;
+  padding-top: 8px;
+  padding-top: .5rem;
+  padding-bottom: 8px;
+  padding-bottom: .5rem;
+  color: inherit;
+  background-color: transparent;
+  -webkit-appearance: none;
+}
+
+.input-range-rv::-webkit-slider-thumb {
+  position: relative;
+  width: 8px;
+  width: .5rem;
+  height: 20px;
+  height: 1.25rem;
+  cursor: pointer;
+  margin-top: -8px;
+  margin-top: -0.5rem;
+  border-radius: 3px;
+  background-color: #fff;
+  -webkit-appearance: none;
+}
+
+/* Touch screen friendly pseudo element */
+.input-range-rv::-webkit-slider-thumb:before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: -8px;
+  top: -0.5rem;
+  left: -14px;
+  left: -0.875rem;
+  width: 36px;
+  width: 2.25rem;
+  height: 36px;
+  height: 2.25rem;
+  opacity: 0;
+}
+
+.input-range-rv::-moz-range-thumb {
+  width: 8px;
+  width: .5rem;
+  height: 20px;
+  height: 1.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  border-color: transparent;
+  border-width: 0;
+  background-color: #fff;
+}
+
+.input-range-rv::-webkit-slider-runnable-track {
+  height: 4px;
+  height: 0.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, .25);
+}
+
+.input-range-rv::-moz-range-track {
+  height: 4px;
+  height: 0.25rem;
+  cursor: pointer;
+  border-radius: 3px;
+  background-color: rgba(255, 255, 255, .25);
+}
+
+.input-range-rv:focus {
+  outline: none;
+}

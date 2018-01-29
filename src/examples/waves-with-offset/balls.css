@@ -1,0 +1,367 @@
+/**
+ * CSS from Johan Karlsson (DonKarlssonSan) CodePen
+ *  Bees and Bombs Recreation | SCSS
+ *  http://codepen.io/DonKarlssonSan/pen/QGzqaM?editors=1100
+ */
+.ball {
+  position: absolute;
+  border-radius: 50%;
+  transition: opacity ease-in-out 0.3s;
+}
+.ball:nth-child(1) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - -30vmin);
+}
+.ball:nth-child(2) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - -21.5vmin);
+}
+.ball:nth-child(3) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - -13vmin);
+}
+.ball:nth-child(4) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - -4.5vmin);
+}
+.ball:nth-child(5) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - 4vmin);
+}
+.ball:nth-child(6) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - 12.5vmin);
+}
+.ball:nth-child(7) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - 21vmin);
+}
+.ball:nth-child(8) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - 29.5vmin);
+}
+.ball:nth-child(9) {
+  width: 8vmin;
+  height: 8vmin;
+  background-color: #c3bbff;
+  left: calc(30% - 38vmin);
+}
+.ball:nth-child(11) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - -31.25vmin);
+}
+.ball:nth-child(12) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - -22.75vmin);
+}
+.ball:nth-child(13) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - -14.25vmin);
+}
+.ball:nth-child(14) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - -5.75vmin);
+}
+.ball:nth-child(15) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - 2.75vmin);
+}
+.ball:nth-child(16) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - 11.25vmin);
+}
+.ball:nth-child(17) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - 19.75vmin);
+}
+.ball:nth-child(18) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - 28.25vmin);
+}
+.ball:nth-child(19) {
+  width: 5.5vmin;
+  height: 5.5vmin;
+  background-color: #ff485e;
+  left: calc(30% - 36.75vmin);
+}
+.ball:nth-child(21) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - -32.5vmin);
+}
+.ball:nth-child(22) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - -24vmin);
+}
+.ball:nth-child(23) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - -15.5vmin);
+}
+.ball:nth-child(24) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - -7vmin);
+}
+.ball:nth-child(25) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - 1.5vmin);
+}
+.ball:nth-child(26) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - 10vmin);
+}
+.ball:nth-child(27) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - 18.5vmin);
+}
+.ball:nth-child(28) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - 27vmin);
+}
+.ball:nth-child(29) {
+  width: 3vmin;
+  height: 3vmin;
+  background-color: #fee1e1;
+  left: calc(30% - 35.5vmin);
+}
+
+.bounceY {
+  -webkit-animation: bounceY;
+          animation: bounceY;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+.bounceY:nth-child(1) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -200ms;
+          animation-delay: -200ms;
+}
+.bounceY:nth-child(2) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -400ms;
+          animation-delay: -400ms;
+}
+.bounceY:nth-child(3) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -600ms;
+          animation-delay: -600ms;
+}
+.bounceY:nth-child(4) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -800ms;
+          animation-delay: -800ms;
+}
+.bounceY:nth-child(5) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -1000ms;
+          animation-delay: -1000ms;
+}
+.bounceY:nth-child(6) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -1200ms;
+          animation-delay: -1200ms;
+}
+.bounceY:nth-child(7) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -1400ms;
+          animation-delay: -1400ms;
+}
+.bounceY:nth-child(8) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -1600ms;
+          animation-delay: -1600ms;
+}
+.bounceY:nth-child(9) {
+  -webkit-animation-duration: 1000ms;
+          animation-duration: 1000ms;
+  -webkit-animation-delay: -1800ms;
+          animation-delay: -1800ms;
+}
+.bounceY:nth-child(11) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -100ms;
+          animation-delay: -100ms;
+}
+.bounceY:nth-child(12) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -200ms;
+          animation-delay: -200ms;
+}
+.bounceY:nth-child(13) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -300ms;
+          animation-delay: -300ms;
+}
+.bounceY:nth-child(14) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -400ms;
+          animation-delay: -400ms;
+}
+.bounceY:nth-child(15) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -500ms;
+          animation-delay: -500ms;
+}
+.bounceY:nth-child(16) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -600ms;
+          animation-delay: -600ms;
+}
+.bounceY:nth-child(17) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -700ms;
+          animation-delay: -700ms;
+}
+.bounceY:nth-child(18) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -800ms;
+          animation-delay: -800ms;
+}
+.bounceY:nth-child(19) {
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+  -webkit-animation-delay: -900ms;
+          animation-delay: -900ms;
+}
+.bounceY:nth-child(21) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -66.66667ms;
+          animation-delay: -66.66667ms;
+}
+.bounceY:nth-child(22) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -133.33333ms;
+          animation-delay: -133.33333ms;
+}
+.bounceY:nth-child(23) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -200ms;
+          animation-delay: -200ms;
+}
+.bounceY:nth-child(24) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -266.66667ms;
+          animation-delay: -266.66667ms;
+}
+.bounceY:nth-child(25) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -333.33333ms;
+          animation-delay: -333.33333ms;
+}
+.bounceY:nth-child(26) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -400ms;
+          animation-delay: -400ms;
+}
+.bounceY:nth-child(27) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -466.66667ms;
+          animation-delay: -466.66667ms;
+}
+.bounceY:nth-child(28) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -533.33333ms;
+          animation-delay: -533.33333ms;
+}
+.bounceY:nth-child(29) {
+  -webkit-animation-duration: 600ms;
+          animation-duration: 600ms;
+  -webkit-animation-delay: -600ms;
+          animation-delay: -600ms;
+}
+
+@-webkit-keyframes bounceY {
+  from {
+    -webkit-transform: translateY(calc(260px - 5vmin));
+            transform: translateY(calc(260px - 5vmin));
+  }
+  to {
+    -webkit-transform: translateY(calc(140px - 5vmin));
+            transform: translateY(calc(140px - 5vmin));
+  }
+}
+
+@keyframes bounceY {
+  from {
+    -webkit-transform: translateY(calc(260px - 5vmin));
+            transform: translateY(calc(260px - 5vmin));
+  }
+  to {
+    -webkit-transform: translateY(calc(140px - 5vmin));
+            transform: translateY(calc(140px - 5vmin));
+  }
+}

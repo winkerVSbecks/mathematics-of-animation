@@ -1,0 +1,26 @@
+{
+  "name": "mathematics-of-animation",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "animejs": "^2.2.0",
+    "gsap": "^1.20.3",
+    "prop-types": "^15.6.0",
+    "ramda": "^0.25.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "recompose": "^0.26.0",
+    "spectacle-code-slide": "^0.5.2",
+    "spectacle-scripts": "2.0.0",
+    "tachyons": "^4.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "raw-loader": "^0.5.1"
+  }
+}
