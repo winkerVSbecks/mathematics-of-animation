@@ -1,19 +1,18 @@
 import React from 'react';
-import { Appear, Image, Link, Slide, SlideSet } from 'spectacle';
+import { Image, Link, Slide, SlideSet } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 
+import { CodePen, Heading, Embed } from 'components';
 import {
-  CodePen,
+  Hexagon,
   CartesianCoordSystem,
   PolarCoordinateSystem,
   PolarPolygon,
-  Heading,
-  Embed,
-} from 'components';
-import { Hexagon } from 'examples/hexagon';
-import { SplashExample } from 'examples/splash';
-import { PolygonParameterization } from 'examples/polygon-parameterization';
-import { HexAPortal } from 'examples/hex-a-portal';
+  PolarPattern,
+  SplashExample,
+  PolygonParameterization,
+  HexAPortal,
+} from 'examples';
 import images from '../images';
 
 export const coordinateGeometrySlides = (
@@ -80,80 +79,48 @@ export const coordinateGeometrySlides = (
     <Slide bgColor="#000">
       <HexAPortal />
     </Slide>
-    <Slide bgColor="primary" textColor="secondary">
-      <Image className="br2 db shadow-5" width={400} src={images.gems} />
-      <Link textColor="secondary" href="http://varun.ca">
-        Rarities 2.0 by Rogie 👑
-      </Link>
-    </Slide>
-    <Slide bgColor="#fdfef6">
-      <Image src={images.gemsExplain} width="100%" />
-    </Slide>
     <Slide bgColor="#FE664D" textColor="secondary">
-      <Embed url="//winkervsbecks.github.io/gems" fallback={images.gemsDemo} />
+      <Embed
+        url="//winkervsbecks.github.io/gems"
+        fallback={images.gemsDemo}
+        bgColor="#FE664D"
+      />
     </Slide>
-    <Slide bgColor="secondary">
-      <Heading size={5} textColor="primary">
+    <Slide bgColor="primary">
+      <Heading size={5}>
         Use polar coordinates for locations to generate patterns
       </Heading>
       <SplashExample />
     </Slide>
-    <Slide bgColor="#fefff7">
-      <Image src={images.splashExplain} width="75%" />
+    <Slide bgColor="secondary">
+      <PolarPattern className="db mb4 mw6 center" />
+    </Slide>
+    <Slide bgColor="secondary">
+      <Heading textColor="primary" f={2}>
+        Bees & Bombs Polar Patterns
+      </Heading>
+      <div className="mh0 flex flex-wrap">
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.bubbles2}
+        />
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.spiraldots}
+        />
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.spins}
+        />
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src={images.spiralbig}
+        />
+      </div>
     </Slide>
   </SlideSet>
 );
-
-// <Slide>
-// <CodePen
-//   height={600}
-//   name="Hexagon with Polar Coordinates"
-//   user="winkerVSbecks"
-//   id="ZpGzdz"
-//   bgColor="#fff"
-//   color="#89C2EF"
-// />
-// </Slide>
-// <Slide bgColor="#FEFEFE">
-// <Image width={400} src={images.manypolygons} />
-// </Slide>
-// <Slide bgColor="primary" textColor="secondary">
-// <Image className="br2 db shadow-5" width={400} src={images.gems} />
-// <Link textColor="secondary" href="http://varun.ca">
-//   Rarities 2.0 by Rogie 👑
-// </Link>
-// </Slide>
-// <Slide bgColor="pink">
-// <svg
-//   xmlns="http://www.w3.org/2000/svg"
-//   height="600px"
-//   viewBox="-2 0 28 24"
-// >
-//   <path
-//     fill="#2e2f30"
-//     d="M18,2 L24,12.5 L18,23 H6 L0,12.5 L6,2Z"
-//     stroke="none"
-//   />
-//   <g fill="none" stroke="#ff485e" strokeWidth="0.25">
-//     <Appear>
-//       <circle cx="24" cy="12.5" r="0.5" />
-//     </Appear>
-//     <Appear>
-//       <circle cx="18" cy="2" r="0.5" />
-//     </Appear>
-//     <Appear>
-//       <circle cx="6" cy="2" r="0.5" />
-//     </Appear>
-//     <Appear>
-//       <g>
-//         <circle cx="6" cy="23" r="0.5" />
-//         <circle cx="0" cy="12.5" r="0.5" />
-//         <circle cx="18" cy="23" r="0.5" />
-//       </g>
-//     </Appear>
-//   </g>
-// </svg>
-// </Slide>
-// <Slide bgColor="#fefef2">
-// <Image src={images.polar} width="100%" />
-// </Slide>

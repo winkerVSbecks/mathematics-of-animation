@@ -1,9 +1,5 @@
-import React from 'react';
-import { SlideSet } from 'spectacle';
-import { oscillationsSlides } from './oscillations';
-import { solvingTrianglesSlides } from './solving-triangles';
-
-const slides = [...oscillationsSlides, ...solvingTrianglesSlides];
+// import { oscillationsSlides } from './oscillations';
+// import { solvingTrianglesSlides } from './solving-triangles';
 
 export { introSlides } from './intro';
 export { coordinateGeometrySlides } from './coordinate-geometry';

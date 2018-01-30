@@ -2,83 +2,43 @@ import React, { Component } from 'react';
 import anime from 'animejs';
 import { Text } from 'components';
 
-const rad = angle => Math.PI * angle / 180;
-
-const point = (o, r, theta) => [
-  o[0] + r * Math.cos(theta),
-  o[1] + r * Math.sin(theta),
-];
-
-const side = (o, r, theta1, theta2) =>
-  `M${point(o, r, rad(theta1))} L ${point(o, r, rad(theta2))}`;
-
-const angleIndicator = (o, r, theta) =>
-  `${point(o, 0, 0)} ${point(o, r, rad(theta))}`;
-
 export class Hexagon extends Component {
+  angles = [];
+
   componentDidMount() {
     anime({
-      targets: [this.side1, this.side2, this.side3, this.side4, this.side5],
+      targets: this.sides.querySelectorAll('path'),
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuad',
       duration: 1500,
       delay: (el, i) => (i + 1) * 1500,
       loop: true,
     });
-    // anime({
-    //   targets: this.line,
-    //   points: [
-    //     {
-    //       value: angleIndicator([50, 50], 45, -45),
-    //     },
-    //     {
-    //       value: angleIndicator([50, 50], 45, -90),
-    //     },
-    //     {
-    //       value: angleIndicator([50, 50], 45, -135),
-    //     },
-    //     {
-    //       value: angleIndicator([50, 50], 45, -180),
-    //     },
-    //     {
-    //       value: angleIndicator([50, 50], 45, -225),
-    //     },
-    //     {
-    //       value: angleIndicator([50, 50], 45, -270),
-    //     },
-    //     {
-    //       value: angleIndicator([50, 50], 45, -315),
-    //     },
-    //     {
-    //       value: angleIndicator([50, 50], 45, -360),
-    //     },
-    //   ],
-    //   easing: 'easeInOutQuad',
-    //   duration: 12000,
-    //   delay: 1500,
-    //   loop: true,
-    // });
     const angle = { value: 0 };
+
+    const step = (idx, delay = 1500) => ({
+      value: idx * 72 + '°',
+      duration: 1,
+      delay,
+      easing: 'linear',
+    });
+
     anime({
-      targets: angle,
-      value: [
-        { value: 1 },
-        { value: 2 },
-        { value: 3 },
-        { value: 4 },
-        { value: 5 },
-      ],
+      targets: this.angles,
+      textContent: [step(0), step(1), step(2), step(3), step(4), step(5)],
       easing: 'easeInOutQuad',
       duration: 1500 * 5,
-      delay: 1500,
       loop: true,
-      update: () => {
-        const t = parseInt(angle.value, 10) * 72;
+    });
 
-        if (this.angle) {
-          this.angle.innerHTML = `angle = ${t}°<br/> x = r * cos(${t}°)<br/> y = r * sin(${t}°)`;
-        }
-      },
+    anime({
+      targets: this.vertices.querySelectorAll('circle'),
+      easing: 'easeOutElastic',
+      r: [0, 2],
+      elasticity: 800,
+      duration: 1500,
+      delay: (el, i) => (i + 1) * 1500,
+      loop: true,
     });
   }
 
@@ -89,7 +49,7 @@ export class Hexagon extends Component {
 
     return (
       <div className={`flex items-center w-100 ${className}`} {...props}>
-        <svg viewBox="0 0 198 192" className="db flex-auto mr5">
+        <svg viewBox="0 0 198 192" className="db flex-auto mr6">
           <defs>
             <path
               id="a"
@@ -325,51 +285,66 @@ export class Hexagon extends Component {
           </g>
           <g
             stroke="#000"
-            fill="white"
             strokeWidth="2"
             strokeLinecap="round"
             transform="translate(52.5 45) rotate(18, 47.175, 44.87)"
+            ref={sides => {
+              this.sides = sides;
+            }}
           >
-            <path
-              ref={side1 => {
-                this.side1 = side1;
-              }}
-              d="M94.90899999999999,34.938 L47.732,0.661"
-            />
-            <path
-              ref={side2 => {
-                this.side2 = side2;
-              }}
-              d="M47.732,0.661 L0.555,34.938"
-            />
-            <path
-              ref={side3 => {
-                this.side3 = side3;
-              }}
-              d="M0.555 34.938 L18.575,90.401"
-            />
-            <path
-              ref={side4 => {
-                this.side4 = side4;
-              }}
-              d="M18.575, 90.401 L76.889 90.401"
-            />
-            <path
-              ref={side5 => {
-                this.side5 = side5;
-              }}
-              d="M76.889 90.401 L94.90899999999999,34.938"
-            />
+            <path d="M94.90899999999999,34.938 L47.732,0.661" />
+            <path d="M47.732,0.661 L0.555,34.938" />
+            <path d="M0.555 34.938 L18.575,90.401" />
+            <path d="M18.575, 90.401 L76.889 90.401" />
+            <path d="M76.889 90.401 L94.90899999999999,34.938" />
+          </g>
+          <g
+            stroke="#000"
+            strokeWidth={2}
+            fill="#fff"
+            transform="translate(52.5 45) rotate(18, 47.175, 44.87)"
+            ref={vertices => {
+              this.vertices = vertices;
+            }}
+          >
+            <circle cx="94.90899999999999" cy="34.938" r="3" />
+            <circle cx="47.732" cy="0.661" r="3" />
+            <circle cx="0.555" cy="34.938" r="3" />
+            <circle cx="18.575" cy="90.401" r="3" />
+            <circle cx="76.889" cy="90.401" r="3" />
           </g>
         </svg>
-        <Text textColor="primary" f={4} className="w5">
-          <span
-            className="lh-copy"
-            ref={angle => {
-              this.angle = angle;
-            }}
-          />
-        </Text>
+        <div style={{ width: '10rem' }}>
+          <Text textColor="primary" f={4} lh="copy">
+            angle ={' '}
+            <span
+              className="dib"
+              ref={a => {
+                this.angles.push(a);
+              }}
+            >
+              0°
+            </span>
+            <br />
+            <br />
+            x = cos(<span
+              className="dib"
+              ref={a => {
+                this.angles.push(a);
+              }}
+            >
+              0°
+            </span>)<br />
+            y = sin(<span
+              className="dib"
+              ref={a => {
+                this.angles.push(a);
+              }}
+            >
+              0°
+            </span>)
+          </Text>
+        </div>
       </div>
     );
   }

@@ -20,7 +20,9 @@ const lineHeights = {
 
 export default mapProps(({ f, lh, fw, ...props }) => ({
   textSize: typeScale[f],
-  lineHeight: lineHeights[lh] ? lineHeights[lh] : lh,
-  style: { fontWeight: fw * 100 },
+  style: {
+    fontWeight: fw * 100,
+    lineHeight: lineHeights[lh] ? lineHeights[lh] : lh,
+  },
   ...props,
 }));

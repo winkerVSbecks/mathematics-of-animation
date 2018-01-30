@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideSet, Fit, Fill, Layout, Link, Image, Slide } from 'spectacle';
+import { SlideSet, Slide } from 'spectacle';
 
 import images from '../images';
 import { Heading, Text } from 'components';

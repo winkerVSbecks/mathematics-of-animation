@@ -1,4 +1,3 @@
-import React from 'react';
 import { Heading as SHeading } from 'spectacle';
 import { compose, defaultProps } from 'recompose';
 import withType from './with-type';
