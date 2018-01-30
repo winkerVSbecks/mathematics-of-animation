@@ -64,9 +64,7 @@ export const solvingTrianglesSlides = (
           <Text>sin(θ) = O / H</Text>
           <Text>cos(θ) = A / H</Text>
           <Text>tan(θ) = O / A</Text>
-          <Appear>
-            <Text>θ = arcTan(O / A)</Text>
-          </Appear>
+          <Text>θ = arcTan(O / A)</Text>
         </Fill>
       </Layout>
     </Slide>
