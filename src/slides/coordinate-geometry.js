@@ -48,7 +48,7 @@ export const coordinateGeometrySlides = (
       </Heading>
     </Slide>
     <Slide bgColor="secondary">
-      <Hexagon className="db mb4 mw6 center" />
+      <Hexagon className="center" />
     </Slide>
     <CodeSlide
       transition={['scale']}

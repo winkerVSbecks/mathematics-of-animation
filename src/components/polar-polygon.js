@@ -220,7 +220,7 @@ export const PolarPolygon = props => (
           330°
         </tspan>
       </text>
-      <g transform="translate(51 45)">
+      <g transform="translate(52.5 45) rotate(18, 47.175, 44.87)">
         <use xlinkHref="#a" fill="#fff" stroke="#333" />
         <mask id="b" fill="#fff">
           <use xlinkHref="#a" />

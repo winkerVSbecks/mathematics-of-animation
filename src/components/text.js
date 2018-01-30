@@ -8,6 +8,7 @@ export const Text = compose(
     lh: 'copy',
     textColor: 'secondary',
     textAlign: 'left',
+    fw: 5,
   }),
   withType,
 )(SText);
