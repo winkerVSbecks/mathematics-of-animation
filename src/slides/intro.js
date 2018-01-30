@@ -8,22 +8,22 @@ export const introSlides = (
   <SlideSet>
     <Slide margin="0">
       <div>
-        <Heading f="headline" margin="0 0 8rem 0">
-          Mathematics<br />of Animation
+        <Heading f="headline" margin="0 0 10rem 0">
+          Mathematics of<br />Animation 📐✏️
         </Heading>
 
-        <Text f={1} className="fw8">
+        <Text f={1} margin="0 0 1rem 0" fw={7}>
           Varun Vachhar
         </Text>
-        <Text f={2} className="fw8">
-          Tech Lead at League Vachhar
+        <Text f={2} margin="0 0 1rem 0">
+          Tech Lead at League Inc.
         </Text>
-        <Text f={2} className="fw8">
+        <Text f={2} margin="0" italic>
           @winkerVSbecks
         </Text>
       </div>
     </Slide>
-    <Slide>___INTRO___</Slide>
+    <Slide>__INTRO__</Slide>
   </SlideSet>
 );
 

@@ -5,3 +5,6 @@ export { Chillwave } from './chillwave';
 export { Embed } from './embed';
 export { Easings } from './easings';
 export { BezierCurve } from './bezier-curve';
+export * from './cartesian-coords';
+export * from './polar-coords';
+export * from './polar-polygon';

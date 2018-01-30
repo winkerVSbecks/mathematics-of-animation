@@ -7,8 +7,8 @@ import {
   introSlides,
   coordinateGeometrySlides,
   parameterizationSlides,
+  outroSlides,
 } from './slides';
-import './prism.css';
 
 const theme = createTheme(
   {
@@ -42,7 +42,7 @@ export default class Presentation extends React.Component {
       >
         {introSlides}
         {coordinateGeometrySlides}
-        {parameterizationSlides}
+        {outroSlides}
       </Deck>
     );
   }
