@@ -9,6 +9,7 @@ import {
   introSlides,
   coordinateGeometrySlides,
   oscillationsSlides,
+  solvingTrianglesSlides,
   outroSlides,
 } from './slides';
 
@@ -26,6 +27,7 @@ export default class Presentation extends React.Component {
         {introSlides}
         {coordinateGeometrySlides}
         {oscillationsSlides}
+        {solvingTrianglesSlides}
         {outroSlides}
       </Deck>
     );
