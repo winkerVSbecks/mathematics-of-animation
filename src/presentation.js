@@ -1,35 +1,18 @@
 import React from 'react';
 import { Deck } from 'spectacle';
 import 'tachyons';
+import './index.css';
 
 import createTheme from 'spectacle/lib/themes/default';
+import { colours, fontFamilies } from 'theme';
 import {
   introSlides,
   coordinateGeometrySlides,
-  parameterizationSlides,
+  oscillationsSlides,
   outroSlides,
 } from './slides';
 
-const theme = createTheme(
-  {
-    primary: '#212121',
-    secondary: 'white',
-    tertiary: 'white',
-    quartenary: '#F2F2F2',
-    gold: '#FFC400',
-    yellow: '#FFEB3B',
-    pink: '#FF7EAB',
-    blue: '#36C3FF',
-    darkBlue: '#2175FF',
-    darkPink: '#D83C74',
-    green: '#00E676',
-    lightGreen: '#B2FF59',
-  },
-  {
-    primary: "'Roboto Mono', Consolas, monaco, monospace",
-    secondary: "'Roboto Mono', Consolas, monaco, monospace",
-  },
-);
+const theme = createTheme(colours, fontFamilies);
 
 export default class Presentation extends React.Component {
   render() {
@@ -42,6 +25,7 @@ export default class Presentation extends React.Component {
       >
         {introSlides}
         {coordinateGeometrySlides}
+        {oscillationsSlides}
         {outroSlides}
       </Deck>
     );

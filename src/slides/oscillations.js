@@ -1,179 +1,157 @@
 import React from 'react';
-import { CodePane, Heading, Image, Link, Slide } from 'spectacle';
-import { Chillwave, CodePen } from '../components';
-import { WavesWithOffset } from 'examples/waves-with-offset';
+import { Image, Link, Slide, SlideSet } from 'spectacle';
+import { Chillwave, CodePane, CodePen, Heading, Text } from 'components';
 import {
+  WavesWithOffset,
   Sine,
   Translation,
   Scaling,
   Rotation,
-} from 'examples/oscillation-demos';
+  sineSnippets,
+  translationSnippets,
+  scalingSnippets,
+  rotationSnippets,
+} from 'examples';
 
 import images from '../images';
-import { s, f } from '../styles';
 
-export const oscillationsSlides = [
-  <Slide bgColor="pink" textColor="tertiary">
-    <Chillwave clr="#5a5ae6" size={3} />
-    <Heading textColor="tertiary">
-      Waves &<br />Oscillations
-    </Heading>
-  </Slide>,
-  <Slide bgColor="#440015" textColor="tertiary">
-    <CodePen
-      name="Sine"
-      user="HunorMarton"
-      id="ggQGqQ"
-      themeId="29124"
-      bgColor="#440015"
-      color="#ff0050"
-    />
-  </Slide>,
-  <Slide>
-    <Image
-      className="br2 db shadow-5"
-      alt="hexagon"
-      src={images.hexagon}
-      width={500}
-    />
-  </Slide>,
-  <Slide bgColor="mauve">
-    <Heading textColor="tertiary" fit>
-      Dave Whyte
-    </Heading>
-    <Heading textColor="red" fit>
-      BEES & BOMBS
-    </Heading>
-  </Slide>,
-  <Slide className="flex">
-    <div className="flex-auto flex flex-wrap" style={{ height: 600 }}>
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.cubewave}) center` }}
+export const oscillationsSlides = (
+  <SlideSet>
+    <Slide>
+      <Chillwave clr="#fff" size={3} />
+      <Heading textAlign="center">
+        Waves &<br />Oscillations
+      </Heading>
+    </Slide>
+    <Slide bgColor="#440015" textColor="tertiary">
+      <CodePen
+        name="Sine"
+        user="HunorMarton"
+        id="ggQGqQ"
+        themeId="29124"
+        bgColor="#440015"
+        color="#ff0050"
       />
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.boxes}) center` }}
+    </Slide>
+    <Slide>
+      <Image
+        className="br2 db shadow-5"
+        alt="hexagon"
+        src={images.hexagon}
+        width={500}
       />
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.out}) center` }}
+    </Slide>
+    <Slide>
+      <Heading textColor="secondary" textAlign="center" margin="0" fit>
+        Dave Whyte
+      </Heading>
+      <Heading textColor="gold" textAlign="center" margin="0" fw={9} fit>
+        BEES & BOMBS
+      </Heading>
+    </Slide>
+    <Slide className="flex">
+      <div className="flex-auto flex flex-wrap" style={{ height: 600 }}>
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.cubewave}) center` }}
+        />
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.boxes}) center` }}
+        />
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.out}) center` }}
+        />
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.waveD}) center` }}
+        />
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.bouncers}) center` }}
+        />
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.dotLineWave}) center` }}
+        />
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.blob}) center` }}
+        />
+        <div
+          className="w-25 cover"
+          style={{ background: `url(${images.weaves}) center` }}
+        />
+      </div>
+    </Slide>
+    <Slide>
+      <Heading textColor="tertiary" size={3}>
+        Sine
+      </Heading>
+      <Sine />
+      <CodePane source={sineSnippets} />
+    </Slide>
+    <Slide>
+      <Heading textColor="tertiary" size={3}>
+        Translation
+      </Heading>
+      <Translation />
+      <CodePane source={translationSnippets} />
+    </Slide>
+    <Slide>
+      <Heading textColor="tertiary" size={3}>
+        Scaling
+      </Heading>
+      <Scaling />
+      <CodePane source={scalingSnippets} />
+    </Slide>
+    <Slide>
+      <Heading textColor="tertiary" size={3}>
+        Rotation
+      </Heading>
+      <Rotation />
+      <CodePane source={rotationSnippets} />
+    </Slide>
+    <Slide bgColor="#22222a" textColor="tertiary">
+      <CodePen
+        name="Rocket around the moon"
+        user="Yakudoo"
+        id="aOEeXB"
+        height={600}
+        bgColor="#22222a"
+        color="#167370"
       />
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.waveD}) center` }}
+    </Slide>
+    <Slide bgColor="#141414">
+      <div>
+        <Image src={images.swimmer} width={400} />
+      </div>
+      <Link
+        textColor="secondary"
+        href="https://dribbble.com/shots/3005711-Swimmer"
+      >
+        Swimmer by Dave Whyte
+      </Link>
+    </Slide>
+    <Slide margin="0" padding="0">
+      <Heading f={1}>Sine Waves with Offsets</Heading>
+      <WavesWithOffset />
+      <Link href="http://codepen.io/DonKarlssonSan/pen/QGzqaM?editors=1100">
+        <Text f={5} textAlign="center" fw={4}>
+          🍴 of Johan Karlsson's CodePen
+        </Text>
+      </Link>
+    </Slide>
+    <Slide bgColor="#22222a" textColor="tertiary">
+      <CodePen
+        name="Rocket around the moon"
+        user="Yakudoo"
+        id="aOEeXB"
+        height={600}
+        bgColor="#22222a"
+        color="#167370"
       />
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.bouncers}) center` }}
-      />
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.dotLineWave}) center` }}
-      />
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.blob}) center` }}
-      />
-      <div
-        className="w-25 cover"
-        style={{ background: `url(${images.weaves}) center` }}
-      />
-    </div>
-  </Slide>,
-  <Slide>
-    <Heading textColor="tertiary" size={3}>
-      Sine
-    </Heading>
-    <Sine />
-    <CodePane
-      lang="javascript"
-      textSize={f[4]}
-      source={`let theta = 0;
-x = Math.sin(theta);
-
-function animationLoop() {
-  theta = theta + 0.15;  // radians
-}`}
-    />
-  </Slide>,
-  <Slide>
-    <Heading textColor="tertiary" size={3} margin={s.b4}>
-      Translation
-    </Heading>
-    <Translation />
-    <CodePane
-      lang="javascript"
-      textSize={f[4]}
-      source="x = xStart + 300 * Math.sin(theta);"
-    />
-  </Slide>,
-  <Slide>
-    <Heading textColor="tertiary" size={3} margin={s.b4}>
-      Scaling
-    </Heading>
-    <Scaling />
-    <CodePane
-      lang="javascript"
-      textSize={f[4]}
-      source="scale = scaleStart + 1 * Math.sin(theta);"
-    />
-  </Slide>,
-  <Slide>
-    <Heading textColor="tertiary" size={3} margin={s.b4}>
-      Rotation
-    </Heading>
-    <Rotation />
-    <CodePane
-      lang="javascript"
-      textSize={f[4]}
-      source={`x = originX + distance * Math.cos(theta);
-y = originY + distance * Math.sin(theta);`}
-    />
-  </Slide>,
-  <Slide bgColor="#22222a" textColor="tertiary">
-    <CodePen
-      name="Rocket around the moon"
-      user="Yakudoo"
-      id="aOEeXB"
-      height={600}
-      bgColor="#22222a"
-      color="#167370"
-    />
-  </Slide>,
-  <Slide bgColor="#141414">
-    <div>
-      <Image src={images.swimmer} width={400} />
-    </div>
-    <Link
-      textColor="primary"
-      textSize={f[6]}
-      href="https://dribbble.com/shots/3005711-Swimmer"
-    >
-      Swimmer by Dave Whyte
-    </Link>
-  </Slide>,
-  <Slide bgColor="tertiary" padding="0">
-    <Heading fit textColor="primary">
-      Sine Waves with Offsets
-    </Heading>
-    <WavesWithOffset />
-    <Link
-      textColor="primary"
-      textSize={f[6]}
-      href="http://codepen.io/DonKarlssonSan/pen/QGzqaM?editors=1100"
-    >
-      🍴 of Johan Karlsson's CodePen
-    </Link>
-  </Slide>,
-  <Slide bgColor="#22222a" textColor="tertiary">
-    <CodePen
-      name="Rocket around the moon"
-      user="Yakudoo"
-      id="aOEeXB"
-      height={600}
-      bgColor="#22222a"
-      color="#167370"
-    />
-  </Slide>,
-];
+    </Slide>
+  </SlideSet>
+);

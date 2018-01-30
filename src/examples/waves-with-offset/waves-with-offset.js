@@ -28,8 +28,12 @@ export class WavesWithOffset extends Component {
     const styleLayer3 = c > 5 ? { opacity: 1 } : { opacity: 0 };
 
     return (
-      <div className="flex">
-        <div className="pointer flex-auto" style={{ height: 400 }} onClick={this.next}>
+      <div className="flex items-center mb4">
+        <div
+          className="pointer flex-auto"
+          style={{ height: 400 }}
+          onClick={this.next}
+        >
           <div className="ball bounceY" />
           <div style={styleTwo} className="ball bounceY" />
           <div style={styleThree} className="ball bounceY" />
@@ -61,17 +65,19 @@ export class WavesWithOffset extends Component {
           <div style={styleLayer3} className="ball bounceY" />
           <div style={styleLayer3} className="ball bounceY" />
         </div>
-        <ul className="list pl0 tl">
+        <ul className="list pl0 tl f3">
           <li className="mb3 white code">
-            theta1 = 0;<br />(theta1 += 0.1)
+            let angle1 = 0;<br />angle1 += 0.1
           </li>
           <li className="mb3 white code" style={styleTwo}>
-            theta2 = 0.4;<br />(theta2 += 0.1)
+            let angle2 = 0.4;<br />angle2 += 0.1
           </li>
           <li className="mb3 white code" style={styleThree}>
-            theta3 = 0.8;<br />(theta3 += 0.1)
+            let angle3 = 0.8;<br />angle3 += 0.1
           </li>
-          <li className="mb3 white code" style={styleFour}>...</li>
+          <li className="mb3 white code" style={styleFour}>
+            ...
+          </li>
         </ul>
       </div>
     );

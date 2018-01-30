@@ -28,13 +28,13 @@ export const coordinateGeometrySlides = (
     <Slide bgColor="secondary">
       <CartesianCoordSystem className="db mb4 mw6 center" />
       <Heading textColor="primary" f={2} textAlign="center">
-        Cartesian Coordinate System
+        Cartesian Coordinate System (x, y)
       </Heading>
     </Slide>
     <Slide bgColor="secondary">
       <PolarCoordinateSystem className="db mb4 mw6 center" />
       <Heading textColor="primary" f={2} textAlign="center">
-        Polar Coordinate System
+        Polar Coordinate System (r, θ)
       </Heading>
     </Slide>
     <Slide bgColor="secondary">

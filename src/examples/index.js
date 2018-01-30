@@ -12,3 +12,4 @@ export * from './solving-right-angled-triangle';
 export * from './splash';
 export * from './trigonometry';
 export * from './waves-with-offset';
+export * from './sine-snippets';
