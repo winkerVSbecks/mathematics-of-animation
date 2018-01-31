@@ -49,6 +49,7 @@ const images = {
   sorcery: require('assets/sorcery.gif'),
   codepen: require('assets/codepen.png'),
   topography: require('assets/topography.gif'),
+  paths: require('assets/paths.gif'),
 };
 
 preloader(images);

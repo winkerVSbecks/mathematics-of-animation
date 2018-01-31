@@ -37,6 +37,42 @@ export const coordinateGeometrySlides = (
         Polar Coordinate System (r, θ)
       </Heading>
     </Slide>
+    <Slide bgColor="primary">
+      <Heading size={5}>
+        Use polar coordinates for locations to generate patterns
+      </Heading>
+      <SplashExample />
+    </Slide>
+    <Slide bgColor="secondary">
+      <PolarPattern className="db mb4 mw6 center" />
+    </Slide>
+    <Slide bgColor="secondary">
+      <Heading textColor="primary" f={2}>
+        Bees & Bombs Polar Patterns
+      </Heading>
+      <div className="mh0 flex flex-wrap">
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.bubbles2}
+        />
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.spiraldots}
+        />
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.spins}
+        />
+        <img
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src={images.spiralbig}
+        />
+      </div>
+    </Slide>
     <Slide bgColor="secondary">
       <PolarPolygon className="db mb4 mw6 center" />
       <Heading textColor="primary" f={3}>
@@ -93,7 +129,7 @@ export const coordinateGeometrySlides = (
             className="br2 db shadow-5"
             margin="0 auto 2rem"
             width={500}
-            src="//cdn-images-1.medium.com/max/1600/1*uHGhUwxAvufuD_THa7sjAg.gif"
+            src={images.paths}
           />
           <Link href="https://medium.com/google-developers/playing-with-paths-3fbc679a6f77">
             <Text textColor="secondary" textAlign="center" fw={4} f={5}>
@@ -114,42 +150,6 @@ export const coordinateGeometrySlides = (
             </Text>
           </Link>
         </div>
-      </div>
-    </Slide>
-    <Slide bgColor="primary">
-      <Heading size={5}>
-        Use polar coordinates for locations to generate patterns
-      </Heading>
-      <SplashExample />
-    </Slide>
-    <Slide bgColor="secondary">
-      <PolarPattern className="db mb4 mw6 center" />
-    </Slide>
-    <Slide bgColor="secondary">
-      <Heading textColor="primary" f={2}>
-        Bees & Bombs Polar Patterns
-      </Heading>
-      <div className="mh0 flex flex-wrap">
-        <img
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mr3"
-          src={images.bubbles2}
-        />
-        <img
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mr3"
-          src={images.spiraldots}
-        />
-        <img
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mr3"
-          src={images.spins}
-        />
-        <img
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2"
-          src={images.spiralbig}
-        />
       </div>
     </Slide>
   </SlideSet>
