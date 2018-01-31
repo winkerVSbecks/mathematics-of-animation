@@ -21,24 +21,15 @@ export const solvingTrianglesSlides = (
           backgroundSize: '50%',
         }}
       >
-        <Heading textColor="tertiary">
+        <Heading textColor="purple" textAlign="center" fw={7} margin="0">
           SOLVING<br />TRIANGLES
         </Heading>
       </div>
     </Slide>
-    <Slide bgColor="mauve">
-      <div
-        className="bg-center flex items-center justify-center"
-        style={{
-          backgroundImage: `${triangle}`,
-          height: 600,
-          backgroundSize: '50%',
-        }}
-      >
-        <Heading size={3} textColor="tertiary">
-          finding missing sides or angles
-        </Heading>
-      </div>
+    <Slide>
+      <Heading fw={7} margin="0">
+        Find Missing 🕵🏽‍ <br />Sides Or Angles
+      </Heading>
     </Slide>
     <Slide bgColor="mauve">
       <Heading size={4} textColor="tertiary">

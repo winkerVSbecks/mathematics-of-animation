@@ -30,8 +30,8 @@ export class WavesWithOffset extends Component {
     return (
       <div className="flex items-center mb4">
         <div
-          className="pointer flex-auto"
-          style={{ height: 400 }}
+          className="pointer flex-auto mr5"
+          style={{ height: 400, backgroundColor: '#fff' }}
           onClick={this.next}
         >
           <div className="ball bounceY" />
@@ -66,16 +66,16 @@ export class WavesWithOffset extends Component {
           <div style={styleLayer3} className="ball bounceY" />
         </div>
         <ul className="list pl0 tl f3">
-          <li className="mb3 white code">
+          <li className="mb4 black code">
             let angle1 = 0;<br />angle1 += 0.1
           </li>
-          <li className="mb3 white code" style={styleTwo}>
+          <li className="mb4 black code" style={styleTwo}>
             let angle2 = 0.4;<br />angle2 += 0.1
           </li>
-          <li className="mb3 white code" style={styleThree}>
+          <li className="mb4 black code" style={styleThree}>
             let angle3 = 0.8;<br />angle3 += 0.1
           </li>
-          <li className="mb3 white code" style={styleFour}>
+          <li className="black code" style={styleFour}>
             ...
           </li>
         </ul>

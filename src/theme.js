@@ -29,6 +29,8 @@ export const colours = {
   darkPink: '#D83C74',
   green: '#00E676',
   lightGreen: '#B2FF59',
+  mauve: '#c3bbff',
+  purple: '#5a5ae6',
 };
 
 export const fontFamilies = {

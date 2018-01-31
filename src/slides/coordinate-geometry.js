@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Link, Slide, SlideSet } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 
-import { CodePen, Heading, Embed } from 'components';
+import { CodePen, Heading, Embed, Text } from 'components';
 import {
   Hexagon,
   CartesianCoordSystem,
@@ -85,6 +85,36 @@ export const coordinateGeometrySlides = (
         fallback={images.gemsDemo}
         bgColor="#FE664D"
       />
+    </Slide>
+    <Slide margin="0" padding="0">
+      <div className="flex items-end">
+        <div className="mr6">
+          <Image
+            className="br2 db shadow-5"
+            margin="0 auto 2rem"
+            width={500}
+            src="//cdn-images-1.medium.com/max/1600/1*uHGhUwxAvufuD_THa7sjAg.gif"
+          />
+          <Link href="https://medium.com/google-developers/playing-with-paths-3fbc679a6f77">
+            <Text textColor="secondary" textAlign="center" fw={4} f={5}>
+              Playing with Paths by Nick Butcher
+            </Text>
+          </Link>
+        </div>
+        <div>
+          <Image
+            className="br2 db shadow-5"
+            margin="0 auto 2rem"
+            width={500}
+            src={images.topography}
+          />
+          <Link href="https://tympanus.net/codrops/2018/01/24/gradient-topography-animation/">
+            <Text textColor="secondary" textAlign="center" fw={4} f={5}>
+              Gradient Topography Animation by Codrops
+            </Text>
+          </Link>
+        </div>
+      </div>
     </Slide>
     <Slide bgColor="primary">
       <Heading size={5}>

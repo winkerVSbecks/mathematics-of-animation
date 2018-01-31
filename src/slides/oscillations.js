@@ -134,11 +134,13 @@ export const oscillationsSlides = (
         Swimmer by Dave Whyte
       </Link>
     </Slide>
-    <Slide margin="0" padding="0">
-      <Heading f={1}>Sine Waves with Offsets</Heading>
+    <Slide bgColor="secondary" margin="0" padding="0">
+      <Heading textColor="primary" f={1} fw={7}>
+        Sine Waves with Offsets
+      </Heading>
       <WavesWithOffset />
       <Link href="http://codepen.io/DonKarlssonSan/pen/QGzqaM?editors=1100">
-        <Text f={5} textAlign="center" fw={4}>
+        <Text f={5} textAlign="center" textColor="primary" fw={4}>
           🍴 of Johan Karlsson's CodePen
         </Text>
       </Link>
