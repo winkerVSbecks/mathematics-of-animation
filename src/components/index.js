@@ -6,3 +6,4 @@ export * from './embed';
 export * from './easings';
 export * from './bezier-curve';
 export * from './code-pane';
+export * from './law-of-cosines';

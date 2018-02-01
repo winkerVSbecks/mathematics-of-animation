@@ -28,3 +28,6 @@ export const outroSlides = (
     <Slide>__Credits__</Slide>
   </SlideSet>
 );
+
+// Original image by David Weisman
+//  * https://en.wikipedia.org/wiki/User:Dweisman
