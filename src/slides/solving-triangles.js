@@ -31,12 +31,16 @@ export const solvingTrianglesSlides = (
         Find Missing 🕵🏽‍ <br />Sides Or Angles
       </Heading>
     </Slide>
-    <Slide bgColor="mauve">
+    <Slide>
+      Right Angled Triangle explainer &<br />The Etymology of Trig Functions
+    </Slide>
+    {/* <Slide bgColor="mauve">
       <Heading size={4} textColor="tertiary">
         Right Angled Triangle
       </Heading>
       <RightAngledTriangle />
-    </Slide>
+    </Slide> */}
+    {/* consider combining the next two */}
     <Slide bgColor="mauve">
       <Heading size={4} textColor="tertiary">
         Solving a Right Angled Triangle
@@ -59,6 +63,7 @@ export const solvingTrianglesSlides = (
         </Fill>
       </Layout>
     </Slide>
+    <Slide>__SA 15__</Slide>
     <Slide bgColor="mauve">
       <CodePen
         name="Solving Triangles for Eye Tracking"
@@ -86,6 +91,8 @@ export const solvingTrianglesSlides = (
         Netmag 404 Page by Hakim El Hattab
       </Link>
     </Slide>
+    <Slide>__law of cosines__</Slide>
+    <Slide>__MetaBalls__</Slide>
     <Slide bgColor="#fff">
       <CodePen
         name="The Glossy Triangle"
@@ -104,7 +111,7 @@ export const solvingTrianglesSlides = (
         height={600}
       />
     </Slide>
-    <Slide bgColor="#fee1e1">
+    {/* <Slide bgColor="#fee1e1">
       <CodePen
         name="Meta Balls Debugging"
         author={
@@ -120,7 +127,7 @@ export const solvingTrianglesSlides = (
         bgColor="#fee1e1"
         height={600}
       />
-    </Slide>
+    </Slide> */}
     <Slide bgColor="#FDFCFC">
       <Heading textColor="tertiary" textAlign="left" size={5}>
         Use It for Levers
