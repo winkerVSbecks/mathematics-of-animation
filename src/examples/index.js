@@ -13,3 +13,4 @@ export * from './splash';
 export * from './trigonometry';
 export * from './waves-with-offset';
 export * from './sine-snippets';
+export * from './trig-functions';

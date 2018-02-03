@@ -1,13 +1,9 @@
 import React from 'react';
-import { Appear, Fill, Image, Layout, Link, Slide, SlideSet } from 'spectacle';
-import { CodePen, Heading, Text, LawOfCosines } from 'components';
+import { Image, Link, Slide, SlideSet } from 'spectacle';
+import { CodePen, Heading, LawOfCosines } from 'components';
 
 import images from '../images';
-import {
-  RightAngledTriangle,
-  SolvingRightAngledTriangle,
-  Trigonometry,
-} from 'examples';
+import { TrigFunctions } from 'examples';
 
 const triangle =
   'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fee1e1"><path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" /></svg>\')';
@@ -30,40 +26,17 @@ export const solvingTrianglesSlides = (
     </Slide>
     <Slide>
       <Heading fw={7} margin="0">
-        Find Missing 🕵🏽‍ <br />Sides Or Angles
+        Find Missing{' '}
+        <span role="img" aria-label="detective">
+          🕵🏽‍
+        </span>
+        <br />Sides Or Angles
       </Heading>
     </Slide>
-    <Slide>
-      Right Angled Triangle explainer &<br />The Etymology of Trig Functions
-    </Slide>
-    {/* <Slide bgColor="mauve">
-      <Heading size={4} textColor="tertiary">
-        Right Angled Triangle
-      </Heading>
-      <RightAngledTriangle />
-    </Slide> */}
-    {/* consider combining the next two */}
-    <Slide bgColor="mauve">
-      <Heading size={4} textColor="tertiary">
-        Solving a Right Angled Triangle
-      </Heading>
-      <SolvingRightAngledTriangle />
-    </Slide>
-    <Slide bgColor="mauve">
-      <Heading size={4} className="fw8">
-        SOH CAH TOA!
-      </Heading>
-      <Layout>
-        <Fill>
-          <Trigonometry />
-        </Fill>
-        <Fill>
-          <Text>sin(θ) = O / H</Text>
-          <Text>cos(θ) = A / H</Text>
-          <Text>tan(θ) = O / A</Text>
-          <Text>θ = arcTan(O / A)</Text>
-        </Fill>
-      </Layout>
+    <Slide margin="0" padding="0">
+      <Heading f={2}>SOH-CAH-TOA!</Heading>
+      {/* Mnemonic */}
+      <TrigFunctions />
     </Slide>
     <Slide>__SA 15__</Slide>
     <Slide bgColor="mauve">
@@ -83,56 +56,6 @@ export const solvingTrianglesSlides = (
         height={600}
       />
     </Slide>
-    <Slide bgColor="#000">
-      <Image src={images.netmag} width={946} />
-      <Link
-        textColor="primary"
-        href="http://lab.hakim.se/404/netmag.html"
-        style={{ display: 'block' }}
-      >
-        Netmag 404 Page by Hakim El Hattab
-      </Link>
-    </Slide>
-    <Slide>
-      <Heading f={2}>Law Of Cosines</Heading>
-      <LawOfCosines />
-    </Slide>
-    <Slide>__MetaBalls__</Slide>
-    <Slide bgColor="#fff">
-      <CodePen
-        name="The Glossy Triangle"
-        user="winkerVSbecks"
-        id="uAIaq"
-        bgColor="#fff"
-        height={600}
-      />
-    </Slide>
-    <Slide bgColor="#fff">
-      <CodePen
-        name="The Glossy Triangle Debug"
-        user="winkerVSbecks"
-        id="QvELaB"
-        bgColor="#fff"
-        height={600}
-      />
-    </Slide>
-    {/* <Slide bgColor="#fee1e1">
-      <CodePen
-        name="Meta Balls Debugging"
-        author={
-          <a
-            style={{ color: '#000' }}
-            href="http://paperjs.org/examples/meta-balls"
-          >
-            Paper.js
-          </a>
-        }
-        user="winkerVSbecks"
-        id="Qvyppq"
-        bgColor="#fee1e1"
-        height={600}
-      />
-    </Slide> */}
     <Slide bgColor="#FDFCFC">
       <Heading textColor="tertiary" textAlign="left" size={5}>
         Use It for Levers
@@ -146,5 +69,10 @@ export const solvingTrianglesSlides = (
         &ldquo;Solving Triangles = Profit&rdquo; by Rachel Smith
       </Link>
     </Slide>
+    <Slide>
+      <Heading f={2}>Law Of Cosines</Heading>
+      <LawOfCosines />
+    </Slide>
+    <Slide>__MetaBalls__</Slide>
   </SlideSet>
 );

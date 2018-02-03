@@ -34,14 +34,6 @@ export const oscillationsSlides = (
       />
     </Slide>
     <Slide>
-      <Image
-        className="br2 db shadow-5"
-        alt="hexagon"
-        src={images.hexagon}
-        width={500}
-      />
-    </Slide>
-    <Slide>
       <Heading textColor="secondary" textAlign="center" margin="0" fit>
         Dave Whyte
       </Heading>
@@ -141,19 +133,12 @@ export const oscillationsSlides = (
       <WavesWithOffset />
       <Link href="http://codepen.io/DonKarlssonSan/pen/QGzqaM?editors=1100">
         <Text f={5} textAlign="center" textColor="primary" fw={4}>
-          🍴 of Johan Karlsson's CodePen
+          <span role="img" aria-label="fork">
+            🍴
+          </span>{' '}
+          of Johan Karlsson's CodePen
         </Text>
       </Link>
-    </Slide>
-    <Slide bgColor="#22222a" textColor="tertiary">
-      <CodePen
-        name="Rocket around the moon"
-        user="Yakudoo"
-        id="aOEeXB"
-        height={600}
-        bgColor="#22222a"
-        color="#167370"
-      />
     </Slide>
   </SlideSet>
 );

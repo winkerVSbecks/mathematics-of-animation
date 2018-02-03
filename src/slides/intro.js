@@ -1,7 +1,6 @@
 import React from 'react';
 import { SlideSet, Slide } from 'spectacle';
 
-import images from '../images';
 import { Heading, Text } from 'components';
 
 export const introSlides = (

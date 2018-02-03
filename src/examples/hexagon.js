@@ -14,7 +14,6 @@ export class Hexagon extends Component {
       delay: (el, i) => (i + 1) * 1500,
       loop: true,
     });
-    const angle = { value: 0 };
 
     const step = (idx, delay = 1500) => ({
       value: idx * 72 + '°',
@@ -43,8 +42,6 @@ export class Hexagon extends Component {
   }
 
   render() {
-    const r = 40;
-    const o = [50, 50];
     const { className, ...props } = this.props;
 
     return (

@@ -15,7 +15,7 @@ export class Sine extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.01;
-      this.setState({ x: Math.sin(theta) });
+      this.setState(() => ({ x: Math.sin(theta) }));
     };
 
     timerSine = setInterval(() => {
@@ -47,7 +47,7 @@ export class Translation extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.01;
-      this.setState({ x: Math.sin(theta) * 300 });
+      this.setState(() => ({ x: Math.sin(theta) * 300 }));
     };
 
     timerTranslation = setInterval(() => {
@@ -85,7 +85,7 @@ export class Scaling extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.01;
-      this.setState({ scale: Math.sin(theta) * 1 });
+      this.setState(() => ({ scale: Math.sin(theta) * 1 }));
     };
 
     timerScaling = setInterval(() => {
@@ -125,10 +125,10 @@ export class Rotation extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.02;
-      this.setState({
+      this.setState(() => ({
         x: 100 * Math.cos(theta),
         y: 100 * Math.sin(theta),
-      });
+      }));
     };
 
     timerRotation = setInterval(() => {

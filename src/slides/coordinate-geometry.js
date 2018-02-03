@@ -2,7 +2,7 @@ import React from 'react';
 import { Image, Link, Slide, SlideSet } from 'spectacle';
 import CodeSlide from 'spectacle-code-slide';
 
-import { CodePen, Heading, Embed, Text } from 'components';
+import { Heading, Embed, Text } from 'components';
 import {
   Hexagon,
   CartesianCoordSystem,
@@ -10,7 +10,6 @@ import {
   PolarPolygon,
   PolarPattern,
   SplashExample,
-  PolygonParameterization,
   HexAPortal,
 } from 'examples';
 import images from '../images';
@@ -52,21 +51,25 @@ export const coordinateGeometrySlides = (
       </Heading>
       <div className="mh0 flex flex-wrap">
         <img
+          alt="bubbles 2"
           style={{ width: '13.5rem', height: '10.125rem' }}
           className="pa1 ba b--moon-gray br2 mr3"
           src={images.bubbles2}
         />
         <img
+          alt="spiral dots"
           style={{ width: '13.5rem', height: '10.125rem' }}
           className="pa1 ba b--moon-gray br2 mr3"
           src={images.spiraldots}
         />
         <img
+          alt="spins"
           style={{ width: '13.5rem', height: '10.125rem' }}
           className="pa1 ba b--moon-gray br2 mr3"
           src={images.spins}
         />
         <img
+          alt="spiral big"
           style={{ width: '13.5rem', height: '10.125rem' }}
           className="pa1 ba b--moon-gray br2"
           src={images.spiralbig}
