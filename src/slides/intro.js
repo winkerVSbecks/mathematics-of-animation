@@ -21,7 +21,9 @@ export const introSlides = (
       </Text>
     </Slide>
     <Slide>
-      <Text>Math is basically coding with poorly named variables</Text>
+      <Text>
+        Math is coding with<br />single letter variable names
+      </Text>
     </Slide>
   </SlideSet>
 );

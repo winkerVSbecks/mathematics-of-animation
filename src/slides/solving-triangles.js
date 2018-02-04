@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Link, Slide, SlideSet } from 'spectacle';
-import { CodePen, Heading, LawOfCosines } from 'components';
+import { CodePen, Heading, LawOfCosines, Text } from 'components';
 
 import images from '../images';
 import { TrigFunctions, SA15Process, Metaball } from 'examples';
@@ -96,7 +96,24 @@ export const solvingTrianglesSlides = (
       />
     </Slide>
     <Slide>
-      <Metaball className="center mw7" />
+      <CodePen
+        user="winkerVSbecks"
+        id="aqNZKR"
+        height={600}
+        bgColor="#212121"
+        showAttr={false}
+      />
+      <Link
+        href="http://varun.ca/metaballs"
+        textColor="secondary"
+        textAlign="center"
+        textSize="1.25rem"
+      >
+        varun.ca/metaballs
+      </Link>
+    </Slide>
+    <Slide margin="0" padding="0">
+      <Metaball className="db center overflow-hidden" style={{ height: 600 }} />
     </Slide>
   </SlideSet>
 );
