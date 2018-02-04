@@ -15,3 +15,4 @@ export * from './waves-with-offset';
 export * from './sine-snippets';
 export * from './trig-functions';
 export * from './sa-15-process';
+export * from './metaball';

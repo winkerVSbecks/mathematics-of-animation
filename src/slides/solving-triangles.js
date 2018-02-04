@@ -3,7 +3,7 @@ import { Image, Link, Slide, SlideSet } from 'spectacle';
 import { CodePen, Heading, LawOfCosines } from 'components';
 
 import images from '../images';
-import { TrigFunctions, SA15Process } from 'examples';
+import { TrigFunctions, SA15Process, Metaball } from 'examples';
 
 const triangle =
   'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fee1e1"><path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" /></svg>\')';
@@ -85,6 +85,17 @@ export const solvingTrianglesSlides = (
       <Heading f={2}>Law Of Cosines</Heading>
       <LawOfCosines />
     </Slide>
-    <Slide>__MetaBalls__</Slide>
+    <Slide margin="0" padding="0" bgColor="#080327">
+      <CodePen
+        user="winkerVSbecks"
+        id="eVZzwj"
+        height={600}
+        bgColor="#080327"
+        showAttr={false}
+      />
+    </Slide>
+    <Slide className="ba">
+      <Metaball className="center mw7" />
+    </Slide>
   </SlideSet>
 );
