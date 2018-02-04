@@ -3,7 +3,7 @@ import { Image, Link, Slide, SlideSet } from 'spectacle';
 import { CodePen, Heading, LawOfCosines } from 'components';
 
 import images from '../images';
-import { TrigFunctions } from 'examples';
+import { TrigFunctions, SA15Process } from 'examples';
 
 const triangle =
   'url(\'data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="#fee1e1"><path d="M12 5.887l8.468 14.113h-16.936l8.468-14.113zm0-3.887l-12 20h24l-12-20z" /></svg>\')';
@@ -38,7 +38,6 @@ export const solvingTrianglesSlides = (
       {/* Mnemonic */}
       <TrigFunctions />
     </Slide>
-    <Slide>__SA 15__</Slide>
     <Slide bgColor="mauve">
       <CodePen
         name="Solving Triangles for Eye Tracking"
@@ -55,6 +54,19 @@ export const solvingTrianglesSlides = (
         bgColor="#c3bbff"
         height={600}
       />
+    </Slide>
+    <Slide margin="0" padding="0">
+      <div className="flex items-stretch">
+        <CodePen
+          className="w-50"
+          user="winkerVSbecks"
+          id="WMwwzV"
+          height={600}
+          bgColor="#212121"
+          showAttr={false}
+        />
+        <SA15Process className="w-50" />
+      </div>
     </Slide>
     <Slide bgColor="#FDFCFC">
       <Heading textColor="tertiary" textAlign="left" size={5}>

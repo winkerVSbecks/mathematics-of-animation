@@ -10,8 +10,10 @@ export const CodePen = ({
   bgColor = '#fff',
   color = '#000',
   author = null,
+  showAttr = true,
+  ...props
 }) => (
-  <div style={{ backgroundColor: bgColor }}>
+  <div style={{ backgroundColor: bgColor }} {...props}>
     <iframe
       height={height}
       scrolling="no"
@@ -31,17 +33,19 @@ export const CodePen = ({
       by <a href={`http://codepen.io/${user}`}>@{user}</a>
       on <a href="http://codepen.io">CodePen</a>.
     </iframe>
-    <p style={{ color }} className="f5">
-      <a style={{ color }} href={`http://codepen.io/${user}/pen/${id}`}>
-        {name}
-      </a>{' '}
-      by{' '}
-      {author || (
-        <a style={{ color }} href={`http://codepen.io/${user}`}>
-          @{user}
-        </a>
-      )}
-    </p>
+    {showAttr && (
+      <p style={{ color }} className="f5">
+        <a style={{ color }} href={`http://codepen.io/${user}/pen/${id}`}>
+          {name}
+        </a>{' '}
+        by{' '}
+        {author || (
+          <a style={{ color }} href={`http://codepen.io/${user}`}>
+            @{user}
+          </a>
+        )}
+      </p>
+    )}
   </div>
 );
 

@@ -21,7 +21,7 @@ export const TrigFunctions = () => (
         >
           <line x1="2" y1="0" x2="2" y2="10" />
         </pattern>
-        <mask id="myMask" maskUnits="userSpaceOnUse" x="0" y="0">
+        <mask id="angle" maskUnits="userSpaceOnUse" x="0" y="0">
           <path
             d="M173.49454393 243.66412167 H49.10614704 L297.88294082 44.64198454 v199.02213713 H173.49454393z"
             fill="#fff"
@@ -42,7 +42,7 @@ export const TrigFunctions = () => (
           cy="243.66412167"
           r="32"
           fill="#fff"
-          mask="url(#myMask)"
+          mask="url(#angle)"
         />
       </g>
       <Appear>
