@@ -3,28 +3,28 @@ import { Appear } from 'spectacle';
 import { colours as c } from 'theme';
 
 export const SA15Process = props => (
-  <svg viewBox="200 150 400 300" fill="#fff" {...props}>
+  <svg viewBox="250 200 300 200" fill="#fff" {...props}>
     <defs>
-      <mask id="triangle" maskUnits="userSpaceOnUse" x="0" y="0">
+      <mask id="triangle" maskUnits="objectBoundingBox" x="0" y="0">
         <path d="M400,300 L441.6,195 V300 Z" fill="#fff" />
       </mask>
     </defs>
     <g strokeWidth="3">
-      <Appear>
-        <path d="M400,300 L 441.6,195" fill="none" stroke={c.green} />
-      </Appear>
-      <Appear>
+      <Appear order={2}>
         <path d="M442.2,300.5 h-10 v-10 h10 z" fill={c.quartenary} />
       </Appear>
-      <Appear>
+      <Appear order={3}>
         <circle
           cx="400"
           cy="300"
           r="16"
-          stroke={c.blue}
-          fill={c.blue}
+          stroke={c.darkBlue}
+          fill={c.darkBlue}
           mask="url(#triangle)"
         />
+      </Appear>
+      <Appear order={1}>
+        <path d="M400,300 L 441.6,195" fill="none" stroke={c.green} />
       </Appear>
     </g>
     <g stroke="#fff" fill="none" strokeWidth="1.5">
