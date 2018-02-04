@@ -31,7 +31,7 @@ export const SA15Process = props => (
       <path d="M 441.6 405 A 113 113 0 1 1 441.6 195" />
       <path d="M 441.6 195 A 113 113 0 0 1 441.6 405" />
     </g>
-    <g stroke="#fff" stroke-dasharray="5, 5" strokeWidth="1" fill="none">
+    <g stroke="#fff" strokeDasharray="5, 5" strokeWidth="1" fill="none">
       <path d="M287,300 H 513" />
       <path d="M441.6,405 L441.6,195" />
     </g>

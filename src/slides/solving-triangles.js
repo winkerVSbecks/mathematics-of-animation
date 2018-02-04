@@ -94,7 +94,7 @@ export const solvingTrianglesSlides = (
         showAttr={false}
       />
     </Slide>
-    <Slide className="ba">
+    <Slide>
       <Metaball className="center mw7" />
     </Slide>
   </SlideSet>
