@@ -1,7 +1,8 @@
 import React from 'react';
-import { SlideSet, Slide, List, ListItem } from 'spectacle';
+import { SlideSet, Slide } from 'spectacle';
 
 import { Heading, Text } from 'components';
+import images from 'images';
 
 export const introSlides = (
   <SlideSet>
@@ -12,7 +13,12 @@ export const introSlides = (
     </Slide>
 
     <Slide>
-      <Heading margin="0 0 1rem 0">Varun Vachhar 👋🏽</Heading>
+      <Heading margin="0 0 1rem 0">
+        Varun Vachhar{' '}
+        <span role="img" aria-label="wave">
+          👋🏽
+        </span>
+      </Heading>
 
       <Text f={2} margin="0 0 1rem 0">
         Tech Lead at League
@@ -21,55 +27,63 @@ export const introSlides = (
         @winkerVSbecks
       </Text>
     </Slide>
-    <Slide bgColor="secondary">
-      <div className="mh0 flex flex-wrap justify-between">
+    <Slide bgColor="secondary" margin="0" padding="0">
+      <div className="mh0 flex flex-wrap justify-center">
         <img
-          alt="napoleon theorem"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mb3"
-          src="http://varun.ca/img/napoleon-theorem.gif"
+          alt="pizza theorem"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mb3 mr3"
+          src={images.pizzaTheorem}
         />
         <img
           alt="reactive O"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mb3"
-          src="http://varun.ca/img/reactive-o.gif"
-        />
-        <img
-          alt="chillwave"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2"
-          src="http://varun.ca/img/chillwave-alt.gif"
-        />
-        <img
-          alt="Triangle Ninja"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2"
-          src="http://varun.ca/img/triangleninja.gif"
-        />
-        <img
-          alt="truncation"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mb3"
-          src="http://varun.ca/img/truncation.gif"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mb3 mr3"
+          src={images.reactiveO}
         />
         <img
           alt="Touch ID"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2"
-          src="http://varun.ca/img/touch-id.gif"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mb3 mr3"
+          src={images.touchId}
         />
+
+        <img
+          alt="napoleon theorem"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mb3 mr3"
+          src={images.napoleonTheorem}
+        />
+        <img
+          alt="chillwave"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mb3 mr3"
+          src={images.triangleninja}
+        />
+        <img
+          alt="Triangle Ninja"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mb3"
+          src={images.truncation}
+        />
+
         <img
           alt="The Core"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2"
-          src="http://varun.ca/img/core.gif"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.core}
         />
         <img
-          alt="pizza theorem"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mb3"
-          src="http://varun.ca/img/pizza-theorem.gif"
+          alt="truncation"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.chillwave}
+        />
+        <img
+          alt="OAM"
+          style={{ width: '16rem', height: '12rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src={images.oam}
         />
       </div>
     </Slide>

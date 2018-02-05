@@ -50,6 +50,15 @@ const images = {
   codepen: require('assets/codepen.png'),
   topography: require('assets/topography.gif'),
   paths: require('assets/paths.gif'),
+  napoleonTheorem: require('assets/work/napoleon-theorem.gif'),
+  reactiveO: require('assets/work/reactive-o.gif'),
+  triangleninja: require('assets/work/triangleninja.gif'),
+  truncation: require('assets/work/truncation.gif'),
+  chillwave: require('assets/work/chillwave-alt.gif'),
+  touchId: require('assets/work/touch-id.gif'),
+  core: require('assets/work/core.gif'),
+  pizzaTheorem: require('assets/work/pizza-theorem.gif'),
+  oam: require('assets/work/oam-alt.gif'),
 };
 
 preloader(images);

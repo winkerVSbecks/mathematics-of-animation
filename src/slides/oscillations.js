@@ -69,11 +69,11 @@ export const oscillationsSlides = (
         />
         <div
           className="w-25 cover"
-          style={{ background: `url(${images.blob}) center` }}
+          style={{ background: `url(${images.weaves}) center` }}
         />
         <div
           className="w-25 cover"
-          style={{ background: `url(${images.weaves}) center` }}
+          style={{ background: `url(${images.blob}) center` }}
         />
       </div>
     </Slide>

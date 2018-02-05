@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Link, Slide, SlideSet } from 'spectacle';
-import { CodePen, Heading, LawOfCosines, Text } from 'components';
+import { CodePen, Heading, LawOfCosines } from 'components';
 
 import images from '../images';
 import { TrigFunctions, SA15Process, Metaball } from 'examples';
