@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, Link, Slide, SlideSet } from 'spectacle';
-import { CodePen, Heading, LawOfCosines } from 'components';
+import { CodePen, Heading, LawOfCosines, Text } from 'components';
 
 import images from '../images';
 import { TrigFunctions, SA15Process, Metaball } from 'examples';
@@ -57,17 +57,19 @@ export const solvingTrianglesSlides = (
       />
     </Slide>
     <Slide bgColor="#FDFCFC">
-      <Heading textColor="tertiary" textAlign="left" size={5}>
+      <Heading textColor="primary" f={1}>
         Use It for Levers
       </Heading>
-      <Image src={images.lever} width={595} />
-      <Link
-        textColor="secondary"
-        href="http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit"
-        style={{ display: 'block' }}
-      >
-        &ldquo;Solving Triangles = Profit&rdquo; by Rachel Smith
-      </Link>
+      <Image src={images.lever} width={595} margin="0 0 4rem 0" />
+      <Text f={3}>
+        <Link
+          textColor="primary"
+          href="http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit"
+          style={{ display: 'block' }}
+        >
+          &ldquo;Solving Triangles = Profit&rdquo; by Rachel Smith
+        </Link>
+      </Text>
     </Slide>
     <Slide margin="0" padding="0">
       <div className="flex items-stretch">

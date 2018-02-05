@@ -44,7 +44,7 @@ export const introSlides = (
         <img
           alt="Touch ID"
           style={{ width: '16rem', height: '12rem' }}
-          className="pa1 ba b--moon-gray br2 mb3 mr3"
+          className="pa1 ba b--moon-gray br2 mb3"
           src={images.touchId}
         />
 

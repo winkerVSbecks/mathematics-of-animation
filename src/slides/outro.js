@@ -25,9 +25,28 @@ export const outroSlides = (
         </Link>
       </Text>
     </Slide>
-    <Slide>__Credits__</Slide>
+    <Slide>
+      <Text margin="0 0 2rem 0">Attributions</Text>
+      <Text f={2}>
+        +{' '}
+        <Link
+          href="https://commons.wikimedia.org/wiki/File:Triangle_with_notations_2.svg"
+          textColor="blue"
+        >
+          Law Of Cosines
+        </Link>{' '}
+        image by David Weisman
+      </Text>
+      <Text f={2}>
+        +{' '}
+        <Link
+          href="https://commons.wikimedia.org/wiki/File:Rtriangle.svg"
+          textColor="blue"
+        >
+          Right Triangle
+        </Link>{' '}
+        image by A Malik
+      </Text>
+    </Slide>
   </SlideSet>
 );
-
-// Original image by David Weisman
-//  * https://en.wikipedia.org/wiki/User:Dweisman
