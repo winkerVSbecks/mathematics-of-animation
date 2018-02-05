@@ -1,24 +1,82 @@
 import React from 'react';
-import { SlideSet, Slide } from 'spectacle';
+import { SlideSet, Slide, List, ListItem } from 'spectacle';
 
 import { Heading, Text } from 'components';
 
 export const introSlides = (
   <SlideSet>
     <Slide>
-      <Heading f="headline" margin="0 0 12rem 0">
+      <Heading f="headline" margin="0">
         Mathematics of<br />Animation 📐✏️
       </Heading>
+    </Slide>
 
-      <Text f={2} margin="0 0 1rem 0" fw={7}>
-        Varun Vachhar
+    <Slide>
+      <Heading margin="0 0 1rem 0">Varun Vachhar 👋🏽</Heading>
+
+      <Text f={2} margin="0 0 1rem 0">
+        Tech Lead at League
       </Text>
-      <Text f={3} margin="0 0 1rem 0">
-        Tech Lead at League Inc.
-      </Text>
-      <Text f={3} margin="0" fw={4}>
+      <Text f={2} margin="0" fw={4}>
         @winkerVSbecks
       </Text>
+    </Slide>
+    <Slide bgColor="secondary">
+      <div className="mh0 flex flex-wrap justify-between">
+        <img
+          alt="napoleon theorem"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mb3"
+          src="http://varun.ca/img/napoleon-theorem.gif"
+        />
+        <img
+          alt="reactive O"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mb3"
+          src="http://varun.ca/img/reactive-o.gif"
+        />
+        <img
+          alt="chillwave"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src="http://varun.ca/img/chillwave-alt.gif"
+        />
+        <img
+          alt="Triangle Ninja"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src="http://varun.ca/img/triangleninja.gif"
+        />
+        <img
+          alt="truncation"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mb3"
+          src="http://varun.ca/img/truncation.gif"
+        />
+        <img
+          alt="Touch ID"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src="http://varun.ca/img/touch-id.gif"
+        />
+        <img
+          alt="The Core"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src="http://varun.ca/img/core.gif"
+        />
+        <img
+          alt="pizza theorem"
+          style={{ width: '13.5rem', height: '10.125rem' }}
+          className="pa1 ba b--moon-gray br2 mb3"
+          src="http://varun.ca/img/pizza-theorem.gif"
+        />
+      </div>
+    </Slide>
+    <Slide>
+      <Text margin="0 0 1rem 0">+ Polar Coordinates</Text>
+      <Text margin="0 0 1rem 0">+ Oscillations</Text>
+      <Text margin="0 0 1rem 0">+ Solving Triangles</Text>
     </Slide>
     <Slide>
       <Text>

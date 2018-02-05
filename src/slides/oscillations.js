@@ -86,17 +86,17 @@ export const oscillationsSlides = (
     </Slide>
     <Slide>
       <Heading textColor="tertiary" size={3}>
-        Translation
-      </Heading>
-      <Translation />
-      <CodePane source={translationSnippets} />
-    </Slide>
-    <Slide>
-      <Heading textColor="tertiary" size={3}>
         Scaling
       </Heading>
       <Scaling />
       <CodePane source={scalingSnippets} />
+    </Slide>
+    <Slide>
+      <Heading textColor="tertiary" size={3}>
+        Translation
+      </Heading>
+      <Translation />
+      <CodePane source={translationSnippets} />
     </Slide>
     <Slide>
       <Heading textColor="tertiary" size={3}>
