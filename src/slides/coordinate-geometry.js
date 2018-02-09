@@ -44,36 +44,36 @@ export const coordinateGeometrySlides = (
     <Slide bgColor="secondary">
       <PolarPattern className="db mb4 mw6 center" />
     </Slide>
-    <Slide bgColor="secondary">
-      <Heading textColor="primary" f={2}>
-        Bees & Bombs Polar Patterns
-      </Heading>
-      <div className="mh0 flex flex-wrap">
+    <Slide bgColor="secondary" margin="0" padding="0">
+      <div className="mh0 flex flex-wrap justify-center">
         <img
           alt="bubbles 2"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mr3"
+          style={{ width: '24rem', height: '18rem' }}
+          className="pa1 ba b--moon-gray br2 mr3 mb3"
           src={images.bubbles2}
         />
         <img
           alt="spiral dots"
-          style={{ width: '13.5rem', height: '10.125rem' }}
-          className="pa1 ba b--moon-gray br2 mr3"
+          style={{ width: '24rem', height: '18rem' }}
+          className="pa1 ba b--moon-gray br2 mb3"
           src={images.spiraldots}
         />
         <img
           alt="spins"
-          style={{ width: '13.5rem', height: '10.125rem' }}
+          style={{ width: '24rem', height: '18rem' }}
           className="pa1 ba b--moon-gray br2 mr3"
           src={images.spins}
         />
         <img
           alt="spiral big"
-          style={{ width: '13.5rem', height: '10.125rem' }}
+          style={{ width: '24rem', height: '18rem' }}
           className="pa1 ba b--moon-gray br2"
           src={images.spiralbig}
         />
       </div>
+      <Heading textColor="primary" f={3} textAlign="center" margin="2rem 0 0 0">
+        Bees & Bombs Polar Patterns
+      </Heading>
     </Slide>
     <Slide bgColor="secondary">
       <PolarPolygon className="db mb4 mw6 center" />
