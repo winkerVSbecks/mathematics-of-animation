@@ -9,7 +9,7 @@ const H = () => <span style={{ color: c.blue }}>h</span>;
 
 export const TrigFunctions = () => (
   <React.Fragment>
-    <Heading f={2}>Right Triangle</Heading>
+    <Heading f={2}>Solving A Right Triangle</Heading>
     {/* Mnemonic */}
     <div className="flex items-start">
       <svg version="1" viewBox="40 0 346 294" className="db flex-auto">

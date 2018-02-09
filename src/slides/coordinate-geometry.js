@@ -1,7 +1,5 @@
 import React from 'react';
 import { Image, Link, Slide, SlideSet } from 'spectacle';
-import CodeSlide from 'spectacle-code-slide';
-
 import { Heading, Embed, Text } from 'components';
 import {
   Hexagon,
@@ -11,6 +9,7 @@ import {
   PolarPattern,
   SplashExample,
   HexAPortal,
+  polygonGenerator,
 } from 'examples';
 import images from '../images';
 
@@ -88,33 +87,7 @@ export const coordinateGeometrySlides = (
     <Slide bgColor="secondary">
       <Hexagon className="center" />
     </Slide>
-    <CodeSlide
-      transition={['scale']}
-      lang="js"
-      // eslint-disable-next-line
-      code={require('!raw-loader!../code/polygon.js')}
-      ranges={[
-        { loc: [0, 0], title: 'Polygon Generator' },
-        { loc: [0, 1], note: 'Number of sides & radius (to control the size)' },
-        { loc: [1, 2], note: 'Calculate the angle' },
-        {
-          loc: [2, 3],
-          note: 'Generate a placeholder list for the vertices of the polygon',
-        },
-        { loc: [12, 15], note: '[0, 1, 2, ... count]' },
-        { loc: [4, 10], note: 'Loop over this list to generate each vertex' },
-        {
-          loc: [5, 9],
-          note: (
-            <span>
-              x = radius * cos(theta)<br />y = radius * sin(theta)
-            </span>
-          ),
-        },
-        { loc: [6, 7], note: 'angle needs to be in radians' },
-        { loc: [16, 19] },
-      ]}
-    />
+    {polygonGenerator}
     <Slide bgColor="#000">
       <HexAPortal />
     </Slide>

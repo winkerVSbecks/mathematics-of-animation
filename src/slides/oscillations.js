@@ -11,6 +11,7 @@ import {
   translationSnippets,
   scalingSnippets,
   rotationSnippets,
+  Sinus,
 } from 'examples';
 
 import images from '../images';
@@ -24,14 +25,19 @@ export const oscillationsSlides = (
       </Heading>
     </Slide>
     <Slide bgColor="#440015" textColor="tertiary">
-      <CodePen
-        name="Sine"
-        user="HunorMarton"
-        id="ggQGqQ"
-        themeId="29124"
-        bgColor="#440015"
-        color="#ff0050"
-      />
+      <Sinus />
+      <p style={{ color: '#ff0050' }} className="mt4 f5">
+        <a
+          style={{ color: '#ff0050' }}
+          href="http://codepen.io/HunorMarton/pen/ggQGqQ"
+        >
+          Sine
+        </a>{' '}
+        by{' '}
+        <a style={{ color: '#ff0050' }} href="http://codepen.io/HunorMarton">
+          @HunorMarton
+        </a>
+      </p>
     </Slide>
     <Slide>
       <Heading textColor="secondary" textAlign="center" margin="0" fit>
@@ -134,9 +140,9 @@ export const oscillationsSlides = (
       <Link href="http://codepen.io/DonKarlssonSan/pen/QGzqaM?editors=1100">
         <Text f={5} textAlign="center" textColor="primary" fw={4}>
           <span role="img" aria-label="fork">
-            🍴
+            based on CodePen
           </span>{' '}
-          of Johan Karlsson's CodePen
+          by Johan Karlsson's
         </Text>
       </Link>
     </Slide>

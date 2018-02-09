@@ -54,6 +54,19 @@ export const solvingTrianglesSlides = (
         height={600}
       />
     </Slide>
+    <Slide margin="0" padding="0">
+      <div className="flex items-stretch">
+        <CodePen
+          className="w-50"
+          user="winkerVSbecks"
+          id="WMwwzV"
+          height={600}
+          bgColor="#212121"
+          showAttr={false}
+        />
+        <SA15Process className="w-50" />
+      </div>
+    </Slide>
     <Slide bgColor="#FDFCFC">
       <Heading textColor="primary" f={1}>
         Use It for Levers
@@ -68,19 +81,6 @@ export const solvingTrianglesSlides = (
           &ldquo;Solving Triangles = Profit&rdquo; by Rachel Smith
         </Link>
       </Text>
-    </Slide>
-    <Slide margin="0" padding="0">
-      <div className="flex items-stretch">
-        <CodePen
-          className="w-50"
-          user="winkerVSbecks"
-          id="WMwwzV"
-          height={600}
-          bgColor="#212121"
-          showAttr={false}
-        />
-        <SA15Process className="w-50" />
-      </div>
     </Slide>
     <Slide>
       <Heading f={2}>Law Of Cosines</Heading>
