@@ -34,8 +34,6 @@ export const solvingTrianglesSlides = (
       </Heading>
     </Slide>
     <Slide margin="0" padding="0">
-      <Heading f={2}>SOH-CAH-TOA!</Heading>
-      {/* Mnemonic */}
       <TrigFunctions />
     </Slide>
     <Slide>

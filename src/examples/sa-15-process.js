@@ -35,6 +35,9 @@ export const SA15Process = props => (
       <path d="M287,300 H 513" />
       <path d="M441.6,405 L441.6,195" />
     </g>
+    <Appear order={4}>
+      <path d="M400,300 H 441.6" fill="none" stroke={c.green} strokeWidth="3" />
+    </Appear>
     <g strokeWidth="2" stroke="#fff" fill="#212121">
       <circle cx="441.6" cy="405" r="4" />
       <circle cx="441.6" cy="195" r="4" />
