@@ -1,81 +1,132 @@
 import React from 'react';
-import { Appear, Heading, Image, Link, Slide, SlideSet } from 'spectacle';
-
-import { CodePen } from '../components';
-import { Hexagon } from 'examples/hexagon';
+import { Image, Link, Slide, SlideSet } from 'spectacle';
+import { Heading, Embed, Text } from 'components';
+import {
+  Hexagon,
+  CartesianCoordSystem,
+  PolarCoordinateSystem,
+  PolarPolygon,
+  PolarPattern,
+  SplashExample,
+  HexAPortal,
+  polygonGenerator,
+} from 'examples';
 import images from '../images';
-import { s, f } from '../styles';
 
 export const coordinateGeometrySlides = (
   <SlideSet>
-    <Slide bgColor="pink" textColor="tertiary">
-      <Image height="8rem" margin={s.r4} src={images.ruler25} />
-      <Heading style={{ display: 'inline' }}>Coordinate Geometry</Heading>
-    </Slide>
-    <Slide bgColor="#fefef2">
-      <Image src={images.cartesian} width="100%" />
-    </Slide>
-    <Slide bgColor="#FEFEFE">
-      <Image width={400} src={images.manypolygons} />
-    </Slide>
-    <Slide bgColor="primary" textColor="secondary">
-      <Image className="br2 db shadow-5" width={400} src={images.gems} />
-      <Link textSize={f[6]} textColor="secondary" href="http://varun.ca">
-        Rarities 2.0 by Rogie 👑
-      </Link>
-    </Slide>
-    <Slide bgColor="pink">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="600px"
-        viewBox="-2 0 28 24"
-      >
-        <path
-          fill="#2e2f30"
-          d="M18,2 L24,12.5 L18,23 H6 L0,12.5 L6,2Z"
-          stroke="none"
-        />
-        <g fill="none" stroke="#ff485e" strokeWidth="0.25">
-          <Appear>
-            <circle cx="24" cy="12.5" r="0.5" />
-          </Appear>
-          <Appear>
-            <circle cx="18" cy="2" r="0.5" />
-          </Appear>
-          <Appear>
-            <circle cx="6" cy="2" r="0.5" />
-          </Appear>
-          <Appear>
-            <g>
-              <circle cx="6" cy="23" r="0.5" />
-              <circle cx="0" cy="12.5" r="0.5" />
-              <circle cx="18" cy="23" r="0.5" />
-            </g>
-          </Appear>
-        </g>
-      </svg>
-    </Slide>
-    <Slide bgColor="#fefef2">
-      <Image src={images.polar} width="100%" />
-    </Slide>
     <Slide>
-      <CodePen
-        height={600}
-        name="Hexagon with Polar Coordinates"
-        user="winkerVSbecks"
-        id="ZpGzdz"
-        bgColor="#fff"
-        color="#89C2EF"
+      <div className="flex items-center">
+        <Image height="8rem" src={images.ruler25} />
+        <Heading margin="0 0 0 2rem" className="flex-auto" lh="solid">
+          Coordinate<br />Geometry
+        </Heading>
+      </div>
+    </Slide>
+    <Slide bgColor="secondary">
+      <CartesianCoordSystem className="db mb4 mw6 center" />
+      <Heading textColor="primary" f={2} textAlign="center">
+        Cartesian Coordinate System (x, y)
+      </Heading>
+    </Slide>
+    <Slide bgColor="secondary">
+      <PolarCoordinateSystem className="db mb4 mw6 center" />
+      <Heading textColor="primary" f={2} textAlign="center">
+        Polar Coordinate System (r, θ)
+      </Heading>
+    </Slide>
+    <Slide bgColor="primary">
+      <Heading size={5}>
+        Use polar coordinates for locations to generate patterns
+      </Heading>
+      <SplashExample />
+    </Slide>
+    <Slide bgColor="secondary">
+      <PolarPattern className="db mb4 mw6 center" />
+    </Slide>
+    <Slide bgColor="secondary" margin="0" padding="0">
+      <div className="mh0 flex flex-wrap justify-center">
+        <img
+          alt="bubbles 2"
+          style={{ width: '24rem', height: '18rem' }}
+          className="pa1 ba b--moon-gray br2 mr3 mb3"
+          src={images.bubbles2}
+        />
+        <img
+          alt="spiral dots"
+          style={{ width: '24rem', height: '18rem' }}
+          className="pa1 ba b--moon-gray br2 mb3"
+          src={images.spiraldots}
+        />
+        <img
+          alt="spins"
+          style={{ width: '24rem', height: '18rem' }}
+          className="pa1 ba b--moon-gray br2 mr3"
+          src={images.spins}
+        />
+        <img
+          alt="spiral big"
+          style={{ width: '24rem', height: '18rem' }}
+          className="pa1 ba b--moon-gray br2"
+          src={images.spiralbig}
+        />
+      </div>
+      <Heading textColor="primary" f={3} textAlign="center" margin="2rem 0 0 0">
+        Bees & Bombs Polar Patterns
+      </Heading>
+    </Slide>
+    <Slide bgColor="secondary">
+      <PolarPolygon className="db mb4 mw6 center" />
+      <Heading textColor="primary" f={3}>
+        POLYGONS
+      </Heading>
+      <Heading textColor="primary" f={2}>
+        angle = 360° / number of sides<br />
+      </Heading>
+    </Slide>
+    <Slide bgColor="secondary">
+      <Hexagon className="center" />
+    </Slide>
+    {polygonGenerator}
+    <Slide bgColor="#000">
+      <HexAPortal />
+    </Slide>
+    <Slide bgColor="#FE664D" textColor="secondary">
+      <Embed
+        url="//winkervsbecks.github.io/gems"
+        fallback={images.gemsDemo}
+        bgColor="#FE664D"
       />
     </Slide>
-    <Slide bgColor="#fefef2">
-      <Heading size={6} textColor="secondary" margin="0">
-        angle = 360° / number of sides
-      </Heading>
-      <Image src={images.octagon} width="100%" />
-    </Slide>
-    <Slide>
-      <Hexagon />
+    <Slide margin="0" padding="0">
+      <div className="flex items-end">
+        <div className="mr6">
+          <Image
+            className="br2 db shadow-5"
+            margin="0 auto 2rem"
+            width={500}
+            src={images.paths}
+          />
+          <Link href="https://medium.com/google-developers/playing-with-paths-3fbc679a6f77">
+            <Text textColor="secondary" textAlign="center" fw={4} f={5}>
+              Playing with Paths by Nick Butcher
+            </Text>
+          </Link>
+        </div>
+        <div>
+          <Image
+            className="br2 db shadow-5"
+            margin="0 auto 2rem"
+            width={500}
+            src={images.topography}
+          />
+          <Link href="https://tympanus.net/codrops/2018/01/24/gradient-topography-animation/">
+            <Text textColor="secondary" textAlign="center" fw={4} f={5}>
+              Gradient Topography Animation by Codrops
+            </Text>
+          </Link>
+        </div>
+      </div>
     </Slide>
   </SlideSet>
 );

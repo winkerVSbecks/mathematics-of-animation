@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { CodePane } from 'components';
 
 require('./balls.css');
 
@@ -28,17 +29,36 @@ export class WavesWithOffset extends Component {
     const styleLayer3 = c > 5 ? { opacity: 1 } : { opacity: 0 };
 
     return (
-      <div className="flex">
-        <div className="pointer flex-auto" style={{ height: 400 }} onClick={this.next}>
-          <div className="ball bounceY" />
-          <div style={styleTwo} className="ball bounceY" />
-          <div style={styleThree} className="ball bounceY" />
-          <div style={styleFour} className="ball bounceY" />
-          <div style={styleLayer1} className="ball bounceY" />
-          <div style={styleLayer1} className="ball bounceY" />
-          <div style={styleLayer1} className="ball bounceY" />
-          <div style={styleLayer1} className="ball bounceY" />
-          <div style={styleLayer1} className="ball bounceY" />
+      <div className="flex items-stretch mb4" onClick={this.next}>
+        <div
+          className="pointer flex-auto mr5"
+          style={{ height: 400, backgroundColor: '#fff' }}
+        >
+          <div className="ball bounceY">0</div>
+          <div style={styleTwo} className="ball bounceY">
+            .2
+          </div>
+          <div style={styleThree} className="ball bounceY">
+            .4
+          </div>
+          <div style={styleFour} className="ball bounceY">
+            .6
+          </div>
+          <div style={styleLayer1} className="ball bounceY">
+            .8
+          </div>
+          <div style={styleLayer1} className="ball bounceY">
+            1
+          </div>
+          <div style={styleLayer1} className="ball bounceY">
+            1.2
+          </div>
+          <div style={styleLayer1} className="ball bounceY">
+            1.4
+          </div>
+          <div style={styleLayer1} className="ball bounceY">
+            1.6
+          </div>
           <div style={styleLayer2} className="ball bounceY" />
           <div style={styleLayer2} className="ball bounceY" />
           <div style={styleLayer2} className="ball bounceY" />
@@ -61,19 +81,42 @@ export class WavesWithOffset extends Component {
           <div style={styleLayer3} className="ball bounceY" />
           <div style={styleLayer3} className="ball bounceY" />
         </div>
-        <ul className="list pl0 tl">
-          <li className="mb3 white code">
-            theta1 = 0;<br />(theta1 += 0.1)
-          </li>
-          <li className="mb3 white code" style={styleTwo}>
-            theta2 = 0.4;<br />(theta2 += 0.1)
-          </li>
-          <li className="mb3 white code" style={styleThree}>
-            theta3 = 0.8;<br />(theta3 += 0.1)
-          </li>
-          <li className="mb3 white code" style={styleFour}>...</li>
-        </ul>
+        <div className="w-30">
+          <CodePane
+            fill
+            style={{ height: '100%', background: '#2d2d2d', padding: '1rem' }}
+            f={4}
+            source={`let angles = [
+  0,
+  0.2,
+  0.4,
+  0.6,
+  ...
+];
+
+function anLoop() {
+  angles.forEach(
+    a => a += 0.1
+  );
+}`}
+          />
+        </div>
       </div>
     );
   }
 }
+
+// <ul className="list pl0 tl f3">
+//   <li className="mb4 black code">
+//     let angle1 = 0;<br />angle1 += 0.1
+//   </li>
+//   <li className="mb4 black code" style={styleTwo}>
+//     let angle2 = 0.4;<br />angle2 += 0.1
+//   </li>
+//   <li className="mb4 black code" style={styleThree}>
+//     let angle3 = 0.8;<br />angle3 += 0.1
+//   </li>
+//   <li className="black code" style={styleFour}>
+//     ...
+//   </li>
+// </ul>

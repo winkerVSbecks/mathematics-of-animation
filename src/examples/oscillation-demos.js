@@ -15,7 +15,7 @@ export class Sine extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.01;
-      this.setState({ x: Math.sin(theta) });
+      this.setState(() => ({ x: Math.sin(theta) }));
     };
 
     timerSine = setInterval(() => {
@@ -29,8 +29,8 @@ export class Sine extends Component {
 
   render() {
     return (
-      <div className="h4 flex items-center justify-center  ba b--black-80 code ttu tracked f1">
-        { this.state.x.toFixed(2) }
+      <div className="bg-near-white black-80 fw7 h4 flex items-center justify-center ba b--black-80 code ttu tracked f1">
+        {this.state.x.toFixed(2)}
       </div>
     );
   }
@@ -47,7 +47,7 @@ export class Translation extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.01;
-      this.setState({ x: Math.sin(theta) * 300 });
+      this.setState(() => ({ x: Math.sin(theta) * 300 }));
     };
 
     timerTranslation = setInterval(() => {
@@ -61,9 +61,12 @@ export class Translation extends Component {
 
   render() {
     return (
-      <div className="h4 flex items-center justify-center  ba b--black-80">
+      <div className="bg-near-white h5 flex items-center justify-center ba b--black-80">
         <div
-          style={{ transform: `translate3d(${this.state.x}px, 0, 0)`, backgroundColor: '#ff485e' }}
+          style={{
+            transform: `translate3d(${this.state.x}px, 0, 0)`,
+            backgroundColor: '#2175FF',
+          }}
           className="br-100 w3 h3"
         />
       </div>
@@ -82,7 +85,7 @@ export class Scaling extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.01;
-      this.setState({ scale: Math.sin(theta) * 1 });
+      this.setState(() => ({ scale: Math.sin(theta) * 1 }));
     };
 
     timerScaling = setInterval(() => {
@@ -98,9 +101,12 @@ export class Scaling extends Component {
     const { scale } = this.state;
 
     return (
-      <div className="h4 flex items-center justify-center  ba b--black-80">
+      <div className="bg-near-white h5 flex items-center justify-center ba b--black-80">
         <div
-          style={{ transform: `scale(${scale}, ${scale})`, backgroundColor: '#ff485e' }}
+          style={{
+            transform: `scale(${scale}, ${scale})`,
+            backgroundColor: '#2175FF',
+          }}
           className="br-100 w3 h3"
         />
       </div>
@@ -119,10 +125,10 @@ export class Rotation extends Component {
     let theta = 0;
     const draw = () => {
       theta += 0.02;
-      this.setState({
+      this.setState(() => ({
         x: 100 * Math.cos(theta),
         y: 100 * Math.sin(theta),
-      });
+      }));
     };
 
     timerRotation = setInterval(() => {
@@ -137,16 +143,16 @@ export class Rotation extends Component {
   render() {
     const { x, y } = this.state;
     return (
-      <div className="h5 flex items-center justify-center  ba b--black-80">
+      <div className="bg-near-white h5 flex items-center justify-center ba b--black-80">
         <div
           style={{
             transformOrigin: 'center center',
             transform: `translate3d(${x}px, ${y}px, 0)`,
-            backgroundColor: '#ff485e',
+            backgroundColor: '#2175FF',
           }}
           className="br-100 w2 h2"
         />
-        <div className="w1 h1 br-100 bg-black absolute" />
+        <div className="dib lh-solid black absolute">✖</div>
       </div>
     );
   }

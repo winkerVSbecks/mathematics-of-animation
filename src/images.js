@@ -33,6 +33,10 @@ const images = {
   waveD: require('assets/beesandbombs/wave_d.gif'),
   cubewave: require('assets/beesandbombs/cubewave.gif'),
   weaves: require('assets/beesandbombs/weaves.gif'),
+  bubbles2: require('assets/beesandbombs/bubbles2.gif'),
+  spins: require('assets/beesandbombs/spins.gif'),
+  spiralbig: require('assets/beesandbombs/spiralbig.gif'),
+  spiraldots: require('assets/beesandbombs/spiraldots.gif'),
   netmag: require('assets/netmag.gif'),
   lever: require('assets/lever.gif'),
   cactus: require('assets/annie-spratt-79272.jpg'),
@@ -44,6 +48,17 @@ const images = {
   measure: require('assets/measure.jpg'),
   sorcery: require('assets/sorcery.gif'),
   codepen: require('assets/codepen.png'),
+  topography: require('assets/topography.gif'),
+  paths: require('assets/paths.gif'),
+  napoleonTheorem: require('assets/work/napoleon-theorem.gif'),
+  reactiveO: require('assets/work/reactive-o.gif'),
+  triangleninja: require('assets/work/triangleninja.gif'),
+  truncation: require('assets/work/truncation.gif'),
+  chillwave: require('assets/work/chillwave-alt.gif'),
+  touchId: require('assets/work/touch-id.gif'),
+  core: require('assets/work/core.gif'),
+  pizzaTheorem: require('assets/work/pizza-theorem.gif'),
+  oam: require('assets/work/oam-alt.gif'),
 };
 
 preloader(images);

@@ -1,91 +1,52 @@
 import React from 'react';
-import {
-  Heading,
-  Fill,
-  Layout,
-  Link,
-  ListItem,
-  List,
-  Slide,
-  Text,
-} from 'spectacle';
+import { Slide, SlideSet, Link } from 'spectacle';
 
-import images from '../images';
-import { s, f } from '../styles';
+import { Text, Heading } from 'components';
 
-export const outroSlides = [
-  <Slide bgColor="#f1ebed" bgImage={images.cactus}>
-    <Heading size={1} textColor="tertiary" textAlign="left">
-      Thank You!
-    </Heading>
-    <Layout>
-      <Fill>
-        <Text
-          className="fw6"
-          margin={s.t4}
-          textAlign="left"
-          textColor="secondary"
-        >
-          Varun Vachhar
-        </Text>
-        <Link href="http://twitter.com/winkervsbecks">
-          <Text
-            margin={s.t2}
-            textColor="gray" textAlign="left" textSize={f[5]}
-            className="fw6"
-          >
-            @winkerVSbecks
-          </Text>
+export const outroSlides = (
+  <SlideSet>
+    <Slide>
+      <Heading
+        bgColor="white"
+        textColor="primary"
+        fw={5}
+        margin="0 0 4rem 0"
+        padding="1rem"
+      >
+        Thank You!
+      </Heading>
+      <Text textSize="3rem" className="fw9">
+        Varun Vachhar
+      </Text>
+      <Text textSize="2.25rem">@winkerVSbecks</Text>
+      <Text margin="4rem 0 0 0" textSize="2.25rem">
+        <Link href="https://tiny.cc/webpack-dragon" textColor="secondary">
+          tiny.cc/animation-math
         </Link>
-        <Link href="http://varun.ca">
-          <Text
-            margin={s.t2}
-            textColor="gray" textAlign="left" textSize={f[5]}
-            className="fw6"
-          >
-            varun.ca
-          </Text>
-        </Link>
-        <Text
-          margin={s.t5}
-          textColor="secondary"
-          textAlign="left" textSize={f[5]}
-          className="fw6"
-        >
-          Slides: <Link href="https://goo.gl/w6FYTC" textColor="tertiary">goo.gl/w6FYTC</Link>
-        </Text>
-      </Fill>
-    </Layout>
-  </Slide>,
-  <Slide>
-    <Heading textColor="tertiary" size={5} textAlign="left">
-      Icons and Images from
-    </Heading>
-    <List>
-      <ListItem>
+      </Text>
+    </Slide>
+    <Slide>
+      <Text margin="0 0 2rem 0">Attributions</Text>
+      <Text f={2}>
+        +{' '}
         <Link
-          textColor="secondary"
-          href="http://iconmonstr.com"
+          href="https://commons.wikimedia.org/wiki/File:Triangle_with_notations_2.svg"
+          textColor="blue"
         >
-          iconmonstr.com (Alexander Kahlkopf)
-        </Link>
-      </ListItem>
-      <ListItem>
+          Law Of Cosines
+        </Link>{' '}
+        image by David Weisman
+      </Text>
+      <Text f={2}>
+        +{' '}
         <Link
-          textColor="secondary"
-          href="https://unsplash.com/@andrewjohnp"
+          href="https://commons.wikimedia.org/wiki/File:Rtriangle.svg"
+          textColor="blue"
         >
-          Andrew Phillips
-        </Link>
-      </ListItem>
-      <ListItem>
-        <Link
-          textColor="secondary"
-          href="https://unsplash.com/@anniespratt"
-        >
-          Annie Spratt
-        </Link>
-      </ListItem>
-    </List>
-  </Slide>,
-];
+          Right Triangle
+        </Link>{' '}
+        image by A Malik
+      </Text>
+    </Slide>
+  </SlideSet>
+);
