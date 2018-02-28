@@ -53,11 +53,11 @@ export const Metaball = props => (
       </Appear>
       <Appear>
         <g fill={c.green}>
-          <text x="470" y="575">
-            radius1
+          <text x="435" y="575">
+            radius1 (r1)
           </text>
           <text x="610" y="578">
-            radius2
+            radius2 (r2)
           </text>
         </g>
       </Appear>
@@ -76,8 +76,7 @@ export const Metaball = props => (
         <foreignObject width="355" height="50" x="370" y="720">
           <pre xmlns="http://www.w3.org/1999/xhtml" class="tl lh-title">
             {`u1 = Math.acos(
-  (radius1 ** 2 + d ** 2 - radius2 ** 2) /
-    (2 * radius1 * d)
+  (r1 ** 2 + d ** 2 - r2 ** 2) / (2 * r1 * d)
 );`}
           </pre>
         </foreignObject>

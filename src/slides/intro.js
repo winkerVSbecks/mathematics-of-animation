@@ -20,7 +20,7 @@ export const introSlides = (
       </Heading>
 
       <Text f={2} margin="0 0 1rem 0">
-        Tech Lead at League
+        Tech Lead at League Inc.
       </Text>
       <Text f={2} margin="0" fw={4}>
         @winkerVSbecks

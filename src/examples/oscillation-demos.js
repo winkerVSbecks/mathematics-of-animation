@@ -46,7 +46,7 @@ export class Translation extends Component {
   componentDidMount() {
     let theta = 0;
     const draw = () => {
-      theta += 0.01;
+      theta += 0.02;
       this.setState(() => ({ x: Math.sin(theta) * 300 }));
     };
 
@@ -84,7 +84,7 @@ export class Scaling extends Component {
   componentDidMount() {
     let theta = 0;
     const draw = () => {
-      theta += 0.01;
+      theta += 0.02;
       this.setState(() => ({ scale: Math.sin(theta) * 1 }));
     };
 
@@ -124,7 +124,7 @@ export class Rotation extends Component {
   componentDidMount() {
     let theta = 0;
     const draw = () => {
-      theta += 0.02;
+      theta -= 0.02;
       this.setState(() => ({
         x: 100 * Math.cos(theta),
         y: 100 * Math.sin(theta),

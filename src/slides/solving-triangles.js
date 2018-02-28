@@ -67,7 +67,7 @@ export const solvingTrianglesSlides = (
         <SA15Process className="w-50" />
       </div>
     </Slide>
-    <Slide bgColor="#FDFCFC">
+    {/* <Slide bgColor="#FDFCFC">
       <Heading textColor="primary" f={1}>
         Use It for Levers
       </Heading>
@@ -81,7 +81,7 @@ export const solvingTrianglesSlides = (
           &ldquo;Solving Triangles = Profit&rdquo; by Rachel Smith
         </Link>
       </Text>
-    </Slide>
+    </Slide> */}
     <Slide>
       <Heading f={2}>Law Of Cosines</Heading>
       <LawOfCosines />
