@@ -64,22 +64,22 @@ export const polygonGenerator = (
           </span>
         ),
       },
-      { loc: [6, 7], note: 'angle needs to be in radians' },
-      { loc: [16, 19] },
-      { loc: [0, 11] },
-      { loc: [27, 32], note: 'SVG Polygon' },
-      { loc: [28, 29], note: 'a list of polar-coordinates' },
-      { loc: [29, 30], note: 'polar ➡️ cartesian coordinates' },
-      {
-        loc: [20, 26],
-        note: (
-          <span>
-            x = radius * cos(theta)<br />y = radius * sin(theta)
-          </span>
-        ),
-      },
-      { loc: [30, 31], note: 'to string attribute' },
-      { loc: [33, 34], note: 'to string attribute' },
+      // { loc: [6, 7], note: 'angle needs to be in radians' },
+      // { loc: [16, 19] },
+      // { loc: [0, 11] },
+      // { loc: [27, 32], note: 'SVG Polygon' },
+      // { loc: [28, 29], note: 'a list of polar-coordinates' },
+      // { loc: [29, 30], note: 'polar ➡️ cartesian coordinates' },
+      // {
+      //   loc: [20, 26],
+      //   note: (
+      //     <span>
+      //       x = radius * cos(theta)<br />y = radius * sin(theta)
+      //     </span>
+      //   ),
+      // },
+      // { loc: [30, 31], note: 'to string attribute' },
+      // { loc: [33, 34], note: 'to string attribute' },
     ]}
   />
 );

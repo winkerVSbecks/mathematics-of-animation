@@ -6,16 +6,18 @@ export class Hexagon extends Component {
   angles = [];
 
   componentDidMount() {
+    const time = 800;
+
     anime({
       targets: this.sides.querySelectorAll('path'),
       strokeDashoffset: [anime.setDashoffset, 0],
       easing: 'easeInOutQuad',
-      duration: 1500,
-      delay: (el, i) => (i + 1) * 1500,
+      duration: time,
+      delay: (el, i) => (i + 1) * time,
       loop: true,
     });
 
-    const step = (idx, delay = 1500) => ({
+    const step = (idx, delay = time) => ({
       value: idx * 72 + '°',
       duration: 1,
       delay,
@@ -26,7 +28,7 @@ export class Hexagon extends Component {
       targets: this.angles,
       textContent: [step(0), step(1), step(2), step(3), step(4), step(5)],
       easing: 'easeInOutQuad',
-      duration: 1500 * 5,
+      duration: time * 5,
       loop: true,
     });
 
@@ -35,8 +37,8 @@ export class Hexagon extends Component {
       easing: 'easeOutElastic',
       r: [0, 2],
       elasticity: 800,
-      duration: 1500,
-      delay: (el, i) => (i + 1) * 1500,
+      duration: time,
+      delay: (el, i) => (i + 1) * time,
       loop: true,
     });
   }
