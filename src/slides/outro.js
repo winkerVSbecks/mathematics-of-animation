@@ -61,6 +61,15 @@ export const outroSlides = (
           Generative Gestaltung
         </Link>
       </Text>
+      <Text f={2}>
+        +{' '}
+        <Link
+          href="https://github.com/winkerVSbecks/mathematics-of-animation"
+          textColor="blue"
+        >
+          Slides source-code
+        </Link>
+      </Text>
     </Slide>
   </SlideSet>
 );
