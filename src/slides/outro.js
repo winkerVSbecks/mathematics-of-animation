@@ -28,7 +28,7 @@ export const outroSlides = (
       </Text>
       <Text textSize="2.25rem">@winkerVSbecks</Text>
       <Text margin="4rem 0 0 0" textSize="2.25rem">
-        <Link href="https://tiny.cc/webpack-dragon" textColor="secondary">
+        <Link href="https://tiny.cc/animation-math" textColor="secondary">
           tiny.cc/animation-math
         </Link>
       </Text>
