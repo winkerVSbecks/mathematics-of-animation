@@ -23,10 +23,8 @@ export const outroSlides = (
       >
         Thank You!
       </Heading>
-      <Text textSize="3rem" className="fw9">
-        Varun Vachhar
-      </Text>
       <Text textSize="2.25rem">@winkerVSbecks</Text>
+      <Text textSize="2.25rem">varun.ca</Text>
       <Text margin="4rem 0 0 0" textSize="2.25rem">
         <Link href="https://tiny.cc/animation-math" textColor="secondary">
           tiny.cc/animation-math

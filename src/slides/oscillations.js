@@ -39,48 +39,48 @@ export const oscillationsSlides = (
         </a>
       </p>
     </Slide>
-    <Slide>
-      <Heading textColor="secondary" textAlign="center" margin="0" fit>
-        Dave Whyte
+    <Slide margin="0">
+      <Heading textColor="secondary" f={2} margin="0 0 2rem 0">
+        Dave Whyte{' '}
+        <small className="dib bg-white ph2 fw8" style={{ color: '#212121' }}>
+          Bees & Bombs
+        </small>
       </Heading>
-      <Heading textColor="gold" textAlign="center" margin="0" fw={9} fit>
-        BEES & BOMBS
-      </Heading>
-    </Slide>
-    <Slide className="flex">
-      <div className="flex-auto flex flex-wrap" style={{ height: 600 }}>
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.cubewave}) center` }}
-        />
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.boxes}) center` }}
-        />
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.out}) center` }}
-        />
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.waveD}) center` }}
-        />
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.bouncers}) center` }}
-        />
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.dotLineWave}) center` }}
-        />
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.weaves}) center` }}
-        />
-        <div
-          className="w-25 cover"
-          style={{ background: `url(${images.blob}) center` }}
-        />
+      <div className="flex">
+        <div className="flex-auto flex flex-wrap" style={{ height: 550 }}>
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.cubewave}) center` }}
+          />
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.boxes}) center` }}
+          />
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.out}) center` }}
+          />
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.waveD}) center` }}
+          />
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.bouncers}) center` }}
+          />
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.dotLineWave}) center` }}
+          />
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.weaves}) center` }}
+          />
+          <div
+            className="w-25 cover"
+            style={{ background: `url(${images.blob}) center` }}
+          />
+        </div>
       </div>
     </Slide>
     <Slide>

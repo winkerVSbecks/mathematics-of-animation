@@ -6,7 +6,7 @@ export class Hexagon extends Component {
   angles = [];
 
   componentDidMount() {
-    const time = 800;
+    const time = 1200;
 
     anime({
       targets: this.sides.querySelectorAll('path'),

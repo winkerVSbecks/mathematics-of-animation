@@ -19,7 +19,7 @@ export const coordinateGeometrySlides = (
       <div className="flex items-center">
         <Image height="8rem" src={images.ruler25} />
         <Heading margin="0 0 0 2rem" className="flex-auto" lh="solid">
-          Coordinate<br />Geometry
+          Coordinate<br />Systems
         </Heading>
       </div>
     </Slide>
@@ -36,9 +36,7 @@ export const coordinateGeometrySlides = (
       </Heading>
     </Slide>
     <Slide bgColor="primary">
-      <Heading size={5}>
-        Use polar coordinates for locations to generate patterns
-      </Heading>
+      <Heading size={5}>Generate & Animate Patterns</Heading>
       <SplashExample />
     </Slide>
     <Slide bgColor="secondary">

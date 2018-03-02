@@ -30,7 +30,7 @@ export const solvingTrianglesSlides = (
         <span role="img" aria-label="detective">
           🕵🏽‍
         </span>
-        <br />Sides Or Angles
+        <br />Side Or Angle
       </Heading>
     </Slide>
     <Slide margin="0" padding="0">

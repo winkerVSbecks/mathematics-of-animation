@@ -2,7 +2,7 @@ import React from 'react';
 import CodeSlide from 'spectacle-code-slide';
 
 const code = `
-function points(count, radius, rotation = 0) {
+function polygonVertices(count, radius, rotation = 0) {
   const angle = 360 / count;
   const vertexIndices = range(count);
 

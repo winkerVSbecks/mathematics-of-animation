@@ -1,5 +1,5 @@
 import React from 'react';
-import { SlideSet, Slide } from 'spectacle';
+import { SlideSet, Slide, Link } from 'spectacle';
 
 import { Heading, Text } from 'components';
 import images from 'images';
@@ -19,11 +19,16 @@ export const introSlides = (
         </span>
       </Heading>
 
-      <Text f={2} margin="0 0 1rem 0">
+      <Text f={2} margin="0 0 4rem 0">
         Tech Lead at League Inc.
       </Text>
       <Text f={2} margin="0" fw={4}>
         @winkerVSbecks
+      </Text>
+      <Text f={2} fw={4}>
+        <Link margin="0" textAlign="left">
+          varun.ca
+        </Link>
       </Text>
     </Slide>
     <Slide bgColor="secondary" margin="0" padding="0">
