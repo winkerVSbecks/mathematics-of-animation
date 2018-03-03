@@ -9,7 +9,7 @@ export const outroSlides = (
     <Slide bgImage={images.generativeGestaltung3} margin="0">
       <Heading fw={9} margin="24rem 0 0 0">
         <Link href="http://www.generative-gestaltung.de/2/" textColor="#0fe976">
-          Generative<br />Gestaltung
+          Generative<br />Design
         </Link>
       </Heading>
     </Slide>

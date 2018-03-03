@@ -313,20 +313,12 @@ export class Hexagon extends Component {
             <circle cx="76.889" cy="90.401" r="3" />
           </g>
         </svg>
-        <div style={{ width: '10rem' }}>
+        <div style={{ width: '14rem' }}>
           <Text textColor="primary" f={4} lh="copy">
-            angle ={' '}
-            <span
-              className="dib"
-              ref={a => {
-                this.angles.push(a);
-              }}
-            >
-              0°
-            </span>
+            θ = <span className="dib">index * 72°</span>
             <br />
             <br />
-            x = cos(<span
+            x = r * cos(<span
               className="dib"
               ref={a => {
                 this.angles.push(a);
@@ -334,7 +326,7 @@ export class Hexagon extends Component {
             >
               0°
             </span>)<br />
-            y = sin(<span
+            y = r * sin(<span
               className="dib"
               ref={a => {
                 this.angles.push(a);

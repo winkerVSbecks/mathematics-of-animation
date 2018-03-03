@@ -22,35 +22,31 @@ export const Metaball = props => (
       <circle cx="630" cy="600" r="64" />
       <path d="M 550.0420165674227,672.8319721254356 C 576.3822584064638,650.2131717083602 584.8359534116471,650.9112015088498 606.3426708140336,659.4670562226416 A 64 64 0 1 0 606.3426708140336,540.5329437773584 C 584.8359534116471,549.0887984911502 576.3822584064638,549.7868282916398 550.0420165674227,527.1680278745644" />
     </g>
-    <Appear>
-      <g>
-        <g stroke="#fff" fill="none" strokeWidth="2" mask="url(#triangle)">
-          <circle cx="487.5" cy="600" r="24" />
-          <circle cx="630" cy="600" r="24" />
-        </g>
-        <g strokeWidth="2">
-          <line x1="630" y1="600" x2="487.5" y2="600" stroke="#fff" />
-          <line x1="487.5" y1="600" x2="577" y2="562" stroke="#fff" />
-          <line x1="577" y1="562" x2="630" y2="600" stroke="#fff" />
-          <g fill={c.primary} stroke="#fff">
-            <circle cx="487.5" cy="600" r="4" />
-            <circle cx="630" cy="600" r="4" />
-            <circle cx="577" cy="562" r="4" />
-          </g>
+    <g>
+      <g stroke="#fff" fill="none" strokeWidth="2" mask="url(#triangle)">
+        <circle cx="487.5" cy="600" r="24" />
+        <circle cx="630" cy="600" r="24" />
+      </g>
+      <g strokeWidth="2">
+        <line x1="630" y1="600" x2="487.5" y2="600" stroke="#fff" />
+        <line x1="487.5" y1="600" x2="577" y2="562" stroke="#fff" />
+        <line x1="577" y1="562" x2="630" y2="600" stroke="#fff" />
+        <g fill={c.primary} stroke="#fff">
+          <circle cx="487.5" cy="600" r="4" />
+          <circle cx="630" cy="600" r="4" />
+          <circle cx="577" cy="562" r="4" />
         </g>
       </g>
-    </Appear>
+    </g>
     <g fontSize="14" fontFamily="Roboto Mono" fill="#fff">
-      <Appear>
-        <g fill={c.darkPink} fontSize="12">
-          <text x="525" y="595">
-            u1
-          </text>
-          <text x="588" y="595">
-            u2
-          </text>
-        </g>
-      </Appear>
+      <g fill={c.darkPink} fontSize="12">
+        <text x="525" y="595">
+          u1
+        </text>
+        <text x="588" y="595">
+          u2
+        </text>
+      </g>
       <Appear>
         <g fill={c.green}>
           <text x="435" y="575">
@@ -74,7 +70,7 @@ export const Metaball = props => (
       </Appear>
       <Appear>
         <foreignObject width="355" height="50" x="370" y="720">
-          <pre xmlns="http://www.w3.org/1999/xhtml" class="tl lh-title">
+          <pre xmlns="http://www.w3.org/1999/xhtml" className="tl lh-title">
             {`u1 = Math.acos(
   (r1 ** 2 + d ** 2 - r2 ** 2) / (2 * r1 * d)
 );`}

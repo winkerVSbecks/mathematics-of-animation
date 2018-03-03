@@ -73,17 +73,23 @@ export const coordinateGeometrySlides = (
         Bees & Bombs Polar Patterns
       </Heading>
     </Slide>
-    <Slide bgColor="secondary">
-      <PolarPolygon className="db mb4 mw6 center" />
+    {/* <Slide bgColor="secondary">
       <Heading textColor="primary" f={3}>
         POLYGONS
       </Heading>
+      <PolarPolygon className="db mb4 mw6 center" />
       <Heading textColor="primary" f={2}>
         angle = 360° / number of sides<br />
       </Heading>
-    </Slide>
-    <Slide bgColor="secondary">
-      <Hexagon className="center" />
+    </Slide> */}
+    <Slide bgColor="secondary" margin="0">
+      <Heading textColor="primary" f={3} margin="0 0 1rem 0">
+        POLYGONS
+      </Heading>
+      <Hexagon className="center" style={{ maxWidth: '60rem' }} />
+      <Heading textColor="primary" f={3} margin="1rem 0 0 0">
+        angle = 360° / number of sides<br />
+      </Heading>
     </Slide>
     {polygonGenerator}
     <Slide bgColor="#000">
@@ -95,6 +101,15 @@ export const coordinateGeometrySlides = (
         fallback={images.gemsDemo}
         bgColor="#FE664D"
       />
+      <div
+        className="absolute bottom-0 left-0 right-0 h4"
+        style={{ bottom: '4.5rem', backgroundColor: '#FE664D' }}
+      />
+      <Text f={5} textAlign="center">
+        <Link href="http://winkervsbecks.github.io/gems/" textColor="primary">
+          winkervsbecks.github.io/gems
+        </Link>
+      </Text>
     </Slide>
     <Slide margin="0" padding="0">
       <div className="flex items-end">

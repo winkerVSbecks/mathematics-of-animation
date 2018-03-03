@@ -2,13 +2,13 @@ import React from 'react';
 import CodeSlide from 'spectacle-code-slide';
 
 const code = `
-function polygonVertices(count, radius, rotation = 0) {
+function polygonVertices(count, radius) {
   const angle = 360 / count;
   const vertexIndices = range(count);
 
   return vertexIndices.map(index => {
     return {
-      theta: degToRag(rotation + angle * index),
+      theta: degToRag(angle * index),
       radius: radius,
     };
   });
@@ -29,8 +29,8 @@ function toCartesian({ radius, theta }) {
   ];
 }
 
-function polygon(noOfSides, circumradius, rotation) {
-  return points(noOfSides, circumradius, rotation)
+function polygon(noOfSides, circumradius) {
+  return points(noOfSides, circumradius)
     .map(toCartesian)
     .join(' ');
 }

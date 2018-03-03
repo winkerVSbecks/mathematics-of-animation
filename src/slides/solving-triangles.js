@@ -1,8 +1,7 @@
 import React from 'react';
-import { Image, Link, Slide, SlideSet } from 'spectacle';
-import { CodePen, Heading, LawOfCosines, Text } from 'components';
+import { Link, Slide, SlideSet } from 'spectacle';
+import { CodePen, Heading, LawOfCosines } from 'components';
 
-import images from '../images';
 import { TrigFunctions, SA15Process, Metaball } from 'examples';
 
 const triangle =
@@ -34,6 +33,7 @@ export const solvingTrianglesSlides = (
       </Heading>
     </Slide>
     <Slide margin="0" padding="0">
+      {/* ne-mo-nic */}
       <TrigFunctions />
     </Slide>
     <Slide>
@@ -67,21 +67,6 @@ export const solvingTrianglesSlides = (
         <SA15Process className="w-50" />
       </div>
     </Slide>
-    {/* <Slide bgColor="#FDFCFC">
-      <Heading textColor="primary" f={1}>
-        Use It for Levers
-      </Heading>
-      <Image src={images.lever} width={595} margin="0 0 4rem 0" />
-      <Text f={3}>
-        <Link
-          textColor="primary"
-          href="http://codepen.io/rachsmith/post/hack-physics-and-javascript-part-2-solving-triangles-profit"
-          style={{ display: 'block' }}
-        >
-          &ldquo;Solving Triangles = Profit&rdquo; by Rachel Smith
-        </Link>
-      </Text>
-    </Slide> */}
     <Slide>
       <Heading f={2}>Law Of Cosines</Heading>
       <LawOfCosines />

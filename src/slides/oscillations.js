@@ -83,13 +83,13 @@ export const oscillationsSlides = (
         </div>
       </div>
     </Slide>
-    <Slide>
+    {/* <Slide>
       <Heading textColor="tertiary" size={3}>
         Sine
       </Heading>
       <Sine />
       <CodePane source={sineSnippets} />
-    </Slide>
+    </Slide> */}
     <Slide>
       <Heading textColor="tertiary" size={3}>
         Scaling
