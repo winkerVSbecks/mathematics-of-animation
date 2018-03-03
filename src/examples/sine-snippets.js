@@ -8,8 +8,9 @@ export const translationSnippets = `function animationLoop() {
   x = xStart + 300 * Math.sin(theta);
 }`;
 
-export const scalingSnippets = `function animationLoop() {
-  theta = theta + 0.02;
+export const scalingSnippets = `let theta = 0;
+function animationLoop() {
+  theta = theta + 0.02; // radians
   scale = scaleStart * Math.sin(theta);
 }`;
 

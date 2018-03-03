@@ -60,7 +60,7 @@ const images = {
   oam: require('assets/work/oam-alt.gif'),
   generativeGestaltung1: require('assets/generative-gestaltung-1.jpg'),
   generativeGestaltung2: require('assets/generative-gestaltung-2.jpg'),
-  generativeGestaltung3: require('assets/generative-gestaltung-3.jpg'),
+  generativeGestaltung3: require('assets/generative-gestaltung-3.png'),
 };
 
 preloader(images);

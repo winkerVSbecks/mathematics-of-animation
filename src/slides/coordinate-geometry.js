@@ -103,7 +103,7 @@ export const coordinateGeometrySlides = (
       />
       <div
         className="absolute bottom-0 left-0 right-0 h4"
-        style={{ bottom: '4.5rem', backgroundColor: '#FE664D' }}
+        style={{ backgroundColor: '#FE664D' }}
       />
       <Text f={5} textAlign="center">
         <Link href="http://winkervsbecks.github.io/gems/" textColor="primary">

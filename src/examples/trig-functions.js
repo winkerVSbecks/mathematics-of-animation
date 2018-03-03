@@ -82,22 +82,16 @@ export const TrigFunctions = () => (
           <span>
             sin(θ) = <O /> / <H />
           </span>
-        </Appear>
-        <br />
-        <Appear>
+          <br />
           <span>
             cos(θ) = <A /> / <H />
           </span>
-        </Appear>
-        <br />
-        <Appear>
+          <br />
           <span>
             tan(θ) = <O /> / <A />
           </span>
-        </Appear>
-        <br />
-        <br />
-        <Appear>
+          <br />
+          <br />
           <span>
             θ = arcTan(<O /> / <A />)<br />
             θ = arcCos(<A /> / <H />)<br />

@@ -62,6 +62,7 @@ export class Translation extends Component {
   render() {
     return (
       <div className="bg-near-white h5 flex items-center justify-center ba b--black-80">
+        <div className="dib lh-solid black absolute">✖</div>
         <div
           style={{
             transform: `translate3d(${this.state.x}px, 0, 0)`,
