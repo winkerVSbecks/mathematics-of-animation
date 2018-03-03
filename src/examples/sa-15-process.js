@@ -10,10 +10,10 @@ export const SA15Process = props => (
       </mask>
     </defs>
     <g strokeWidth="3">
-      <Appear order={4}>
+      <Appear order={3}>
         <path d="M442.2,300.5 h-10 v-10 h10 z" fill={c.quartenary} />
       </Appear>
-      <Appear order={2}>
+      <Appear order={5}>
         <circle
           cx="400"
           cy="300"
@@ -23,7 +23,7 @@ export const SA15Process = props => (
           mask="url(#triangle)"
         />
       </Appear>
-      <Appear order={3}>
+      <Appear order={2}>
         <path d="M400,300 L 441.6,195" fill="none" stroke={c.green} />
       </Appear>
     </g>
@@ -35,7 +35,7 @@ export const SA15Process = props => (
       <path d="M287,300 H 513" />
       <path d="M441.6,405 L441.6,195" />
     </g>
-    <Appear order={5}>
+    <Appear order={4}>
       <path d="M400,300 H 441.6" fill="none" stroke={c.green} strokeWidth="3" />
     </Appear>
     <g strokeWidth="2" stroke="#fff" fill="#212121">

@@ -1,17 +1,21 @@
 import React from 'react';
-import { Slide, SlideSet, Link } from 'spectacle';
+import { Slide, SlideSet, Link, Image } from 'spectacle';
 
 import { Text, Heading } from 'components';
 import images from 'images';
 
 export const outroSlides = (
   <SlideSet>
-    <Slide bgImage={images.generativeGestaltung3} margin="0">
-      <Heading fw={9} margin="24rem 0 0 0">
-        <Link href="http://www.generative-gestaltung.de/2/" textColor="#0fe976">
-          Generative<br />Design
+    <Slide>
+      <Image src={images.generativeGestaltung3} className="w-75" />
+      <Text fw={9} f={2} textAlign="center">
+        <Link
+          href="http://www.generative-gestaltung.de/2/"
+          textColor="secondary"
+        >
+          generative-gestaltung.de
         </Link>
-      </Heading>
+      </Text>
     </Slide>
     <Slide>
       <Heading
